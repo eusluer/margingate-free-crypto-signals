@@ -1,0 +1,9496 @@
+{
+  "last_update": "2025-07-22T22:39:04.781011",
+  "signals": {
+    "BRUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 71,
+            "type": "bearish",
+            "gap": [
+              0.05044,
+              0.07142
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 49,
+            "type": "BOS_up",
+            "level": 0.07359
+          },
+          {
+            "index": 49,
+            "type": "BOS_down",
+            "level": 0.06166
+          },
+          {
+            "index": 70,
+            "type": "BOS_down",
+            "level": 0.04686
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 0.45913682277320333
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 66,
+            "type": "bearish",
+            "gap": [
+              0.05877,
+              0.07142
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 46,
+            "type": "BOS_up",
+            "level": 0.07296
+          },
+          {
+            "index": 47,
+            "type": "BOS_down",
+            "level": 0.06939
+          },
+          {
+            "index": 65,
+            "type": "BOS_down",
+            "level": 0.04686
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 1.225601452564689
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 30,
+            "type": "bullish",
+            "gap": [
+              0.07151,
+              0.07152
+            ]
+          },
+          {
+            "index": 39,
+            "type": "bearish",
+            "gap": [
+              0.05877,
+              0.0712
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 38,
+            "type": "BOS_down",
+            "level": 0.04686
+          },
+          {
+            "index": 63,
+            "type": "BOS_down",
+            "level": 0.04974
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 46.93877551020454
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 4,
+            "type": "bearish",
+            "gap": [
+              0.05877,
+              0.0713
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 43,
+            "type": "BOS_down",
+            "level": 0.04997
+          },
+          {
+            "index": 52,
+            "type": "BOS_down",
+            "level": 0.04974
+          },
+          {
+            "index": 59,
+            "type": "BOS_up",
+            "level": 0.05023
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 59,
+            "type": "CHoCH",
+            "from": "BOS_down",
+            "to": "BOS_up",
+            "level": 0.05023
+          }
+        ],
+        "RSI": 48.484848484848584
+      }
+    },
+    "CFXUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 63,
+            "type": "bullish",
+            "gap": [
+              0.18625,
+              0.20201
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bearish",
+            "gap": [
+              0.212,
+              0.218
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bearish",
+            "gap": [
+              0.19175,
+              0.20385
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 59,
+            "type": "BOS_up",
+            "level": 0.15397
+          },
+          {
+            "index": 61,
+            "type": "BOS_up",
+            "level": 0.18625
+          },
+          {
+            "index": 62,
+            "type": "BOS_up",
+            "level": 0.2516
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 55.7043537725097
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 67,
+            "type": "bearish",
+            "gap": [
+              0.212,
+              0.21569
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bearish",
+            "gap": [
+              0.19387,
+              0.20385
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bearish",
+            "gap": [
+              0.16998,
+              0.18218
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 72,
+            "type": "BOS_down",
+            "level": 0.18218
+          },
+          {
+            "index": 73,
+            "type": "BOS_down",
+            "level": 0.157
+          },
+          {
+            "index": 74,
+            "type": "BOS_down",
+            "level": 0.15696
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 24.406779661016927
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 68,
+            "type": "bearish",
+            "gap": [
+              0.18692,
+              0.18714
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bearish",
+            "gap": [
+              0.17556,
+              0.1847
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bearish",
+            "gap": [
+              0.1685,
+              0.1703
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 69,
+            "type": "BOS_down",
+            "level": 0.1703
+          },
+          {
+            "index": 70,
+            "type": "BOS_down",
+            "level": 0.157
+          },
+          {
+            "index": 71,
+            "type": "BOS_down",
+            "level": 0.15696
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 28.918406072106237
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 63,
+            "type": "bearish",
+            "gap": [
+              0.18217,
+              0.1847
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bearish",
+            "gap": [
+              0.17556,
+              0.18108
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bearish",
+            "gap": [
+              0.16551,
+              0.1703
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 66,
+            "type": "BOS_down",
+            "level": 0.16368
+          },
+          {
+            "index": 67,
+            "type": "BOS_down",
+            "level": 0.157
+          },
+          {
+            "index": 68,
+            "type": "BOS_down",
+            "level": 0.15696
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 22.328548644338085
+      }
+    },
+    "HEIUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 69,
+            "type": "bearish",
+            "gap": [
+              0.3563,
+              0.3603
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.3736,
+              0.3965
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.409,
+              0.4123
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 55,
+            "type": "BOS_up",
+            "level": 0.4144
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.438
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.456
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 76.3522884882108
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 62,
+            "type": "bearish",
+            "gap": [
+              0.3589,
+              0.3634
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bullish",
+            "gap": [
+              0.356,
+              0.3563
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.3736,
+              0.3814
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.438
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.4449
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.456
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 80.91809180918088
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 60,
+            "type": "bullish",
+            "gap": [
+              0.404,
+              0.408
+            ]
+          },
+          {
+            "index": 66,
+            "type": "bullish",
+            "gap": [
+              0.4067,
+              0.4154
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.4229,
+              0.4328
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.44
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.4449
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.456
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 58.36545875096376
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 58,
+            "type": "bullish",
+            "gap": [
+              0.4198,
+              0.4226
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bullish",
+            "gap": [
+              0.422,
+              0.4238
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.4225,
+              0.4291
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 64,
+            "type": "BOS_up",
+            "level": 0.44
+          },
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 0.4449
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.456
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 58.24053452115813
+      }
+    },
+    "UMAUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 69,
+            "type": "bullish",
+            "gap": [
+              1.717,
+              1.756
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bearish",
+            "gap": [
+              1.649,
+              1.756
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bearish",
+            "gap": [
+              1.581,
+              1.611
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 1.398
+          },
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 1.717
+          },
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 2.047
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 61.29893238434163
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              1.794,
+              1.821
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bearish",
+            "gap": [
+              1.649,
+              1.656
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bearish",
+            "gap": [
+              1.61,
+              1.611
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 60,
+            "type": "BOS_up",
+            "level": 1.717
+          },
+          {
+            "index": 61,
+            "type": "BOS_up",
+            "level": 1.985
+          },
+          {
+            "index": 62,
+            "type": "BOS_up",
+            "level": 2.047
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 39.816031537450726
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 45,
+            "type": "bearish",
+            "gap": [
+              1.583,
+              1.606
+            ]
+          },
+          {
+            "index": 49,
+            "type": "bearish",
+            "gap": [
+              1.578,
+              1.582
+            ]
+          },
+          {
+            "index": 50,
+            "type": "bearish",
+            "gap": [
+              1.563,
+              1.569
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 51,
+            "type": "BOS_down",
+            "level": 1.514
+          },
+          {
+            "index": 52,
+            "type": "BOS_down",
+            "level": 1.512
+          },
+          {
+            "index": 53,
+            "type": "BOS_down",
+            "level": 1.495
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 41.42857142857144
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 56,
+            "type": "bullish",
+            "gap": [
+              1.523,
+              1.525
+            ]
+          },
+          {
+            "index": 63,
+            "type": "bearish",
+            "gap": [
+              1.533,
+              1.534
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              1.518,
+              1.525
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 29,
+            "type": "BOS_down",
+            "level": 1.514
+          },
+          {
+            "index": 30,
+            "type": "BOS_down",
+            "level": 1.512
+          },
+          {
+            "index": 32,
+            "type": "BOS_down",
+            "level": 1.495
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 50.58823529411758
+      }
+    },
+    "SYNUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 48,
+            "type": "bullish",
+            "gap": [
+              0.1283,
+              0.1315
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bearish",
+            "gap": [
+              0.1366,
+              0.1372
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.133,
+              0.1384
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 72,
+            "type": "BOS_down",
+            "level": 0.125
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.1521
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.1713
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 70.74010327022376
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.1302,
+              0.131
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bullish",
+            "gap": [
+              0.1365,
+              0.1404
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.145,
+              0.1472
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.1433
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.1521
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.1713
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 74.79338842975204
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 59,
+            "type": "bullish",
+            "gap": [
+              0.1395,
+              0.1408
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.1419,
+              0.1426
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.154,
+              0.1599
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.1538
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.154
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.1713
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 71.12299465240639
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 67,
+            "type": "bullish",
+            "gap": [
+              0.1462,
+              0.148
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.154,
+              0.1549
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.1572,
+              0.1599
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.154
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.1572
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.1713
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 76.19047619047612
+      }
+    },
+    "PENGUUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 66,
+            "type": "bullish",
+            "gap": [
+              0.032254,
+              0.036834
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bearish",
+            "gap": [
+              0.036784,
+              0.036834
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.038168,
+              0.040355
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 0.0404
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.042674
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.04486
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 81.89511073965734
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 61,
+            "type": "bearish",
+            "gap": [
+              0.036784,
+              0.037144
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bullish",
+            "gap": [
+              0.036584,
+              0.036803
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.038168,
+              0.03908
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 57,
+            "type": "BOS_up",
+            "level": 0.0404
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.042674
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.04486
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 76.45380548795833
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 62,
+            "type": "bullish",
+            "gap": [
+              0.03897,
+              0.0391
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bullish",
+            "gap": [
+              0.04053,
+              0.040542
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.042252,
+              0.042604
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 62,
+            "type": "BOS_up",
+            "level": 0.042674
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.043124
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.04486
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 69.71519251649545
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              0.041327,
+              0.041354
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bullish",
+            "gap": [
+              0.041097,
+              0.041262
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bullish",
+            "gap": [
+              0.041959,
+              0.042134
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.043124
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.04364
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.04486
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 59.04233171408743
+      }
+    },
+    "ZKJUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 62,
+            "type": "bullish",
+            "gap": [
+              0.1769,
+              0.1783
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.1953,
+              0.1978
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.2034,
+              0.2043
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 0.199
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.2062
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.226
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 86.87050359712234
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 60,
+            "type": "bullish",
+            "gap": [
+              0.1893,
+              0.1894
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.1924,
+              0.1927
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.2042,
+              0.2043
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 61,
+            "type": "BOS_up",
+            "level": 0.199
+          },
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.2062
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.226
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 70.07633587786259
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 55,
+            "type": "bullish",
+            "gap": [
+              0.1939,
+              0.1963
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.2043,
+              0.2121
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.2131,
+              0.215
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 63,
+            "type": "BOS_up",
+            "level": 0.2043
+          },
+          {
+            "index": 64,
+            "type": "BOS_up",
+            "level": 0.2147
+          },
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.226
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 61.63793103448275
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 57,
+            "type": "bullish",
+            "gap": [
+              0.2147,
+              0.2191
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.2093,
+              0.2111
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.2131,
+              0.215
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 55,
+            "type": "BOS_up",
+            "level": 0.2147
+          },
+          {
+            "index": 56,
+            "type": "BOS_up",
+            "level": 0.2251
+          },
+          {
+            "index": 57,
+            "type": "BOS_up",
+            "level": 0.226
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 60.167130919220064
+      }
+    },
+    "DOODUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.0038188,
+              0.004135
+            ]
+          },
+          {
+            "index": 66,
+            "type": "bullish",
+            "gap": [
+              0.0042982,
+              0.0045348
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.00437,
+              0.0043743
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 64,
+            "type": "BOS_up",
+            "level": 0.0042982
+          },
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.0050351
+          },
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 0.0052426
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 66.02324554950712
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 57,
+            "type": "bullish",
+            "gap": [
+              0.0044622,
+              0.00477
+            ]
+          },
+          {
+            "index": 59,
+            "type": "bearish",
+            "gap": [
+              0.0046284,
+              0.00477
+            ]
+          },
+          {
+            "index": 62,
+            "type": "bearish",
+            "gap": [
+              0.0042073,
+              0.0044219
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 55,
+            "type": "BOS_up",
+            "level": 0.0044622
+          },
+          {
+            "index": 56,
+            "type": "BOS_up",
+            "level": 0.0050351
+          },
+          {
+            "index": 57,
+            "type": "BOS_up",
+            "level": 0.0052426
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 55.452333554523314
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 64,
+            "type": "bullish",
+            "gap": [
+              0.0043985,
+              0.0044005
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bullish",
+            "gap": [
+              0.0044792,
+              0.0044829
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.004598,
+              0.0046586
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 63,
+            "type": "BOS_up",
+            "level": 0.0044841
+          },
+          {
+            "index": 64,
+            "type": "BOS_up",
+            "level": 0.0045652
+          },
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 0.0047395
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 70.03650375177448
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 71,
+            "type": "bullish",
+            "gap": [
+              0.0045432,
+              0.0045491
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.0045959,
+              0.0046028
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.0046273,
+              0.0046586
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 54,
+            "type": "BOS_up",
+            "level": 0.0045652
+          },
+          {
+            "index": 62,
+            "type": "BOS_up",
+            "level": 0.0047329
+          },
+          {
+            "index": 63,
+            "type": "BOS_up",
+            "level": 0.0047395
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 65.6270137904369
+      }
+    },
+    "DIAUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 62,
+            "type": "bullish",
+            "gap": [
+              0.5109,
+              0.548
+            ]
+          },
+          {
+            "index": 63,
+            "type": "bullish",
+            "gap": [
+              0.5723,
+              0.7683
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.896,
+              0.9359
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 62,
+            "type": "BOS_up",
+            "level": 0.93
+          },
+          {
+            "index": 64,
+            "type": "BOS_up",
+            "level": 1.125
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 1.207
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 78.06678066780668
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 60,
+            "type": "bullish",
+            "gap": [
+              0.9259,
+              0.9664
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bullish",
+            "gap": [
+              1.0088,
+              1.0127
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              1.0394,
+              1.0504
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 53,
+            "type": "BOS_up",
+            "level": 1.02
+          },
+          {
+            "index": 54,
+            "type": "BOS_up",
+            "level": 1.125
+          },
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 1.207
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 59.70080197409005
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 59,
+            "type": "bearish",
+            "gap": [
+              1.0394,
+              1.0472
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bullish",
+            "gap": [
+              1.0155,
+              1.0239
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              1.1042,
+              1.1141
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 1.1028
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 1.1042
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 1.1532
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 70.64989517819704
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 37,
+            "type": "bullish",
+            "gap": [
+              1.0265,
+              1.0506
+            ]
+          },
+          {
+            "index": 58,
+            "type": "bullish",
+            "gap": [
+              1.059,
+              1.06
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              1.1042,
+              1.1124
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 1.1028
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 1.1042
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 1.1532
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 62.666666666666686
+      }
+    },
+    "SWELLUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 50,
+            "type": "bearish",
+            "gap": [
+              0.01258,
+              0.01272
+            ]
+          },
+          {
+            "index": 53,
+            "type": "bullish",
+            "gap": [
+              0.01249,
+              0.01257
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.0135,
+              0.01358
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.01475
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.01502
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.01596
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 70.34358047016275
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 45,
+            "type": "bullish",
+            "gap": [
+              0.0129,
+              0.01291
+            ]
+          },
+          {
+            "index": 47,
+            "type": "bearish",
+            "gap": [
+              0.01275,
+              0.01291
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bullish",
+            "gap": [
+              0.0135,
+              0.01368
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.01479
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.01502
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.01596
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 68.59122401847576
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 55,
+            "type": "bullish",
+            "gap": [
+              0.01408,
+              0.01423
+            ]
+          },
+          {
+            "index": 62,
+            "type": "bearish",
+            "gap": [
+              0.01475,
+              0.0148
+            ]
+          },
+          {
+            "index": 66,
+            "type": "bullish",
+            "gap": [
+              0.01487,
+              0.01503
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 51,
+            "type": "BOS_up",
+            "level": 0.01479
+          },
+          {
+            "index": 56,
+            "type": "BOS_up",
+            "level": 0.01502
+          },
+          {
+            "index": 59,
+            "type": "BOS_up",
+            "level": 0.01596
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 52.142857142857146
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 57,
+            "type": "bullish",
+            "gap": [
+              0.01487,
+              0.01505
+            ]
+          },
+          {
+            "index": 58,
+            "type": "bullish",
+            "gap": [
+              0.01511,
+              0.0153
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bullish",
+            "gap": [
+              0.01502,
+              0.01517
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 44,
+            "type": "BOS_up",
+            "level": 0.01544
+          },
+          {
+            "index": 45,
+            "type": "BOS_up",
+            "level": 0.01596
+          },
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 0.01573
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 43.8423645320197
+      }
+    },
+    "PUMPUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 70,
+            "type": "bearish",
+            "gap": [
+              0.004146,
+              0.004181
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bearish",
+            "gap": [
+              0.003854,
+              0.004139
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bearish",
+            "gap": [
+              0.003776,
+              0.003795
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 51,
+            "type": "BOS_down",
+            "level": 0.003778
+          },
+          {
+            "index": 71,
+            "type": "BOS_down",
+            "level": 0.003616
+          },
+          {
+            "index": 72,
+            "type": "BOS_down",
+            "level": 0.003559
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 18.010167029774905
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.004146,
+              0.004148
+            ]
+          },
+          {
+            "index": 66,
+            "type": "bearish",
+            "gap": [
+              0.004121,
+              0.004139
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bearish",
+            "gap": [
+              0.003854,
+              0.00397
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 66,
+            "type": "BOS_down",
+            "level": 0.003795
+          },
+          {
+            "index": 67,
+            "type": "BOS_down",
+            "level": 0.003616
+          },
+          {
+            "index": 69,
+            "type": "BOS_down",
+            "level": 0.003559
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 25.954198473282403
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 52,
+            "type": "bearish",
+            "gap": [
+              0.003709,
+              0.003712
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bullish",
+            "gap": [
+              0.003769,
+              0.00382
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bearish",
+            "gap": [
+              0.003717,
+              0.003727
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 51,
+            "type": "BOS_down",
+            "level": 0.003559
+          },
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 0.003867
+          },
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 0.00388
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 44.23076923076925
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              0.003769,
+              0.003794
+            ]
+          },
+          {
+            "index": 62,
+            "type": "bullish",
+            "gap": [
+              0.003799,
+              0.00382
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bearish",
+            "gap": [
+              0.003717,
+              0.003726
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 57,
+            "type": "BOS_up",
+            "level": 0.003817
+          },
+          {
+            "index": 61,
+            "type": "BOS_up",
+            "level": 0.003867
+          },
+          {
+            "index": 62,
+            "type": "BOS_up",
+            "level": 0.00388
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 38.59649122807014
+      }
+    },
+    "API3USDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.8134,
+              0.8313
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bullish",
+            "gap": [
+              0.8858,
+              0.9012
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bearish",
+            "gap": [
+              0.8718,
+              0.9012
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 64,
+            "type": "BOS_up",
+            "level": 0.856
+          },
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.8958
+          },
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 1.033
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 59.84567901234568
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 66,
+            "type": "bearish",
+            "gap": [
+              0.8984,
+              0.9012
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bearish",
+            "gap": [
+              0.8692,
+              0.8739
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bearish",
+            "gap": [
+              0.8413,
+              0.8532
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 56,
+            "type": "BOS_up",
+            "level": 0.8958
+          },
+          {
+            "index": 61,
+            "type": "BOS_up",
+            "level": 0.9445
+          },
+          {
+            "index": 62,
+            "type": "BOS_up",
+            "level": 1.033
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 47.397834439399226
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 63,
+            "type": "bearish",
+            "gap": [
+              0.8282,
+              0.83
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.8282,
+              0.8349
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.8366,
+              0.84
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 53,
+            "type": "BOS_down",
+            "level": 0.8217
+          },
+          {
+            "index": 63,
+            "type": "BOS_down",
+            "level": 0.8155
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.8484
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 73,
+            "type": "CHoCH",
+            "from": "BOS_down",
+            "to": "BOS_up",
+            "level": 0.8484
+          }
+        ],
+        "RSI": 57.64895330112716
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 57,
+            "type": "bullish",
+            "gap": [
+              0.8371,
+              0.8377
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.8294,
+              0.833
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.8325,
+              0.8336
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 56,
+            "type": "BOS_up",
+            "level": 0.8442
+          },
+          {
+            "index": 57,
+            "type": "BOS_up",
+            "level": 0.8474
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.8484
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 52.80612244897957
+      }
+    },
+    "ICNTUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 31,
+            "type": "bearish",
+            "gap": [
+              0.2778,
+              0.2814
+            ]
+          },
+          {
+            "index": 41,
+            "type": "bearish",
+            "gap": [
+              0.2501,
+              0.258
+            ]
+          },
+          {
+            "index": 43,
+            "type": "bearish",
+            "gap": [
+              0.2383,
+              0.2413
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.2531
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.254
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.2603
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 65.3889515219842
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 62,
+            "type": "bearish",
+            "gap": [
+              0.2363,
+              0.2382
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bullish",
+            "gap": [
+              0.2363,
+              0.2373
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.2393,
+              0.24
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.2531
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.254
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.2603
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 62.56613756613757
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 67,
+            "type": "bullish",
+            "gap": [
+              0.2452,
+              0.2462
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.2488,
+              0.2504
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.2538,
+              0.2556
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 62,
+            "type": "BOS_up",
+            "level": 0.254
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.2574
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.2603
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 64.16861826697888
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 56,
+            "type": "bearish",
+            "gap": [
+              0.2452,
+              0.2455
+            ]
+          },
+          {
+            "index": 60,
+            "type": "bullish",
+            "gap": [
+              0.2468,
+              0.2471
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.2532,
+              0.2551
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.2563
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.2574
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.2603
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 82.12290502793302
+      }
+    },
+    "AGTUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 63,
+            "type": "bearish",
+            "gap": [
+              0.005018,
+              0.005628
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bearish",
+            "gap": [
+              0.004819,
+              0.00496
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bearish",
+            "gap": [
+              0.004653,
+              0.004712
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 51,
+            "type": "BOS_down",
+            "level": 0.005597
+          },
+          {
+            "index": 57,
+            "type": "BOS_down",
+            "level": 0.00543
+          },
+          {
+            "index": 62,
+            "type": "BOS_down",
+            "level": 0.004414
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 24.588880187940504
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 41,
+            "type": "bullish",
+            "gap": [
+              0.005699,
+              0.005765
+            ]
+          },
+          {
+            "index": 50,
+            "type": "bearish",
+            "gap": [
+              0.005009,
+              0.005628
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bearish",
+            "gap": [
+              0.004693,
+              0.00475
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 71,
+            "type": "BOS_down",
+            "level": 0.004604
+          },
+          {
+            "index": 72,
+            "type": "BOS_down",
+            "level": 0.00445
+          },
+          {
+            "index": 73,
+            "type": "BOS_down",
+            "level": 0.004422
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 23.298429319371778
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 61,
+            "type": "bearish",
+            "gap": [
+              0.004699,
+              0.004722
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bearish",
+            "gap": [
+              0.004587,
+              0.004635
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.004517,
+              0.004578
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 64,
+            "type": "BOS_down",
+            "level": 0.004464
+          },
+          {
+            "index": 66,
+            "type": "BOS_down",
+            "level": 0.00445
+          },
+          {
+            "index": 67,
+            "type": "BOS_down",
+            "level": 0.004422
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 42.39130434782608
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 47,
+            "type": "bearish",
+            "gap": [
+              0.004729,
+              0.00477
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bullish",
+            "gap": [
+              0.004517,
+              0.004519
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.004551,
+              0.00458
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 55,
+            "type": "BOS_down",
+            "level": 0.004464
+          },
+          {
+            "index": 58,
+            "type": "BOS_down",
+            "level": 0.00445
+          },
+          {
+            "index": 61,
+            "type": "BOS_down",
+            "level": 0.004422
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 55.378486055776904
+      }
+    },
+    "LOKAUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 54,
+            "type": "bearish",
+            "gap": [
+              0.1108,
+              0.11097
+            ]
+          },
+          {
+            "index": 62,
+            "type": "bullish",
+            "gap": [
+              0.10397,
+              0.10576
+            ]
+          },
+          {
+            "index": 66,
+            "type": "bullish",
+            "gap": [
+              0.10932,
+              0.11196
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 49,
+            "type": "BOS_up",
+            "level": 0.11565
+          },
+          {
+            "index": 51,
+            "type": "BOS_up",
+            "level": 0.12573
+          },
+          {
+            "index": 52,
+            "type": "BOS_up",
+            "level": 0.135
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 65.80728327425072
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 40,
+            "type": "bullish",
+            "gap": [
+              0.09873,
+              0.09882
+            ]
+          },
+          {
+            "index": 48,
+            "type": "bullish",
+            "gap": [
+              0.10397,
+              0.10619
+            ]
+          },
+          {
+            "index": 57,
+            "type": "bullish",
+            "gap": [
+              0.10894,
+              0.11196
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 29,
+            "type": "BOS_up",
+            "level": 0.13287
+          },
+          {
+            "index": 30,
+            "type": "BOS_up",
+            "level": 0.135
+          },
+          {
+            "index": 57,
+            "type": "BOS_up",
+            "level": 0.12411
+          }
+        ],
+        "CHoCH": [],
+        "RSI": NaN
+      },
+      "30m": {
+        "FVG": [],
+        "BOS": [],
+        "CHoCH": [],
+        "RSI": NaN
+      },
+      "15m": {
+        "FVG": [],
+        "BOS": [],
+        "CHoCH": [],
+        "RSI": NaN
+      }
+    },
+    "TANSSIUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 22,
+            "type": "bullish",
+            "gap": [
+              0.05341,
+              0.05408
+            ]
+          },
+          {
+            "index": 47,
+            "type": "bullish",
+            "gap": [
+              0.06201,
+              0.06312
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.06188,
+              0.06226
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 40,
+            "type": "BOS_up",
+            "level": 0.07347
+          },
+          {
+            "index": 51,
+            "type": "BOS_up",
+            "level": 0.0735
+          },
+          {
+            "index": 68,
+            "type": "BOS_down",
+            "level": 0.05847
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 68,
+            "type": "CHoCH",
+            "from": "BOS_up",
+            "to": "BOS_down",
+            "level": 0.05847
+          }
+        ],
+        "RSI": 55.77035735207967
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 61,
+            "type": "bearish",
+            "gap": [
+              0.06188,
+              0.06233
+            ]
+          },
+          {
+            "index": 62,
+            "type": "bearish",
+            "gap": [
+              0.06147,
+              0.06163
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bullish",
+            "gap": [
+              0.06147,
+              0.0629
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 52,
+            "type": "BOS_down",
+            "level": 0.06025
+          },
+          {
+            "index": 61,
+            "type": "BOS_down",
+            "level": 0.05847
+          },
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 0.06726
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 68,
+            "type": "CHoCH",
+            "from": "BOS_down",
+            "to": "BOS_up",
+            "level": 0.06726
+          }
+        ],
+        "RSI": 59.571045576407506
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 44,
+            "type": "bearish",
+            "gap": [
+              0.06225,
+              0.06226
+            ]
+          },
+          {
+            "index": 49,
+            "type": "bullish",
+            "gap": [
+              0.06374,
+              0.0642
+            ]
+          },
+          {
+            "index": 62,
+            "type": "bearish",
+            "gap": [
+              0.06338,
+              0.0634
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 32,
+            "type": "BOS_up",
+            "level": 0.06468
+          },
+          {
+            "index": 33,
+            "type": "BOS_up",
+            "level": 0.0655
+          },
+          {
+            "index": 49,
+            "type": "BOS_up",
+            "level": 0.06726
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 56.133333333333354
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 56,
+            "type": "bullish",
+            "gap": [
+              0.06357,
+              0.06381
+            ]
+          },
+          {
+            "index": 66,
+            "type": "bearish",
+            "gap": [
+              0.06363,
+              0.0638
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bullish",
+            "gap": [
+              0.06363,
+              0.06364
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.0652
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.06557
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.06565
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 67.77493606138111
+      }
+    },
+    "FIDAUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.09861,
+              0.10309
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bullish",
+            "gap": [
+              0.10933,
+              0.11237
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bullish",
+            "gap": [
+              0.11816,
+              0.1201
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 0.12241
+          },
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 0.12387
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.13154
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 78.43283582089552
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 55,
+            "type": "bullish",
+            "gap": [
+              0.09727,
+              0.10309
+            ]
+          },
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              0.10993,
+              0.11237
+            ]
+          },
+          {
+            "index": 66,
+            "type": "bullish",
+            "gap": [
+              0.11816,
+              0.12155
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 61,
+            "type": "BOS_up",
+            "level": 0.12387
+          },
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.12788
+          },
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 0.13154
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 59.86875315497224
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 57,
+            "type": "bullish",
+            "gap": [
+              0.11804,
+              0.12108
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bullish",
+            "gap": [
+              0.12287,
+              0.12321
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.12464,
+              0.1251
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 38,
+            "type": "BOS_up",
+            "level": 0.12788
+          },
+          {
+            "index": 39,
+            "type": "BOS_up",
+            "level": 0.13154
+          },
+          {
+            "index": 55,
+            "type": "BOS_down",
+            "level": 0.11541
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 55,
+            "type": "CHoCH",
+            "from": "BOS_up",
+            "to": "BOS_down",
+            "level": 0.11541
+          }
+        ],
+        "RSI": 53.94101876675603
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              0.12287,
+              0.1234
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bearish",
+            "gap": [
+              0.12366,
+              0.12372
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.1239,
+              0.12537
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.12661
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.1271
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.12823
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 55.49132947976879
+      }
+    },
+    "AINUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 44,
+            "type": "bullish",
+            "gap": [
+              0.12655,
+              0.12787
+            ]
+          },
+          {
+            "index": 59,
+            "type": "bearish",
+            "gap": [
+              0.13788,
+              0.1389
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.14447,
+              0.14578
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 68,
+            "type": "BOS_down",
+            "level": 0.12903
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.15805
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.165
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 53.63461538461539
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 58,
+            "type": "bearish",
+            "gap": [
+              0.13662,
+              0.13749
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bullish",
+            "gap": [
+              0.13466,
+              0.13578
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bullish",
+            "gap": [
+              0.14246,
+              0.14649
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.15265
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.15805
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.165
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 59.33991917377638
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 58,
+            "type": "bullish",
+            "gap": [
+              0.14571,
+              0.14621
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bullish",
+            "gap": [
+              0.14888,
+              0.14912
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bearish",
+            "gap": [
+              0.14439,
+              0.14716
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 64,
+            "type": "BOS_up",
+            "level": 0.15408
+          },
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.15805
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.165
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 40.83784554003988
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 66,
+            "type": "bearish",
+            "gap": [
+              0.147,
+              0.14706
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bullish",
+            "gap": [
+              0.147,
+              0.14912
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bearish",
+            "gap": [
+              0.14512,
+              0.14716
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 66,
+            "type": "BOS_down",
+            "level": 0.14403
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.165
+          },
+          {
+            "index": 72,
+            "type": "BOS_down",
+            "level": 0.141
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 72,
+            "type": "CHoCH",
+            "from": "BOS_up",
+            "to": "BOS_down",
+            "level": 0.141
+          }
+        ],
+        "RSI": 38.12570568310122
+      }
+    },
+    "UXLINKUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.3855,
+              0.386
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bullish",
+            "gap": [
+              0.3958,
+              0.4013
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bullish",
+            "gap": [
+              0.4044,
+              0.4211
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.3958
+          },
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 0.4136
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.468
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 71.52886115444616
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 59,
+            "type": "bullish",
+            "gap": [
+              0.3999,
+              0.4013
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.4001,
+              0.4017
+            ]
+          },
+          {
+            "index": 66,
+            "type": "bullish",
+            "gap": [
+              0.4044,
+              0.436
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 58,
+            "type": "BOS_up",
+            "level": 0.4136
+          },
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.4606
+          },
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 0.468
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 61.93181818181817
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 63,
+            "type": "bearish",
+            "gap": [
+              0.4233,
+              0.4288
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.4233,
+              0.4253
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.4274,
+              0.4277
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 39,
+            "type": "BOS_up",
+            "level": 0.468
+          },
+          {
+            "index": 62,
+            "type": "BOS_down",
+            "level": 0.421
+          },
+          {
+            "index": 63,
+            "type": "BOS_down",
+            "level": 0.4178
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 43.27485380116962
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 55,
+            "type": "bullish",
+            "gap": [
+              0.4233,
+              0.4239
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.4276,
+              0.4285
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.4283,
+              0.4284
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 51,
+            "type": "BOS_down",
+            "level": 0.421
+          },
+          {
+            "index": 52,
+            "type": "BOS_down",
+            "level": 0.4178
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 54.21686746987955
+      }
+    },
+    "PUMPBTCUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 58,
+            "type": "bullish",
+            "gap": [
+              0.04039,
+              0.04064
+            ]
+          },
+          {
+            "index": 59,
+            "type": "bullish",
+            "gap": [
+              0.04116,
+              0.04136
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bearish",
+            "gap": [
+              0.04232,
+              0.04239
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 51,
+            "type": "BOS_down",
+            "level": 0.0369
+          },
+          {
+            "index": 58,
+            "type": "BOS_up",
+            "level": 0.04417
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.04512
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 54.275092936802956
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 62,
+            "type": "bearish",
+            "gap": [
+              0.0411,
+              0.04202
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.04079,
+              0.04155
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.04383,
+              0.04392
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 62,
+            "type": "BOS_down",
+            "level": 0.03954
+          },
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 0.04383
+          },
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.04512
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 57.289527720739194
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 63,
+            "type": "bearish",
+            "gap": [
+              0.04338,
+              0.04372
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bearish",
+            "gap": [
+              0.04313,
+              0.04335
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.04313,
+              0.04316
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 50,
+            "type": "BOS_up",
+            "level": 0.04383
+          },
+          {
+            "index": 52,
+            "type": "BOS_up",
+            "level": 0.04405
+          },
+          {
+            "index": 53,
+            "type": "BOS_up",
+            "level": 0.04512
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 46.51162790697671
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 58,
+            "type": "bearish",
+            "gap": [
+              0.0434,
+              0.04351
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.04305,
+              0.04341
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.04309,
+              0.04321
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 51,
+            "type": "BOS_down",
+            "level": 0.0428
+          },
+          {
+            "index": 52,
+            "type": "BOS_down",
+            "level": 0.04268
+          },
+          {
+            "index": 65,
+            "type": "BOS_down",
+            "level": 0.04258
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 56.15763546798033
+      }
+    },
+    "DRIFTUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.5137,
+              0.5847
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bullish",
+            "gap": [
+              0.648,
+              0.6719
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bearish",
+            "gap": [
+              0.6537,
+              0.6829
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.648
+          },
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 0.722
+          },
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 0.7544
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 69.86413043478261
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 59,
+            "type": "bullish",
+            "gap": [
+              0.6883,
+              0.69
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.7001,
+              0.7007
+            ]
+          },
+          {
+            "index": 66,
+            "type": "bearish",
+            "gap": [
+              0.668,
+              0.6829
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 57,
+            "type": "BOS_up",
+            "level": 0.6883
+          },
+          {
+            "index": 58,
+            "type": "BOS_up",
+            "level": 0.722
+          },
+          {
+            "index": 59,
+            "type": "BOS_up",
+            "level": 0.7544
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 40.49539170506911
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 51,
+            "type": "bearish",
+            "gap": [
+              0.6413,
+              0.6415
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.6444,
+              0.6516
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bearish",
+            "gap": [
+              0.6554,
+              0.6563
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.6615
+          },
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 0.6677
+          },
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 0.6679
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 52.203389830508506
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 56,
+            "type": "bullish",
+            "gap": [
+              0.6503,
+              0.6516
+            ]
+          },
+          {
+            "index": 62,
+            "type": "bearish",
+            "gap": [
+              0.6598,
+              0.6631
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.6505,
+              0.653
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 57,
+            "type": "BOS_up",
+            "level": 0.6615
+          },
+          {
+            "index": 58,
+            "type": "BOS_up",
+            "level": 0.6677
+          },
+          {
+            "index": 60,
+            "type": "BOS_up",
+            "level": 0.6679
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 22.857142857142833
+      }
+    },
+    "1000000BOBUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 44,
+            "type": "bearish",
+            "gap": [
+              0.05613,
+              0.05814
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bearish",
+            "gap": [
+              0.06046,
+              0.0614
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bearish",
+            "gap": [
+              0.05911,
+              0.0592
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 44,
+            "type": "BOS_down",
+            "level": 0.05191
+          },
+          {
+            "index": 45,
+            "type": "BOS_down",
+            "level": 0.04885
+          },
+          {
+            "index": 49,
+            "type": "BOS_down",
+            "level": 0.04805
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 51.88916876574307
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 28,
+            "type": "bullish",
+            "gap": [
+              0.05119,
+              0.05149
+            ]
+          },
+          {
+            "index": 59,
+            "type": "bullish",
+            "gap": [
+              0.05998,
+              0.06093
+            ]
+          },
+          {
+            "index": 63,
+            "type": "bullish",
+            "gap": [
+              0.06139,
+              0.0614
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 71,
+            "type": "BOS_down",
+            "level": 0.05654
+          },
+          {
+            "index": 72,
+            "type": "BOS_down",
+            "level": 0.05602
+          },
+          {
+            "index": 73,
+            "type": "BOS_down",
+            "level": 0.05581
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 32.8195829555757
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 52,
+            "type": "bearish",
+            "gap": [
+              0.05828,
+              0.05836
+            ]
+          },
+          {
+            "index": 63,
+            "type": "bearish",
+            "gap": [
+              0.05763,
+              0.05821
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.05662,
+              0.05677
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 63,
+            "type": "BOS_down",
+            "level": 0.05608
+          },
+          {
+            "index": 65,
+            "type": "BOS_down",
+            "level": 0.05602
+          },
+          {
+            "index": 69,
+            "type": "BOS_down",
+            "level": 0.05581
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 36.84210526315793
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 25,
+            "type": "bullish",
+            "gap": [
+              0.05897,
+              0.0591
+            ]
+          },
+          {
+            "index": 52,
+            "type": "bearish",
+            "gap": [
+              0.05763,
+              0.05816
+            ]
+          },
+          {
+            "index": 63,
+            "type": "bearish",
+            "gap": [
+              0.05652,
+              0.05671
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 52,
+            "type": "BOS_down",
+            "level": 0.05608
+          },
+          {
+            "index": 56,
+            "type": "BOS_down",
+            "level": 0.05602
+          },
+          {
+            "index": 65,
+            "type": "BOS_down",
+            "level": 0.05581
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 45.98540145985396
+      }
+    },
+    "MOODENGUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 62,
+            "type": "bullish",
+            "gap": [
+              0.19178,
+              0.19254
+            ]
+          },
+          {
+            "index": 66,
+            "type": "bullish",
+            "gap": [
+              0.19808,
+              0.1998
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.21291,
+              0.21603
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 51,
+            "type": "BOS_down",
+            "level": 0.17776
+          },
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 0.21631
+          },
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.249
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 64.15829403321715
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 55,
+            "type": "bullish",
+            "gap": [
+              0.19342,
+              0.19486
+            ]
+          },
+          {
+            "index": 57,
+            "type": "bullish",
+            "gap": [
+              0.19868,
+              0.1998
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bullish",
+            "gap": [
+              0.20811,
+              0.21304
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 58,
+            "type": "BOS_up",
+            "level": 0.21631
+          },
+          {
+            "index": 63,
+            "type": "BOS_up",
+            "level": 0.21658
+          },
+          {
+            "index": 64,
+            "type": "BOS_up",
+            "level": 0.249
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 53.9454806312769
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 53,
+            "type": "bullish",
+            "gap": [
+              0.21469,
+              0.21592
+            ]
+          },
+          {
+            "index": 60,
+            "type": "bullish",
+            "gap": [
+              0.22194,
+              0.22198
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.21616,
+              0.21789
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 34,
+            "type": "BOS_up",
+            "level": 0.249
+          },
+          {
+            "index": 51,
+            "type": "BOS_down",
+            "level": 0.20838
+          },
+          {
+            "index": 52,
+            "type": "BOS_down",
+            "level": 0.20758
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 36.60744217230979
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 45,
+            "type": "bullish",
+            "gap": [
+              0.22194,
+              0.22206
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.21453,
+              0.21626
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.21696,
+              0.21789
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 47,
+            "type": "BOS_up",
+            "level": 0.2292
+          },
+          {
+            "index": 55,
+            "type": "BOS_down",
+            "level": 0.21315
+          },
+          {
+            "index": 64,
+            "type": "BOS_down",
+            "level": 0.21179
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 48.46184578505794
+      }
+    },
+    "HOMEUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.02624,
+              0.026518
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bullish",
+            "gap": [
+              0.027183,
+              0.027184
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.027911,
+              0.028923
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 51,
+            "type": "BOS_up",
+            "level": 0.0277
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.027911
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.0349
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 55.034701799788266
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.026125,
+              0.026518
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bullish",
+            "gap": [
+              0.028615,
+              0.028923
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bearish",
+            "gap": [
+              0.027574,
+              0.028243
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 0.027911
+          },
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 0.028615
+          },
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 0.0349
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 54.40548056704877
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 69,
+            "type": "bearish",
+            "gap": [
+              0.027631,
+              0.028439
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bearish",
+            "gap": [
+              0.02735,
+              0.027511
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.027346,
+              0.027379
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 68,
+            "type": "BOS_down",
+            "level": 0.027511
+          },
+          {
+            "index": 69,
+            "type": "BOS_down",
+            "level": 0.026914
+          },
+          {
+            "index": 71,
+            "type": "BOS_down",
+            "level": 0.026826
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 31.851704205700656
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 64,
+            "type": "bearish",
+            "gap": [
+              0.027631,
+              0.028239
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.027241,
+              0.027511
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.027185,
+              0.02723
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 64,
+            "type": "BOS_down",
+            "level": 0.027052
+          },
+          {
+            "index": 65,
+            "type": "BOS_down",
+            "level": 0.026914
+          },
+          {
+            "index": 68,
+            "type": "BOS_down",
+            "level": 0.026826
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 26.77008750994439
+      }
+    },
+    "LAUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 45,
+            "type": "bearish",
+            "gap": [
+              0.355,
+              0.357
+            ]
+          },
+          {
+            "index": 47,
+            "type": "bullish",
+            "gap": [
+              0.355,
+              0.356
+            ]
+          },
+          {
+            "index": 50,
+            "type": "bearish",
+            "gap": [
+              0.348,
+              0.349
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.373
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.379
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.385
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 89.36170212765956
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 32,
+            "type": "bearish",
+            "gap": [
+              0.335,
+              0.336
+            ]
+          },
+          {
+            "index": 55,
+            "type": "bullish",
+            "gap": [
+              0.349,
+              0.35
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.355,
+              0.359
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.379
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.38
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.385
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 67.64705882352942
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 48,
+            "type": "bullish",
+            "gap": [
+              0.36,
+              0.364
+            ]
+          },
+          {
+            "index": 60,
+            "type": "bullish",
+            "gap": [
+              0.367,
+              0.368
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bullish",
+            "gap": [
+              0.37,
+              0.372
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 0.38
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.383
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.385
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 57.77777777777777
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.372,
+              0.374
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.38,
+              0.381
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bearish",
+            "gap": [
+              0.38,
+              0.381
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 60,
+            "type": "BOS_up",
+            "level": 0.38
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.383
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.385
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 53.33333333333333
+      }
+    },
+    "MERLUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              0.10761,
+              0.10778
+            ]
+          },
+          {
+            "index": 62,
+            "type": "bullish",
+            "gap": [
+              0.10906,
+              0.11143
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bullish",
+            "gap": [
+              0.11633,
+              0.1238
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 62,
+            "type": "BOS_up",
+            "level": 0.1226
+          },
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 0.12615
+          },
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 0.13172
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 76.98630136986304
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 50,
+            "type": "bullish",
+            "gap": [
+              0.11208,
+              0.11342
+            ]
+          },
+          {
+            "index": 58,
+            "type": "bullish",
+            "gap": [
+              0.11623,
+              0.11699
+            ]
+          },
+          {
+            "index": 59,
+            "type": "bullish",
+            "gap": [
+              0.11753,
+              0.1238
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 58,
+            "type": "BOS_up",
+            "level": 0.12615
+          },
+          {
+            "index": 59,
+            "type": "BOS_up",
+            "level": 0.12942
+          },
+          {
+            "index": 60,
+            "type": "BOS_up",
+            "level": 0.13172
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 54.62603878116344
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.127,
+              0.12723
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.12772,
+              0.1285
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.12917,
+              0.12934
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 63,
+            "type": "BOS_up",
+            "level": 0.12893
+          },
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.13006
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.13082
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 69.55782312925169
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 63,
+            "type": "bearish",
+            "gap": [
+              0.12696,
+              0.12754
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.12698,
+              0.12723
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.12917,
+              0.12945
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 56,
+            "type": "BOS_up",
+            "level": 0.12972
+          },
+          {
+            "index": 57,
+            "type": "BOS_up",
+            "level": 0.13006
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.13082
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 61.33333333333335
+      }
+    },
+    "SXTUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 52,
+            "type": "bearish",
+            "gap": [
+              0.08692,
+              0.08723
+            ]
+          },
+          {
+            "index": 55,
+            "type": "bearish",
+            "gap": [
+              0.08353,
+              0.08526
+            ]
+          },
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              0.08509,
+              0.08518
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 54,
+            "type": "BOS_down",
+            "level": 0.0831
+          },
+          {
+            "index": 55,
+            "type": "BOS_down",
+            "level": 0.08015
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.09222
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 74,
+            "type": "CHoCH",
+            "from": "BOS_down",
+            "to": "BOS_up",
+            "level": 0.09222
+          }
+        ],
+        "RSI": 61.05022831050227
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 34,
+            "type": "bearish",
+            "gap": [
+              0.08482,
+              0.08526
+            ]
+          },
+          {
+            "index": 36,
+            "type": "bearish",
+            "gap": [
+              0.08264,
+              0.08326
+            ]
+          },
+          {
+            "index": 55,
+            "type": "bullish",
+            "gap": [
+              0.08527,
+              0.08587
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 49,
+            "type": "BOS_up",
+            "level": 0.08913
+          },
+          {
+            "index": 67,
+            "type": "BOS_down",
+            "level": 0.08212
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.09222
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 74,
+            "type": "CHoCH",
+            "from": "BOS_down",
+            "to": "BOS_up",
+            "level": 0.09222
+          }
+        ],
+        "RSI": 62.321232123212305
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.08557,
+              0.0863
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.08703,
+              0.08724
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.0881,
+              0.08894
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.08703
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.0881
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.09222
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 77.62512266928368
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 69,
+            "type": "bullish",
+            "gap": [
+              0.08557,
+              0.08621
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.08715,
+              0.08724
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.0881,
+              0.08909
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.0881
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.09024
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.09222
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 80.69738480697389
+      }
+    },
+    "LAYERUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 62,
+            "type": "bullish",
+            "gap": [
+              0.7026,
+              0.7044
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.7195,
+              0.7379
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bullish",
+            "gap": [
+              0.7695,
+              0.7701
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 0.7733
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.8439
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.8468
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 78.09307604994325
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.753,
+              0.7619
+            ]
+          },
+          {
+            "index": 66,
+            "type": "bullish",
+            "gap": [
+              0.7695,
+              0.7921
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bearish",
+            "gap": [
+              0.8038,
+              0.8098
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 60,
+            "type": "BOS_up",
+            "level": 0.7733
+          },
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.8439
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.8468
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 60.85213032581454
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 48,
+            "type": "bullish",
+            "gap": [
+              0.783,
+              0.7891
+            ]
+          },
+          {
+            "index": 49,
+            "type": "bullish",
+            "gap": [
+              0.7953,
+              0.7955
+            ]
+          },
+          {
+            "index": 63,
+            "type": "bearish",
+            "gap": [
+              0.7992,
+              0.8048
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 37,
+            "type": "BOS_up",
+            "level": 0.8197
+          },
+          {
+            "index": 38,
+            "type": "BOS_up",
+            "level": 0.8439
+          },
+          {
+            "index": 57,
+            "type": "BOS_up",
+            "level": 0.8468
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 39.8016997167139
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              0.7979,
+              0.798
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.7992,
+              0.8012
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bullish",
+            "gap": [
+              0.7992,
+              0.8005
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 51,
+            "type": "BOS_down",
+            "level": 0.7932
+          },
+          {
+            "index": 52,
+            "type": "BOS_down",
+            "level": 0.7833
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.8078
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 71,
+            "type": "CHoCH",
+            "from": "BOS_down",
+            "to": "BOS_up",
+            "level": 0.8078
+          }
+        ],
+        "RSI": 47.837837837837924
+      }
+    },
+    "HUMAUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              0.036189,
+              0.036598
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.037973,
+              0.038588
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.039193,
+              0.0397
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.042921
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.043633
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.044877
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 64.26089474446214
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 55,
+            "type": "bullish",
+            "gap": [
+              0.037926,
+              0.038588
+            ]
+          },
+          {
+            "index": 59,
+            "type": "bearish",
+            "gap": [
+              0.039097,
+              0.039257
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bullish",
+            "gap": [
+              0.039193,
+              0.039338
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 64,
+            "type": "BOS_up",
+            "level": 0.042921
+          },
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 0.043633
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.044877
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 56.3286984543773
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 69,
+            "type": "bearish",
+            "gap": [
+              0.040988,
+              0.041084
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bearish",
+            "gap": [
+              0.040489,
+              0.040895
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.040723,
+              0.040916
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 61,
+            "type": "BOS_up",
+            "level": 0.044483
+          },
+          {
+            "index": 62,
+            "type": "BOS_up",
+            "level": 0.044877
+          },
+          {
+            "index": 69,
+            "type": "BOS_down",
+            "level": 0.039549
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 69,
+            "type": "CHoCH",
+            "from": "BOS_up",
+            "to": "BOS_down",
+            "level": 0.039549
+          }
+        ],
+        "RSI": 44.60471567267683
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 64,
+            "type": "bearish",
+            "gap": [
+              0.040988,
+              0.041795
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.040366,
+              0.040895
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.040728,
+              0.041004
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 50,
+            "type": "BOS_up",
+            "level": 0.044877
+          },
+          {
+            "index": 64,
+            "type": "BOS_down",
+            "level": 0.040106
+          },
+          {
+            "index": 65,
+            "type": "BOS_down",
+            "level": 0.039549
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 47.791085804044805
+      }
+    },
+    "1000FLOKIUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 39,
+            "type": "bullish",
+            "gap": [
+              0.11121,
+              0.11851
+            ]
+          },
+          {
+            "index": 40,
+            "type": "bullish",
+            "gap": [
+              0.12012,
+              0.1229
+            ]
+          },
+          {
+            "index": 50,
+            "type": "bullish",
+            "gap": [
+              0.13423,
+              0.1361
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 43,
+            "type": "BOS_up",
+            "level": 0.14563
+          },
+          {
+            "index": 50,
+            "type": "BOS_up",
+            "level": 0.14814
+          },
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.15527
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 56.26985610166324
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 53,
+            "type": "bearish",
+            "gap": [
+              0.13718,
+              0.13872
+            ]
+          },
+          {
+            "index": 55,
+            "type": "bullish",
+            "gap": [
+              0.13718,
+              0.13734
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bullish",
+            "gap": [
+              0.14147,
+              0.1472
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 51,
+            "type": "BOS_up",
+            "level": 0.14612
+          },
+          {
+            "index": 63,
+            "type": "BOS_up",
+            "level": 0.15315
+          },
+          {
+            "index": 64,
+            "type": "BOS_up",
+            "level": 0.15527
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 54.097584083372794
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 42,
+            "type": "bearish",
+            "gap": [
+              0.14299,
+              0.14333
+            ]
+          },
+          {
+            "index": 51,
+            "type": "bearish",
+            "gap": [
+              0.1403,
+              0.14092
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bullish",
+            "gap": [
+              0.14174,
+              0.14377
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 0.1465
+          },
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.14672
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.14747
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 63.28871892925419
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 63,
+            "type": "bullish",
+            "gap": [
+              0.14419,
+              0.14462
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.14424,
+              0.14462
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.14381,
+              0.14484
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 62,
+            "type": "BOS_up",
+            "level": 0.1465
+          },
+          {
+            "index": 64,
+            "type": "BOS_up",
+            "level": 0.14672
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.14747
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 58.97435897435894
+      }
+    },
+    "CTKUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 63,
+            "type": "bullish",
+            "gap": [
+              0.39,
+              0.3935
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bullish",
+            "gap": [
+              0.3997,
+              0.4084
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.436,
+              0.448
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.437
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.47
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.5163
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 69.29103016059537
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              0.4034,
+              0.4084
+            ]
+          },
+          {
+            "index": 63,
+            "type": "bullish",
+            "gap": [
+              0.4215,
+              0.4238
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bullish",
+            "gap": [
+              0.4462,
+              0.448
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 0.47
+          },
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.505
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.5163
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 60.166468489892985
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 69,
+            "type": "bearish",
+            "gap": [
+              0.4758,
+              0.4771
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bearish",
+            "gap": [
+              0.4722,
+              0.4735
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bearish",
+            "gap": [
+              0.4544,
+              0.4556
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 72,
+            "type": "BOS_down",
+            "level": 0.4556
+          },
+          {
+            "index": 73,
+            "type": "BOS_down",
+            "level": 0.4506
+          },
+          {
+            "index": 74,
+            "type": "BOS_down",
+            "level": 0.45
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 24.35233160621756
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 51,
+            "type": "bearish",
+            "gap": [
+              0.4809,
+              0.4844
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.468,
+              0.4735
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bearish",
+            "gap": [
+              0.4544,
+              0.4568
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 70,
+            "type": "BOS_down",
+            "level": 0.4556
+          },
+          {
+            "index": 73,
+            "type": "BOS_down",
+            "level": 0.4506
+          },
+          {
+            "index": 74,
+            "type": "BOS_down",
+            "level": 0.45
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 20.477137176938328
+      }
+    },
+    "XTZUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 69,
+            "type": "bearish",
+            "gap": [
+              1.022,
+              1.032
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bearish",
+            "gap": [
+              1.001,
+              1.012
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bearish",
+            "gap": [
+              0.985,
+              0.99
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 56,
+            "type": "BOS_up",
+            "level": 1.114
+          },
+          {
+            "index": 59,
+            "type": "BOS_up",
+            "level": 1.181
+          },
+          {
+            "index": 60,
+            "type": "BOS_up",
+            "level": 1.216
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 7.5630252100839925
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 64,
+            "type": "bearish",
+            "gap": [
+              1.011,
+              1.012
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              1.001,
+              1.003
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bearish",
+            "gap": [
+              0.959,
+              0.963
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 67,
+            "type": "BOS_down",
+            "level": 0.959
+          },
+          {
+            "index": 69,
+            "type": "BOS_down",
+            "level": 0.936
+          },
+          {
+            "index": 72,
+            "type": "BOS_down",
+            "level": 0.933
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 7.207207207207205
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 51,
+            "type": "bearish",
+            "gap": [
+              0.965,
+              0.974
+            ]
+          },
+          {
+            "index": 52,
+            "type": "bearish",
+            "gap": [
+              0.955,
+              0.963
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.947,
+              0.949
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 52,
+            "type": "BOS_down",
+            "level": 0.948
+          },
+          {
+            "index": 53,
+            "type": "BOS_down",
+            "level": 0.936
+          },
+          {
+            "index": 63,
+            "type": "BOS_down",
+            "level": 0.933
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 46.969696969696955
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 29,
+            "type": "bearish",
+            "gap": [
+              0.959,
+              0.963
+            ]
+          },
+          {
+            "index": 33,
+            "type": "bearish",
+            "gap": [
+              0.946,
+              0.95
+            ]
+          },
+          {
+            "index": 56,
+            "type": "bullish",
+            "gap": [
+              0.949,
+              0.95
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 33,
+            "type": "BOS_down",
+            "level": 0.936
+          },
+          {
+            "index": 52,
+            "type": "BOS_down",
+            "level": 0.934
+          },
+          {
+            "index": 53,
+            "type": "BOS_down",
+            "level": 0.933
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 28.125
+      }
+    },
+    "FORTHUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              2.82,
+              2.857
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bullish",
+            "gap": [
+              2.89,
+              2.909
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bearish",
+            "gap": [
+              2.882,
+              2.909
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 39,
+            "type": "BOS_up",
+            "level": 2.882
+          },
+          {
+            "index": 64,
+            "type": "BOS_up",
+            "level": 2.904
+          },
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 3.105
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 53.29087048832274
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 44,
+            "type": "bullish",
+            "gap": [
+              2.737,
+              2.764
+            ]
+          },
+          {
+            "index": 49,
+            "type": "bullish",
+            "gap": [
+              2.804,
+              2.811
+            ]
+          },
+          {
+            "index": 63,
+            "type": "bullish",
+            "gap": [
+              2.889,
+              2.909
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 53,
+            "type": "BOS_up",
+            "level": 2.879
+          },
+          {
+            "index": 54,
+            "type": "BOS_up",
+            "level": 2.904
+          },
+          {
+            "index": 62,
+            "type": "BOS_up",
+            "level": 3.105
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 46.11650485436893
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 57,
+            "type": "bullish",
+            "gap": [
+              2.856,
+              2.865
+            ]
+          },
+          {
+            "index": 63,
+            "type": "bearish",
+            "gap": [
+              2.817,
+              2.842
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              2.817,
+              2.823
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 43,
+            "type": "BOS_down",
+            "level": 2.819
+          },
+          {
+            "index": 44,
+            "type": "BOS_down",
+            "level": 2.79
+          },
+          {
+            "index": 63,
+            "type": "BOS_down",
+            "level": 2.782
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 38.888888888888935
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 56,
+            "type": "bullish",
+            "gap": [
+              2.8,
+              2.823
+            ]
+          },
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              2.843,
+              2.848
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              2.828,
+              2.84
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 39,
+            "type": "BOS_up",
+            "level": 2.893
+          },
+          {
+            "index": 43,
+            "type": "BOS_up",
+            "level": 2.895
+          },
+          {
+            "index": 53,
+            "type": "BOS_down",
+            "level": 2.782
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 53,
+            "type": "CHoCH",
+            "from": "BOS_up",
+            "to": "BOS_down",
+            "level": 2.782
+          }
+        ],
+        "RSI": 34.25925925925944
+      }
+    },
+    "1000BONKUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 59,
+            "type": "bullish",
+            "gap": [
+              0.033383,
+              0.033488
+            ]
+          },
+          {
+            "index": 66,
+            "type": "bullish",
+            "gap": [
+              0.03419,
+              0.034394
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.034602,
+              0.034791
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 39,
+            "type": "BOS_up",
+            "level": 0.039344
+          },
+          {
+            "index": 40,
+            "type": "BOS_up",
+            "level": 0.039595
+          },
+          {
+            "index": 41,
+            "type": "BOS_up",
+            "level": 0.040823
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 61.62706236380616
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 55,
+            "type": "bullish",
+            "gap": [
+              0.032919,
+              0.033666
+            ]
+          },
+          {
+            "index": 56,
+            "type": "bullish",
+            "gap": [
+              0.03419,
+              0.034342
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bullish",
+            "gap": [
+              0.033894,
+              0.03422
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 56,
+            "type": "BOS_up",
+            "level": 0.035573
+          },
+          {
+            "index": 57,
+            "type": "BOS_up",
+            "level": 0.03593
+          },
+          {
+            "index": 59,
+            "type": "BOS_up",
+            "level": 0.037079
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 55.34561486380098
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 59,
+            "type": "bullish",
+            "gap": [
+              0.034116,
+              0.03422
+            ]
+          },
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              0.034723,
+              0.034766
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bullish",
+            "gap": [
+              0.035371,
+              0.03544
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.036236
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.036696
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.036786
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 64.99659168370823
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.035836,
+              0.035839
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.036312,
+              0.036316
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bearish",
+            "gap": [
+              0.036301,
+              0.036316
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.036312
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.036696
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.036786
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 50.91288471570154
+      }
+    },
+    "ARCUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 58,
+            "type": "bullish",
+            "gap": [
+              0.03013,
+              0.0302
+            ]
+          },
+          {
+            "index": 62,
+            "type": "bullish",
+            "gap": [
+              0.03142,
+              0.03144
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.0319,
+              0.03253
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 54,
+            "type": "BOS_down",
+            "level": 0.02923
+          },
+          {
+            "index": 55,
+            "type": "BOS_down",
+            "level": 0.0285
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.03514
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 70,
+            "type": "CHoCH",
+            "from": "BOS_down",
+            "to": "BOS_up",
+            "level": 0.03514
+          }
+        ],
+        "RSI": 52.44635193133048
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.03095,
+              0.03253
+            ]
+          },
+          {
+            "index": 66,
+            "type": "bullish",
+            "gap": [
+              0.03288,
+              0.03335
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bearish",
+            "gap": [
+              0.03244,
+              0.03261
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 49,
+            "type": "BOS_up",
+            "level": 0.03325
+          },
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.03451
+          },
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 0.03514
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 49.74619289340101
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 36,
+            "type": "bullish",
+            "gap": [
+              0.03288,
+              0.03327
+            ]
+          },
+          {
+            "index": 48,
+            "type": "bullish",
+            "gap": [
+              0.03319,
+              0.03338
+            ]
+          },
+          {
+            "index": 52,
+            "type": "bearish",
+            "gap": [
+              0.03196,
+              0.03261
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 38,
+            "type": "BOS_up",
+            "level": 0.03451
+          },
+          {
+            "index": 39,
+            "type": "BOS_up",
+            "level": 0.03499
+          },
+          {
+            "index": 40,
+            "type": "BOS_up",
+            "level": 0.03514
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 39.08256880733939
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 29,
+            "type": "bearish",
+            "gap": [
+              0.03182,
+              0.03261
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.03156,
+              0.03174
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.03153,
+              0.03163
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 60,
+            "type": "BOS_down",
+            "level": 0.03127
+          },
+          {
+            "index": 64,
+            "type": "BOS_down",
+            "level": 0.03118
+          },
+          {
+            "index": 65,
+            "type": "BOS_down",
+            "level": 0.03101
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 48.08510638297872
+      }
+    },
+    "GPSUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 42,
+            "type": "bullish",
+            "gap": [
+              0.02454,
+              0.02463
+            ]
+          },
+          {
+            "index": 59,
+            "type": "bearish",
+            "gap": [
+              0.02342,
+              0.02348
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bearish",
+            "gap": [
+              0.02329,
+              0.02349
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 71,
+            "type": "BOS_down",
+            "level": 0.02126
+          },
+          {
+            "index": 72,
+            "type": "BOS_down",
+            "level": 0.02097
+          },
+          {
+            "index": 73,
+            "type": "BOS_down",
+            "level": 0.0204
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 24.291497975708467
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 43,
+            "type": "bearish",
+            "gap": [
+              0.02342,
+              0.02357
+            ]
+          },
+          {
+            "index": 53,
+            "type": "bearish",
+            "gap": [
+              0.02329,
+              0.0234
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bearish",
+            "gap": [
+              0.02203,
+              0.02232
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 67,
+            "type": "BOS_down",
+            "level": 0.02126
+          },
+          {
+            "index": 69,
+            "type": "BOS_down",
+            "level": 0.02097
+          },
+          {
+            "index": 72,
+            "type": "BOS_down",
+            "level": 0.0204
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 22.55434782608691
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 54,
+            "type": "bullish",
+            "gap": [
+              0.02141,
+              0.02149
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bearish",
+            "gap": [
+              0.02098,
+              0.02126
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.02074,
+              0.02075
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 53,
+            "type": "BOS_down",
+            "level": 0.02097
+          },
+          {
+            "index": 63,
+            "type": "BOS_down",
+            "level": 0.02075
+          },
+          {
+            "index": 66,
+            "type": "BOS_down",
+            "level": 0.0204
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 30.357142857142847
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 58,
+            "type": "bearish",
+            "gap": [
+              0.02131,
+              0.02133
+            ]
+          },
+          {
+            "index": 59,
+            "type": "bearish",
+            "gap": [
+              0.02099,
+              0.02126
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.02067,
+              0.02073
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 32,
+            "type": "BOS_down",
+            "level": 0.02097
+          },
+          {
+            "index": 52,
+            "type": "BOS_down",
+            "level": 0.02075
+          },
+          {
+            "index": 58,
+            "type": "BOS_down",
+            "level": 0.0204
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 47.32142857142853
+      }
+    },
+    "DMCUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 30,
+            "type": "bearish",
+            "gap": [
+              0.004834,
+              0.005071
+            ]
+          },
+          {
+            "index": 34,
+            "type": "bullish",
+            "gap": [
+              0.004772,
+              0.004826
+            ]
+          },
+          {
+            "index": 50,
+            "type": "bearish",
+            "gap": [
+              0.005275,
+              0.005331
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 35,
+            "type": "BOS_down",
+            "level": 0.004464
+          },
+          {
+            "index": 43,
+            "type": "BOS_up",
+            "level": 0.005705
+          },
+          {
+            "index": 48,
+            "type": "BOS_up",
+            "level": 0.005788
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 49.89169675090255
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 61,
+            "type": "bearish",
+            "gap": [
+              0.005157,
+              0.005164
+            ]
+          },
+          {
+            "index": 62,
+            "type": "bearish",
+            "gap": [
+              0.005046,
+              0.005111
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bullish",
+            "gap": [
+              0.005046,
+              0.005118
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 45,
+            "type": "BOS_up",
+            "level": 0.005553
+          },
+          {
+            "index": 61,
+            "type": "BOS_down",
+            "level": 0.004867
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.005477
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 74,
+            "type": "CHoCH",
+            "from": "BOS_down",
+            "to": "BOS_up",
+            "level": 0.005477
+          }
+        ],
+        "RSI": 53.786574870912204
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 51,
+            "type": "bearish",
+            "gap": [
+              0.005091,
+              0.005164
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bullish",
+            "gap": [
+              0.005265,
+              0.00529
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bearish",
+            "gap": [
+              0.005249,
+              0.005312
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.005322
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.0054
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.005477
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 55.661664392905855
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 69,
+            "type": "bullish",
+            "gap": [
+              0.005322,
+              0.005342
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bearish",
+            "gap": [
+              0.005347,
+              0.005352
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bearish",
+            "gap": [
+              0.005281,
+              0.005312
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 0.005387
+          },
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.0054
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.005477
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 56.23762376237629
+      }
+    },
+    "BANANAUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 60,
+            "type": "bullish",
+            "gap": [
+              23.58,
+              23.854
+            ]
+          },
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              24.268,
+              24.478
+            ]
+          },
+          {
+            "index": 62,
+            "type": "bullish",
+            "gap": [
+              24.94,
+              26.658
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 60,
+            "type": "BOS_up",
+            "level": 24.94
+          },
+          {
+            "index": 61,
+            "type": "BOS_up",
+            "level": 29.949
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 32.38
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 66.62410441938
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 48,
+            "type": "bullish",
+            "gap": [
+              24.831,
+              26.002
+            ]
+          },
+          {
+            "index": 56,
+            "type": "bullish",
+            "gap": [
+              27.213,
+              27.674
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              28.22,
+              29.029
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 47,
+            "type": "BOS_up",
+            "level": 27.462
+          },
+          {
+            "index": 48,
+            "type": "BOS_up",
+            "level": 29.949
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 32.38
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 55.69464899361807
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              27.38,
+              27.619
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bullish",
+            "gap": [
+              27.951,
+              28.081
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bullish",
+            "gap": [
+              28.22,
+              28.814
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 58,
+            "type": "BOS_up",
+            "level": 28.954
+          },
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 31.314
+          },
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 32.38
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 59.489099906379565
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 67,
+            "type": "bullish",
+            "gap": [
+              29.434,
+              29.531
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bearish",
+            "gap": [
+              29.514,
+              29.531
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bearish",
+            "gap": [
+              29.28,
+              29.288
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 52,
+            "type": "BOS_down",
+            "level": 26.929
+          },
+          {
+            "index": 61,
+            "type": "BOS_up",
+            "level": 31.314
+          },
+          {
+            "index": 62,
+            "type": "BOS_up",
+            "level": 32.38
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 54.97271607111421
+      }
+    },
+    "STOUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 55,
+            "type": "bearish",
+            "gap": [
+              0.08381,
+              0.08447
+            ]
+          },
+          {
+            "index": 60,
+            "type": "bullish",
+            "gap": [
+              0.08541,
+              0.08543
+            ]
+          },
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              0.08604,
+              0.08688
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 0.09268
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.0948
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.09528
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 67.20623501199043
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 46,
+            "type": "bullish",
+            "gap": [
+              0.08604,
+              0.0862
+            ]
+          },
+          {
+            "index": 47,
+            "type": "bullish",
+            "gap": [
+              0.08684,
+              0.08693
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.08954,
+              0.09024
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 59,
+            "type": "BOS_up",
+            "level": 0.09268
+          },
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.0948
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.09528
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 56.20998719590267
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 60,
+            "type": "bullish",
+            "gap": [
+              0.09092,
+              0.09141
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.09122,
+              0.09137
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.09254,
+              0.09299
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 46,
+            "type": "BOS_down",
+            "level": 0.08681
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.09404
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.09528
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 54.23280423280424
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 56,
+            "type": "bullish",
+            "gap": [
+              0.09081,
+              0.09137
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.09214,
+              0.09299
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bearish",
+            "gap": [
+              0.09358,
+              0.09366
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.09404
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.09486
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.09528
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 54.78927203065132
+      }
+    },
+    "SWARMSUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 55,
+            "type": "bearish",
+            "gap": [
+              0.02245,
+              0.0225
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.02388,
+              0.02397
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.02454,
+              0.02554
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 55,
+            "type": "BOS_down",
+            "level": 0.02147
+          },
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.02721
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.02859
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 61.33828996282526
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.02473,
+              0.02554
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bearish",
+            "gap": [
+              0.02592,
+              0.02618
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bearish",
+            "gap": [
+              0.02538,
+              0.02575
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 60,
+            "type": "BOS_up",
+            "level": 0.0253
+          },
+          {
+            "index": 64,
+            "type": "BOS_up",
+            "level": 0.02721
+          },
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.02859
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 53.25301204819276
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 51,
+            "type": "bearish",
+            "gap": [
+              0.02592,
+              0.02633
+            ]
+          },
+          {
+            "index": 52,
+            "type": "bearish",
+            "gap": [
+              0.02489,
+              0.02575
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.02478,
+              0.02494
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 35,
+            "type": "BOS_up",
+            "level": 0.02831
+          },
+          {
+            "index": 36,
+            "type": "BOS_up",
+            "level": 0.02859
+          },
+          {
+            "index": 51,
+            "type": "BOS_down",
+            "level": 0.02411
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 51,
+            "type": "CHoCH",
+            "from": "BOS_up",
+            "to": "BOS_down",
+            "level": 0.02411
+          }
+        ],
+        "RSI": 44.525547445255455
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 29,
+            "type": "bearish",
+            "gap": [
+              0.02473,
+              0.02575
+            ]
+          },
+          {
+            "index": 56,
+            "type": "bullish",
+            "gap": [
+              0.02489,
+              0.02494
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.02485,
+              0.02494
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 28,
+            "type": "BOS_down",
+            "level": 0.02434
+          },
+          {
+            "index": 29,
+            "type": "BOS_down",
+            "level": 0.02411
+          },
+          {
+            "index": 65,
+            "type": "BOS_down",
+            "level": 0.02435
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 47.214076246334265
+      }
+    },
+    "RLCUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 62,
+            "type": "bullish",
+            "gap": [
+              1.1847,
+              1.19
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bearish",
+            "gap": [
+              1.2261,
+              1.2521
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bearish",
+            "gap": [
+              1.1979,
+              1.2144
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 1.2864
+          },
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 1.29
+          },
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 1.3455
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 54.927986444507205
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 57,
+            "type": "bullish",
+            "gap": [
+              1.2348,
+              1.25
+            ]
+          },
+          {
+            "index": 63,
+            "type": "bullish",
+            "gap": [
+              1.2602,
+              1.265
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bearish",
+            "gap": [
+              1.2062,
+              1.2144
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 60,
+            "type": "BOS_up",
+            "level": 1.29
+          },
+          {
+            "index": 62,
+            "type": "BOS_up",
+            "level": 1.3455
+          },
+          {
+            "index": 69,
+            "type": "BOS_down",
+            "level": 1.1513
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 69,
+            "type": "CHoCH",
+            "from": "BOS_up",
+            "to": "BOS_down",
+            "level": 1.1513
+          }
+        ],
+        "RSI": 44.377763739734654
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              1.1952,
+              1.2002
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              1.1983,
+              1.2025
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              1.2114,
+              1.2121
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 1.2143
+          },
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 1.2182
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 1.2268
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 62.15098241985526
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 56,
+            "type": "bullish",
+            "gap": [
+              1.1984,
+              1.2002
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              1.1945,
+              1.2009
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              1.2114,
+              1.2153
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 60,
+            "type": "BOS_up",
+            "level": 1.2148
+          },
+          {
+            "index": 61,
+            "type": "BOS_up",
+            "level": 1.2182
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 1.2268
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 51.10246433203635
+      }
+    },
+    "RESOLVUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 62,
+            "type": "bullish",
+            "gap": [
+              0.15364,
+              0.15772
+            ]
+          },
+          {
+            "index": 63,
+            "type": "bullish",
+            "gap": [
+              0.15859,
+              0.15945
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bullish",
+            "gap": [
+              0.16355,
+              0.17122
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.19835
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.19949
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.21576
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 72.14891611687088
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 60,
+            "type": "bullish",
+            "gap": [
+              0.16302,
+              0.16701
+            ]
+          },
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              0.17061,
+              0.17122
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bearish",
+            "gap": [
+              0.18502,
+              0.18615
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 64,
+            "type": "BOS_up",
+            "level": 0.19835
+          },
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 0.19949
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.21576
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 58.569218166924536
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 66,
+            "type": "bearish",
+            "gap": [
+              0.18334,
+              0.18682
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.1844,
+              0.1855
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.18846,
+              0.18985
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 45,
+            "type": "BOS_down",
+            "level": 0.17563
+          },
+          {
+            "index": 59,
+            "type": "BOS_up",
+            "level": 0.21576
+          },
+          {
+            "index": 66,
+            "type": "BOS_down",
+            "level": 0.17564
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 66,
+            "type": "CHoCH",
+            "from": "BOS_up",
+            "to": "BOS_down",
+            "level": 0.17564
+          }
+        ],
+        "RSI": 52.501645819618176
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 63,
+            "type": "bearish",
+            "gap": [
+              0.18062,
+              0.18131
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bullish",
+            "gap": [
+              0.1839,
+              0.18499
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bullish",
+            "gap": [
+              0.18832,
+              0.19014
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 45,
+            "type": "BOS_up",
+            "level": 0.21576
+          },
+          {
+            "index": 58,
+            "type": "BOS_down",
+            "level": 0.17933
+          },
+          {
+            "index": 59,
+            "type": "BOS_down",
+            "level": 0.17564
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 65.58779761904765
+      }
+    },
+    "MYXUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              0.08412,
+              0.08477
+            ]
+          },
+          {
+            "index": 66,
+            "type": "bullish",
+            "gap": [
+              0.08811,
+              0.09443
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bearish",
+            "gap": [
+              0.08652,
+              0.09443
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.09515
+          },
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 0.10625
+          },
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 0.112
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 51.43424138553131
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 58,
+            "type": "bullish",
+            "gap": [
+              0.09515,
+              0.09576
+            ]
+          },
+          {
+            "index": 61,
+            "type": "bearish",
+            "gap": [
+              0.08652,
+              0.09962
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.08289,
+              0.08325
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 57,
+            "type": "BOS_up",
+            "level": 0.09975
+          },
+          {
+            "index": 58,
+            "type": "BOS_up",
+            "level": 0.10625
+          },
+          {
+            "index": 59,
+            "type": "BOS_up",
+            "level": 0.112
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 50.26852846401719
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 43,
+            "type": "bearish",
+            "gap": [
+              0.08501,
+              0.08564
+            ]
+          },
+          {
+            "index": 46,
+            "type": "bullish",
+            "gap": [
+              0.08432,
+              0.08519
+            ]
+          },
+          {
+            "index": 48,
+            "type": "bullish",
+            "gap": [
+              0.08735,
+              0.08778
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 49,
+            "type": "BOS_up",
+            "level": 0.09165
+          },
+          {
+            "index": 51,
+            "type": "BOS_up",
+            "level": 0.09251
+          },
+          {
+            "index": 52,
+            "type": "BOS_up",
+            "level": 0.09324
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 39.007782101167344
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 43,
+            "type": "bullish",
+            "gap": [
+              0.0882,
+              0.08839
+            ]
+          },
+          {
+            "index": 55,
+            "type": "bullish",
+            "gap": [
+              0.08566,
+              0.08586
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bullish",
+            "gap": [
+              0.08625,
+              0.0865
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 51,
+            "type": "BOS_down",
+            "level": 0.08546
+          },
+          {
+            "index": 52,
+            "type": "BOS_down",
+            "level": 0.08472
+          },
+          {
+            "index": 53,
+            "type": "BOS_down",
+            "level": 0.08408
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 52.769679300291486
+      }
+    },
+    "NEWTUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              0.3163,
+              0.3182
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.3303,
+              0.3324
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bearish",
+            "gap": [
+              0.3357,
+              0.3368
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 0.3459
+          },
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.3514
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.3597
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 75.06666666666673
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 47,
+            "type": "bullish",
+            "gap": [
+              0.3187,
+              0.3194
+            ]
+          },
+          {
+            "index": 50,
+            "type": "bullish",
+            "gap": [
+              0.3218,
+              0.3226
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              0.3411,
+              0.3434
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 58,
+            "type": "BOS_up",
+            "level": 0.3459
+          },
+          {
+            "index": 64,
+            "type": "BOS_up",
+            "level": 0.3514
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.3597
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 61.548731642189566
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.3354,
+              0.3363
+            ]
+          },
+          {
+            "index": 66,
+            "type": "bullish",
+            "gap": [
+              0.3362,
+              0.3373
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bullish",
+            "gap": [
+              0.3416,
+              0.3434
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.3569
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.3596
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.3597
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 77.83641160949874
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.3395,
+              0.3406
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bullish",
+            "gap": [
+              0.3395,
+              0.3414
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              0.3492,
+              0.3493
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.3569
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 0.3596
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.3597
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 72.49283667621776
+      }
+    },
+    "BULLAUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 57,
+            "type": "bullish",
+            "gap": [
+              0.07,
+              0.0701
+            ]
+          },
+          {
+            "index": 61,
+            "type": "bearish",
+            "gap": [
+              0.07,
+              0.0714
+            ]
+          },
+          {
+            "index": 63,
+            "type": "bullish",
+            "gap": [
+              0.07,
+              0.0705
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 49,
+            "type": "BOS_up",
+            "level": 0.0791
+          },
+          {
+            "index": 52,
+            "type": "BOS_down",
+            "level": 0.0627
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 0.0747
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 74,
+            "type": "CHoCH",
+            "from": "BOS_down",
+            "to": "BOS_up",
+            "level": 0.0747
+          }
+        ],
+        "RSI": 68.42105263157889
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 46,
+            "type": "bearish",
+            "gap": [
+              0.0707,
+              0.0714
+            ]
+          },
+          {
+            "index": 57,
+            "type": "bearish",
+            "gap": [
+              0.0718,
+              0.0721
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bullish",
+            "gap": [
+              0.0709,
+              0.0712
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 29,
+            "type": "BOS_down",
+            "level": 0.0627
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.0738
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.0747
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 60.25641025641025
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 66,
+            "type": "bullish",
+            "gap": [
+              0.0728,
+              0.0729
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bearish",
+            "gap": [
+              0.0715,
+              0.0722
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              0.0712,
+              0.0735
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.0734
+          },
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 0.0738
+          },
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 0.0747
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 62.22222222222219
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 66,
+            "type": "bearish",
+            "gap": [
+              0.0715,
+              0.0722
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bullish",
+            "gap": [
+              0.0712,
+              0.0716
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.0717,
+              0.0735
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 66,
+            "type": "BOS_down",
+            "level": 0.0708
+          },
+          {
+            "index": 67,
+            "type": "BOS_down",
+            "level": 0.0705
+          },
+          {
+            "index": 68,
+            "type": "BOS_down",
+            "level": 0.0701
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 55.22388059701485
+      }
+    },
+    "SPXUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              1.8257,
+              1.8464
+            ]
+          },
+          {
+            "index": 62,
+            "type": "bullish",
+            "gap": [
+              1.9016,
+              1.9434
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              1.8889,
+              1.8997
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 61,
+            "type": "BOS_up",
+            "level": 2.0102
+          },
+          {
+            "index": 62,
+            "type": "BOS_up",
+            "level": 2.04
+          },
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 2.177
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 56.24472064679619
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 53,
+            "type": "bearish",
+            "gap": [
+              1.8948,
+              1.9131
+            ]
+          },
+          {
+            "index": 55,
+            "type": "bullish",
+            "gap": [
+              1.8948,
+              1.9265
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bullish",
+            "gap": [
+              1.8454,
+              1.908
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 56,
+            "type": "BOS_up",
+            "level": 2.177
+          },
+          {
+            "index": 67,
+            "type": "BOS_down",
+            "level": 1.8044
+          },
+          {
+            "index": 69,
+            "type": "BOS_down",
+            "level": 1.783
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 55.76636111703262
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 57,
+            "type": "bullish",
+            "gap": [
+              1.8501,
+              1.8859
+            ]
+          },
+          {
+            "index": 59,
+            "type": "bullish",
+            "gap": [
+              1.9207,
+              1.934
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              1.9363,
+              1.9607
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 59,
+            "type": "BOS_up",
+            "level": 1.9821
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 2.0025
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 2.0135
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 53.365973072215425
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 44,
+            "type": "bullish",
+            "gap": [
+              1.9275,
+              1.934
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bullish",
+            "gap": [
+              1.9363,
+              1.9392
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bullish",
+            "gap": [
+              1.9478,
+              1.9607
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 1.9927
+          },
+          {
+            "index": 71,
+            "type": "BOS_up",
+            "level": 2.0025
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 2.0135
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 61.336898395721896
+      }
+    },
+    "OMUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 63,
+            "type": "bullish",
+            "gap": [
+              0.26138,
+              0.30074
+            ]
+          },
+          {
+            "index": 64,
+            "type": "bullish",
+            "gap": [
+              0.32696,
+              0.33141
+            ]
+          },
+          {
+            "index": 71,
+            "type": "bearish",
+            "gap": [
+              0.31449,
+              0.32468
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 61,
+            "type": "BOS_up",
+            "level": 0.26138
+          },
+          {
+            "index": 62,
+            "type": "BOS_up",
+            "level": 0.32696
+          },
+          {
+            "index": 63,
+            "type": "BOS_up",
+            "level": 0.39484
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 63.027599392127065
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 50,
+            "type": "bullish",
+            "gap": [
+              0.26138,
+              0.29264
+            ]
+          },
+          {
+            "index": 52,
+            "type": "bullish",
+            "gap": [
+              0.32696,
+              0.34296
+            ]
+          },
+          {
+            "index": 66,
+            "type": "bearish",
+            "gap": [
+              0.32243,
+              0.32864
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 50,
+            "type": "BOS_up",
+            "level": 0.32696
+          },
+          {
+            "index": 51,
+            "type": "BOS_up",
+            "level": 0.37585
+          },
+          {
+            "index": 52,
+            "type": "BOS_up",
+            "level": 0.39484
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 24.621594349142285
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 37,
+            "type": "bearish",
+            "gap": [
+              0.32022,
+              0.323
+            ]
+          },
+          {
+            "index": 41,
+            "type": "bearish",
+            "gap": [
+              0.3159,
+              0.31839
+            ]
+          },
+          {
+            "index": 56,
+            "type": "bullish",
+            "gap": [
+              0.30699,
+              0.30744
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 42,
+            "type": "BOS_down",
+            "level": 0.30727
+          },
+          {
+            "index": 43,
+            "type": "BOS_down",
+            "level": 0.30508
+          },
+          {
+            "index": 44,
+            "type": "BOS_down",
+            "level": 0.30123
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 40.01782531194307
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 53,
+            "type": "bearish",
+            "gap": [
+              0.30803,
+              0.30934
+            ]
+          },
+          {
+            "index": 63,
+            "type": "bearish",
+            "gap": [
+              0.30907,
+              0.30968
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bearish",
+            "gap": [
+              0.30527,
+              0.30582
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 50,
+            "type": "BOS_up",
+            "level": 0.31532
+          },
+          {
+            "index": 67,
+            "type": "BOS_down",
+            "level": 0.30363
+          }
+        ],
+        "CHoCH": [
+          {
+            "index": 67,
+            "type": "CHoCH",
+            "from": "BOS_up",
+            "to": "BOS_down",
+            "level": 0.30363
+          }
+        ],
+        "RSI": 25.302593659942346
+      }
+    },
+    "DEGOUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 55,
+            "type": "bullish",
+            "gap": [
+              1.1414,
+              1.1418
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bearish",
+            "gap": [
+              1.1576,
+              1.1582
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              1.1576,
+              1.1867
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 55,
+            "type": "BOS_up",
+            "level": 1.2045
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 1.21
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 1.2654
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 65.34653465346534
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 70,
+            "type": "bearish",
+            "gap": [
+              1.1503,
+              1.151
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bullish",
+            "gap": [
+              1.1528,
+              1.1867
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bullish",
+            "gap": [
+              1.21,
+              1.2165
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 1.21
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 1.2556
+          },
+          {
+            "index": 74,
+            "type": "BOS_up",
+            "level": 1.2654
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 60.50982030923527
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 66,
+            "type": "bullish",
+            "gap": [
+              1.1661,
+              1.1704
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bullish",
+            "gap": [
+              1.181,
+              1.1867
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bullish",
+            "gap": [
+              1.21,
+              1.2191
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 68,
+            "type": "BOS_up",
+            "level": 1.2377
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 1.2556
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 1.2654
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 68.92488954344621
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 64,
+            "type": "bullish",
+            "gap": [
+              1.21,
+              1.2217
+            ]
+          },
+          {
+            "index": 67,
+            "type": "bullish",
+            "gap": [
+              1.235,
+              1.2366
+            ]
+          },
+          {
+            "index": 74,
+            "type": "bearish",
+            "gap": [
+              1.2255,
+              1.2268
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 66,
+            "type": "BOS_up",
+            "level": 1.2496
+          },
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 1.2556
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 1.2654
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 58.8676671214188
+      }
+    },
+    "FHEUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 68,
+            "type": "bearish",
+            "gap": [
+              0.06794,
+              0.07795
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bearish",
+            "gap": [
+              0.06449,
+              0.0665
+            ]
+          },
+          {
+            "index": 73,
+            "type": "bearish",
+            "gap": [
+              0.06115,
+              0.06232
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 68,
+            "type": "BOS_down",
+            "level": 0.06064
+          },
+          {
+            "index": 72,
+            "type": "BOS_down",
+            "level": 0.05955
+          },
+          {
+            "index": 73,
+            "type": "BOS_down",
+            "level": 0.05829
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 35.73865127263187
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 61,
+            "type": "bearish",
+            "gap": [
+              0.06794,
+              0.07852
+            ]
+          },
+          {
+            "index": 62,
+            "type": "bearish",
+            "gap": [
+              0.064,
+              0.0665
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bearish",
+            "gap": [
+              0.06129,
+              0.06249
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 61,
+            "type": "BOS_down",
+            "level": 0.06064
+          },
+          {
+            "index": 69,
+            "type": "BOS_down",
+            "level": 0.05955
+          },
+          {
+            "index": 72,
+            "type": "BOS_down",
+            "level": 0.05829
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 22.27414330218069
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 21,
+            "type": "bearish",
+            "gap": [
+              0.06255,
+              0.06549
+            ]
+          },
+          {
+            "index": 52,
+            "type": "bearish",
+            "gap": [
+              0.06228,
+              0.06264
+            ]
+          },
+          {
+            "index": 54,
+            "type": "bearish",
+            "gap": [
+              0.06124,
+              0.0613
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 51,
+            "type": "BOS_down",
+            "level": 0.06127
+          },
+          {
+            "index": 53,
+            "type": "BOS_down",
+            "level": 0.05955
+          },
+          {
+            "index": 64,
+            "type": "BOS_down",
+            "level": 0.05829
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 43.11774461028198
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 66,
+            "type": "bearish",
+            "gap": [
+              0.059,
+              0.05907
+            ]
+          },
+          {
+            "index": 68,
+            "type": "bullish",
+            "gap": [
+              0.059,
+              0.05935
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bearish",
+            "gap": [
+              0.05933,
+              0.05938
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 32,
+            "type": "BOS_down",
+            "level": 0.05955
+          },
+          {
+            "index": 54,
+            "type": "BOS_down",
+            "level": 0.05902
+          },
+          {
+            "index": 55,
+            "type": "BOS_down",
+            "level": 0.05829
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 47.54901960784316
+      }
+    },
+    "SOPHUSDT": {
+      "4h": {
+        "FVG": [
+          {
+            "index": 61,
+            "type": "bullish",
+            "gap": [
+              0.034555,
+              0.034803
+            ]
+          },
+          {
+            "index": 62,
+            "type": "bullish",
+            "gap": [
+              0.035092,
+              0.035283
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.035962,
+              0.036809
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 67,
+            "type": "BOS_up",
+            "level": 0.039366
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.041533
+          },
+          {
+            "index": 73,
+            "type": "BOS_up",
+            "level": 0.042125
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 74.54083400716182
+      },
+      "2h": {
+        "FVG": [
+          {
+            "index": 50,
+            "type": "bullish",
+            "gap": [
+              0.035378,
+              0.035484
+            ]
+          },
+          {
+            "index": 54,
+            "type": "bullish",
+            "gap": [
+              0.035947,
+              0.036711
+            ]
+          },
+          {
+            "index": 69,
+            "type": "bullish",
+            "gap": [
+              0.037446,
+              0.037676
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 69,
+            "type": "BOS_up",
+            "level": 0.040828
+          },
+          {
+            "index": 70,
+            "type": "BOS_up",
+            "level": 0.041533
+          },
+          {
+            "index": 72,
+            "type": "BOS_up",
+            "level": 0.042125
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 56.60529228292585
+      },
+      "30m": {
+        "FVG": [
+          {
+            "index": 57,
+            "type": "bullish",
+            "gap": [
+              0.039081,
+              0.039378
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bullish",
+            "gap": [
+              0.039406,
+              0.039745
+            ]
+          },
+          {
+            "index": 70,
+            "type": "bearish",
+            "gap": [
+              0.039372,
+              0.0396
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 52,
+            "type": "BOS_up",
+            "level": 0.040828
+          },
+          {
+            "index": 58,
+            "type": "BOS_up",
+            "level": 0.041533
+          },
+          {
+            "index": 65,
+            "type": "BOS_up",
+            "level": 0.042125
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 50.20400593471811
+      },
+      "15m": {
+        "FVG": [
+          {
+            "index": 64,
+            "type": "bearish",
+            "gap": [
+              0.039606,
+              0.03991
+            ]
+          },
+          {
+            "index": 65,
+            "type": "bearish",
+            "gap": [
+              0.039264,
+              0.0396
+            ]
+          },
+          {
+            "index": 72,
+            "type": "bullish",
+            "gap": [
+              0.039346,
+              0.039355
+            ]
+          }
+        ],
+        "BOS": [
+          {
+            "index": 43,
+            "type": "BOS_up",
+            "level": 0.041533
+          },
+          {
+            "index": 56,
+            "type": "BOS_up",
+            "level": 0.041635
+          },
+          {
+            "index": 57,
+            "type": "BOS_up",
+            "level": 0.042125
+          }
+        ],
+        "CHoCH": [],
+        "RSI": 38.11011323701679
+      }
+    }
+  }
+}
