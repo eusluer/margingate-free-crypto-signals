@@ -8,8 +8,9 @@ import CoinList from "./CoinList";
 import RSIMap from "./RSIMap";
 import CoinAnalysis from "./CoinAnalysis";
 import UserGuide from "./UserGuide";
+import SmcPaAnalysis from "./SmcPaAnalysis";
 
-type TabType = "guide" | "alarms" | "signals" | "coins" | "rsi" | "analysis";
+type TabType = "guide" | "alarms" | "signals" | "coins" | "rsi" | "analysis" | "smc-pa";
 
 export default function DashboardPage() {
   const { user, loading, signOut } = useAuth();
@@ -59,6 +60,13 @@ export default function DashboardPage() {
       icon: "🎯",
       description: 'Momentum analysis for volatile pairs',
       component: <RSIMap />
+    },
+    {
+      id: "smc-pa" as TabType,
+      label: 'SMC-PA Analysis',
+      icon: "🧠",
+      description: 'Smart Money & Price Action - Live data analysis',
+      component: <SmcPaAnalysis />
     },
     {
       id: "analysis" as TabType,
@@ -155,7 +163,7 @@ export default function DashboardPage() {
 
           {/* Quick Stats Bar */}
           <div className="mt-8 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-4">
               <div className="text-center p-4 bg-gradient-to-br from-teal-50 to-teal-100 dark:from-teal-900/20 dark:to-teal-800/20 rounded-xl">
                 <div className="text-2xl mb-2">📚</div>
                 <div className="text-lg font-bold text-teal-700 dark:text-teal-400">Usage Guide</div>
@@ -175,9 +183,15 @@ export default function DashboardPage() {
               </div>
               
               <div className="text-center p-4 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-xl">
+                <div className="text-2xl mb-2">🧠</div>
+                <div className="text-lg font-bold text-purple-700 dark:text-purple-400">SMC-PA Live</div>
+                <div className="text-sm text-purple-600 dark:text-purple-500">Smart money analysis</div>
+              </div>
+              
+              <div className="text-center p-4 bg-gradient-to-br from-pink-50 to-pink-100 dark:from-pink-900/20 dark:to-pink-800/20 rounded-xl">
                 <div className="text-2xl mb-2">💎</div>
-                <div className="text-lg font-bold text-purple-700 dark:text-purple-400">Market Tracking</div>
-                <div className="text-sm text-purple-600 dark:text-purple-500">Real-time data</div>
+                <div className="text-lg font-bold text-pink-700 dark:text-pink-400">Market Tracking</div>
+                <div className="text-sm text-pink-600 dark:text-pink-500">Real-time data</div>
               </div>
               
               <div className="text-center p-4 bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/20 dark:to-orange-800/20 rounded-xl">
