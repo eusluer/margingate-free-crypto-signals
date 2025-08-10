@@ -1,58 +1,88 @@
 "use client";
 import React, { useState, useMemo } from "react";
 import useSWR from "swr";
-import { fetchSmcPaData, AlarmData, SignalData, CoinData } from "../../lib/supabaseStorage";
+import { fetchSmcPaData } from "../../lib/supabaseStorage";
+import type { AlarmScanJson, SummaryJson } from "../../lib/supabaseStorage";
+
+type ProcessedData = {
+  totalAlarms: number;
+  longEntryCount: number;
+  shortComboCount: number;
+  recentAlarms: Array<AlarmScanJson["alarms"][number] & { interval: string }>;
+  shortSignalsByTf: Record<string, Array<SummaryJson["short_signals"]["coins"][number]>>;
+  lastUpdate: string | null;
+};
 
 export default function SmcPaAnalysis() {
-  const { data, error, isLoading } = useSWR('smc-pa-data', fetchSmcPaData, { 
+  const { data, error, isLoading } = useSWR("smc-pa-data", fetchSmcPaData, {
     refreshInterval: 60_000,
-    revalidateOnFocus: true 
+    revalidateOnFocus: true,
   });
-  
-  const [activeView, setActiveView] = useState<'overview' | 'alarms' | 'signals' | 'volatility'>('overview');
-  const [selectedTimeframe, setSelectedTimeframe] = useState<'4h' | '2h' | '30m' | '15m'>('4h');
 
-  // Process data for display
-  const processedData = useMemo(() => {
+  const [activeView, setActiveView] = useState<
+    "overview" | "alarms" | "signals" | "volatility"
+  >("overview");
+  const [selectedTimeframe, setSelectedTimeframe] = useState<
+    "4h" | "2h" | "30m" | "15m"
+  >("4h");
+
+  const processedData: ProcessedData | null = useMemo(() => {
     if (!data) return null;
 
-    const longAlarms = data.alarms.filter((alarm: AlarmData) => alarm.type === 'LONG');
-    const shortAlarms = data.alarms.filter((alarm: AlarmData) => alarm.type === 'SHORT');
-    
-    // Get most volatile coins
-    const volatileCoins = data.coins
-      .sort((a: CoinData, b: CoinData) => Math.abs(b.priceChangePercent) - Math.abs(a.priceChangePercent))
-      .slice(0, 10);
+    const alarm2h = data.alarm_2h?.alarms ?? [];
+    const alarm4h = data.alarm_4h?.alarms ?? [];
+    const totalAlarms = (data.alarm_2h?.total_alarms ?? 0) + (data.alarm_4h?.total_alarms ?? 0);
 
-    // Count signals by timeframe
-    const signalCounts = Object.keys(data.signals).reduce((acc, symbol) => {
-      const symbolSignals = data.signals[symbol];
-      Object.keys(symbolSignals).forEach(timeframe => {
-        if (!acc[timeframe]) acc[timeframe] = { FVG: 0, BOS: 0, CHoCH: 0 };
-        acc[timeframe].FVG += symbolSignals[timeframe].FVG?.length || 0;
-        acc[timeframe].BOS += symbolSignals[timeframe].BOS?.length || 0;
-        acc[timeframe].CHoCH += symbolSignals[timeframe].CHoCH?.length || 0;
-      });
-      return acc;
-    }, {} as any);
+    const recentAlarms = [
+      ...alarm4h.map((a) => ({ ...a, interval: "4h" })),
+      ...alarm2h.map((a) => ({ ...a, interval: "2h" })),
+    ].slice(0, 8);
+
+    const longEntryCount = data.entry_long?.active_signals?.length ?? 0;
+    const shortComboCount = data.entry_short?.active_signals?.length ?? 0;
+
+    // Short signals coin listesini zaman dilimine göre gruplama (sonuc.json)
+    const shortCoins = data.summary?.short_signals?.coins ?? [];
+    const shortSignalsByTf: ProcessedData["shortSignalsByTf"] = shortCoins.reduce(
+      (acc, c) => {
+        // 4h ve 2h için doğrudan timeframes listesi var
+        ["4h", "2h"].forEach((tf) => {
+          if (c.timeframes?.includes(tf)) {
+            if (!acc[tf]) acc[tf] = [];
+            acc[tf].push(c);
+          }
+        });
+        // 30m/15m için choch değerleri mevcutsa ekle
+        if (c.choch_30m !== null && c.choch_30m !== undefined) {
+          if (!acc["30m"]) acc["30m"] = [];
+          acc["30m"].push(c);
+        }
+        if (c.choch_15m !== null && c.choch_15m !== undefined) {
+          if (!acc["15m"]) acc["15m"] = [];
+          acc["15m"].push(c);
+        }
+        return acc;
+      },
+      {} as Record<string, Array<SummaryJson["short_signals"]["coins"][number]>>
+    );
 
     return {
-      totalAlarms: data.alarms.length,
-      longAlarms: longAlarms.length,
-      shortAlarms: shortAlarms.length,
-      volatileCoins,
-      signalCounts,
-      recentAlarms: data.alarms.slice(0, 8),
-      lastUpdate: data.last_update
+      totalAlarms,
+      longEntryCount,
+      shortComboCount,
+      recentAlarms,
+      shortSignalsByTf,
+      lastUpdate: data.last_update ?? null,
     };
   }, [data]);
 
-  if (isLoading) return (
+  if (isLoading)
+    return (
     <div className="flex items-center justify-center p-8">
       <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
       <span className="ml-2">Loading SMC-PA analysis...</span>
     </div>
-  );
+    );
 
   if (error) return (
     <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-700 rounded-xl p-6">
@@ -60,9 +90,10 @@ export default function SmcPaAnalysis() {
     </div>
   );
 
-  if (!processedData) return (
-    <div className="text-center p-8 text-gray-500">No SMC-PA data available.</div>
-  );
+  if (!processedData)
+    return (
+      <div className="text-center p-8 text-gray-500">No SMC-PA data available.</div>
+    );
 
   return (
     <div className="space-y-6">
@@ -80,7 +111,9 @@ export default function SmcPaAnalysis() {
           <div className="text-right">
             <p className="text-sm text-gray-500 dark:text-gray-400">Last Update</p>
             <p className="text-sm font-mono text-blue-600 dark:text-blue-400">
-              {processedData.lastUpdate ? new Date(processedData.lastUpdate).toLocaleString() : 'N/A'}
+              {processedData.lastUpdate
+                ? new Date(processedData.lastUpdate).toLocaleString()
+                : 'N/A'}
             </p>
           </div>
         </div>
@@ -89,15 +122,15 @@ export default function SmcPaAnalysis() {
       {/* Navigation Tabs */}
       <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl p-2 shadow-xl">
         <div className="flex flex-wrap gap-2">
-          {[
-            { id: 'overview', label: 'Overview', icon: '📊' },
-            { id: 'alarms', label: 'Setup Alerts', icon: '🚨' },
-            { id: 'signals', label: 'Signal Analysis', icon: '🔍' },
-            { id: 'volatility', label: 'Volatility Map', icon: '⚡' }
-          ].map(tab => (
+            {[
+              { id: 'overview', label: 'Overview', icon: '📊' },
+              { id: 'alarms', label: 'Setup Alerts', icon: '🚨' },
+              { id: 'signals', label: 'Signal Analysis', icon: '🔍' },
+              { id: 'volatility', label: 'Short Signals Map', icon: '⚡' },
+            ].map((tab) => (
             <button
               key={tab.id}
-              onClick={() => setActiveView(tab.id as any)}
+                onClick={() => setActiveView(tab.id as any)}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl font-medium transition-all duration-300 ${
                 activeView === tab.id
                   ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg'
@@ -116,27 +149,27 @@ export default function SmcPaAnalysis() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Stats Cards */}
           <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-xl p-6">
-            <div className="text-3xl mb-2">🎯</div>
+            <div className="text-3xl mb-2">🚨</div>
             <div className="text-2xl font-bold text-blue-700 dark:text-blue-400">{processedData.totalAlarms}</div>
-            <div className="text-sm text-blue-600 dark:text-blue-300">Active Setup Alerts</div>
+            <div className="text-sm text-blue-600 dark:text-blue-300">Aktif Alarm (4h + 2h)</div>
           </div>
 
           <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-xl p-6">
-            <div className="text-3xl mb-2">📈</div>
-            <div className="text-2xl font-bold text-green-700 dark:text-green-400">{processedData.longAlarms}</div>
-            <div className="text-sm text-green-600 dark:text-green-300">LONG Setups</div>
+            <div className="text-3xl mb-2">🟢</div>
+            <div className="text-2xl font-bold text-green-700 dark:text-green-400">{processedData.longEntryCount}</div>
+            <div className="text-sm text-green-600 dark:text-green-300">Long Entry Sinyalleri</div>
           </div>
 
           <div className="bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/20 dark:to-red-800/20 rounded-xl p-6">
-            <div className="text-3xl mb-2">📉</div>
-            <div className="text-2xl font-bold text-red-700 dark:text-red-400">{processedData.shortAlarms}</div>
-            <div className="text-sm text-red-600 dark:text-red-300">SHORT Setups</div>
+            <div className="text-3xl mb-2">🔴</div>
+            <div className="text-2xl font-bold text-red-700 dark:text-red-400">{processedData.shortComboCount}</div>
+            <div className="text-sm text-red-600 dark:text-red-300">Short CHOCH Kombinasyonları</div>
           </div>
 
           <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-xl p-6">
             <div className="text-3xl mb-2">⚡</div>
-            <div className="text-2xl font-bold text-purple-700 dark:text-purple-400">{processedData.volatileCoins.length}</div>
-            <div className="text-sm text-purple-600 dark:text-purple-300">Volatile Assets</div>
+            <div className="text-2xl font-bold text-purple-700 dark:text-purple-400">{Object.values(processedData.shortSignalsByTf).reduce((a, b) => a + b.length, 0)}</div>
+            <div className="text-sm text-purple-600 dark:text-purple-300">Short Sinyal Adayları (toplam)</div>
           </div>
         </div>
       )}
@@ -152,55 +185,27 @@ export default function SmcPaAnalysis() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {processedData.recentAlarms.map((alarm: AlarmData, index: number) => (
-              <div key={index} className={`bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-l-4 ${
-                alarm.type === 'LONG' ? 'border-green-500' : 'border-red-500'
-              }`}>
+            {processedData.recentAlarms.map((alarm, index) => (
+              <div key={index} className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-l-4 border-blue-500">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-                      {alarm.symbol}
-                    </h3>
-                    <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
-                      alarm.type === 'LONG' 
-                        ? 'bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-300'
-                        : 'bg-red-100 text-red-800 dark:bg-red-900/20 dark:text-red-300'
-                    }`}>
-                      {alarm.type} Setup
+                    <h3 className="text-lg font-bold text-gray-900 dark:text-white">{alarm.symbol}</h3>
+                    <span className="inline-block px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-300">
+                      {alarm.timestamp} · {alarm.range_position_pct?.toFixed(2)}%
                     </span>
                   </div>
-                  {alarm.interval && (
-                    <span className="bg-blue-100 dark:bg-blue-900/20 text-blue-800 dark:text-blue-300 px-2 py-1 rounded text-sm">
-                      {alarm.interval}
-                    </span>
-                  )}
+                  <span className="bg-purple-100 dark:bg-purple-900/20 text-purple-800 dark:text-purple-300 px-2 py-1 rounded text-sm">{alarm.interval}</span>
                 </div>
 
                 <div className="space-y-2 text-sm">
-                  {alarm.current_price && (
-                    <div className="flex justify-between">
-                      <span className="text-gray-600 dark:text-gray-400">Current Price:</span>
-                      <span className="font-mono">${alarm.current_price.toFixed(6)}</span>
-                    </div>
-                  )}
-                  {alarm.alarm_level && (
-                    <div className="flex justify-between">
-                      <span className="text-gray-600 dark:text-gray-400">Alert Level:</span>
-                      <span className="font-mono">${alarm.alarm_level.toFixed(6)}</span>
-                    </div>
-                  )}
-                  {alarm.bos_level && (
-                    <div className="flex justify-between">
-                      <span className="text-gray-600 dark:text-gray-400">BOS Level:</span>
-                      <span className="font-mono">${alarm.bos_level.toFixed(6)}</span>
-                    </div>
-                  )}
-                </div>
-
-                <div className="mt-4 p-3 bg-gray-50 dark:bg-gray-700 rounded-lg">
-                  <p className="text-xs text-gray-600 dark:text-gray-400">
-                    <strong>Analysis:</strong> {alarm.rule}
-                  </p>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600 dark:text-gray-400">Current Price</span>
+                    <span className="font-mono">${alarm.current_price?.toFixed(6)}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-600 dark:text-gray-400">Range Low / Mid / High</span>
+                    <span className="font-mono">${alarm.range_low?.toFixed(6)} / ${alarm.range_mid?.toFixed(6)} / ${alarm.range_high?.toFixed(6)}</span>
+                  </div>
                 </div>
               </div>
             ))}
@@ -211,53 +216,97 @@ export default function SmcPaAnalysis() {
       {/* Signals Tab */}
       {activeView === 'signals' && (
         <div className="space-y-6">
-          {/* Timeframe Selector */}
-          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-4">
-            <div className="flex flex-wrap gap-2">
-              {['4h', '2h', '30m', '15m'].map(tf => (
-                <button
-                  key={tf}
-                  onClick={() => setSelectedTimeframe(tf as any)}
-                  className={`px-4 py-2 rounded-lg font-medium transition-all ${
-                    selectedTimeframe === tf
-                      ? 'bg-purple-600 text-white'
-                      : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                  }`}
-                >
-                  {tf}
-                </button>
-              ))}
+          {/* Long & Short Signals */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* Long Entry */}
+            <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 shadow-xl">
+              <h3 className="text-lg font-bold mb-4">Long Entry Sinyalleri</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {data?.entry_long?.active_signals?.map((s, idx) => (
+                  <div key={idx} className="p-4 rounded-lg bg-green-50 dark:bg-green-900/20">
+                    <div className="flex items-center justify-between">
+                      <div className="font-bold text-green-800 dark:text-green-300">{s.symbol}</div>
+                      <span className="text-xs px-2 py-0.5 rounded bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-200">
+                        {s.signal_type}
+                      </span>
+                    </div>
+                    <div className="mt-2 text-sm text-gray-700 dark:text-gray-300 flex justify-between">
+                      <span>Price</span>
+                      <span className="font-mono">${s.current_price.toFixed(6)}</span>
+                    </div>
+                    <div className="text-sm text-gray-700 dark:text-gray-300 flex justify-between">
+                      <span>CHOCH</span>
+                      <span className="font-mono">${s.choch_level.toFixed(6)}</span>
+                    </div>
+                    <div className="text-xs text-gray-500 mt-1">Dist: {s.distance_pct.toFixed(2)}% · Max: {s.max_distance_pct}%</div>
+                  </div>
+                ))}
+                {(!data?.entry_long?.active_signals || data.entry_long.active_signals.length === 0) && (
+                  <div className="text-sm text-gray-500">Aktif long sinyali yok.</div>
+                )}
+              </div>
+            </div>
+
+            {/* Short Combo */}
+            <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 shadow-xl">
+              <div className="flex items-center justify-between mb-4">
+                <h3 className="text-lg font-bold">Short CHOCH Kombinasyonları</h3>
+                <div className="flex gap-2">
+                  {(["4h", "2h", "30m", "15m"] as const).map((tf) => (
+                    <button
+                      key={tf}
+                      onClick={() => setSelectedTimeframe(tf)}
+                      className={`px-3 py-1 rounded-lg text-xs font-medium ${
+                        selectedTimeframe === tf
+                          ? "bg-purple-600 text-white"
+                          : "bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300"
+                      }`}
+                    >
+                      {tf}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {data?.entry_short?.active_signals
+                  ?.filter((s) => {
+                    if (selectedTimeframe === "4h" || selectedTimeframe === "2h") {
+                      return s.above_range_timeframes?.includes(selectedTimeframe);
+                    }
+                    if (selectedTimeframe === "30m") return Boolean(s.signal_30m);
+                    if (selectedTimeframe === "15m") return Boolean(s.signal_15m);
+                    return true;
+                  })
+                  .map((s, idx) => (
+                    <div key={idx} className="p-4 rounded-lg bg-red-50 dark:bg-red-900/20">
+                      <div className="flex items-center justify-between">
+                        <div className="font-bold text-red-800 dark:text-red-300">{s.symbol}</div>
+                        <span className="text-xs px-2 py-0.5 rounded bg-red-100 dark:bg-red-800 text-red-700 dark:text-red-200">
+                          {s.signal_type}
+                        </span>
+                      </div>
+                      {s.signal_30m && (
+                        <div className="mt-2 text-xs text-gray-700 dark:text-gray-300 flex justify-between">
+                          <span>30m</span>
+                          <span className="font-mono">${s.signal_30m.choch_level.toFixed(6)} · {s.signal_30m.distance_pct.toFixed(2)}%</span>
+                        </div>
+                      )}
+                      {s.signal_15m && (
+                        <div className="text-xs text-gray-700 dark:text-gray-300 flex justify-between">
+                          <span>15m</span>
+                          <span className="font-mono">${s.signal_15m.choch_level.toFixed(6)} · {s.signal_15m.distance_pct.toFixed(2)}%</span>
+                        </div>
+                      )}
+                      {(!s.signal_30m && !s.signal_15m) && (
+                        <div className="text-xs text-gray-500 mt-2">Sadece 4h/2h üstü durum.</div>
+                      )}
+                      <div className="text-xs text-gray-500 mt-1">{s.reason}</div>
+                    </div>
+                  ))}
+              </div>
             </div>
           </div>
-
-          {/* Signal Counts */}
-          {processedData.signalCounts[selectedTimeframe] && (
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-xl p-6">
-                <div className="text-2xl mb-2">📊</div>
-                <div className="text-2xl font-bold text-green-700 dark:text-green-400">
-                  {processedData.signalCounts[selectedTimeframe].FVG}
-                </div>
-                <div className="text-sm text-green-600 dark:text-green-300">Fair Value Gaps</div>
-              </div>
-
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-xl p-6">
-                <div className="text-2xl mb-2">🔷</div>
-                <div className="text-2xl font-bold text-blue-700 dark:text-blue-400">
-                  {processedData.signalCounts[selectedTimeframe].BOS}
-                </div>
-                <div className="text-sm text-blue-600 dark:text-blue-300">Break of Structure</div>
-              </div>
-
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-xl p-6">
-                <div className="text-2xl mb-2">🔄</div>
-                <div className="text-2xl font-bold text-purple-700 dark:text-purple-400">
-                  {processedData.signalCounts[selectedTimeframe].CHoCH}
-                </div>
-                <div className="text-sm text-purple-600 dark:text-purple-300">Change of Character</div>
-              </div>
-            </div>
-          )}
         </div>
       )}
 
@@ -265,28 +314,39 @@ export default function SmcPaAnalysis() {
       {activeView === 'volatility' && (
         <div className="space-y-6">
           <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl p-6">
-            <h3 className="text-lg font-bold mb-4">Most Volatile Assets (Educational Analysis)</h3>
+            <h3 className="text-lg font-bold mb-4">Short Sinyal Adayları</h3>
+            <div className="flex flex-wrap gap-2 mb-4">
+              {["4h", "2h", "30m", "15m"].map((tf) => (
+                <button
+                  key={tf}
+                  onClick={() => setSelectedTimeframe(tf as any)}
+                  className={`px-3 py-1 rounded-lg text-sm ${
+                    selectedTimeframe === tf
+                      ? "bg-purple-600 text-white"
+                      : "bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300"
+                  }`}
+                >
+                  {tf}
+                </button>
+              ))}
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {processedData.volatileCoins.map((coin: CoinData, index: number) => (
-                <div key={coin.symbol} className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
+              {(processedData.shortSignalsByTf[selectedTimeframe] || []).map((c) => (
+                <div key={`${c.symbol}-${selectedTimeframe}`} className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-700 rounded-lg">
                   <div>
-                    <div className="font-bold text-gray-900 dark:text-white">{coin.symbol}</div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">
-                      ${coin.lastPrice.toFixed(6)}
-                    </div>
+                    <div className="font-bold text-gray-900 dark:text-white">{c.symbol}</div>
+                    <div className="text-xs text-gray-600 dark:text-gray-400">{c.timeframes?.join(', ')}</div>
                   </div>
-                  <div className="text-right">
-                    <div className={`font-bold ${
-                      coin.priceChangePercent >= 0 ? 'text-green-600' : 'text-red-600'
-                    }`}>
-                      {coin.priceChangePercent >= 0 ? '+' : ''}{coin.priceChangePercent.toFixed(2)}%
-                    </div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">
-                      Vol: {(coin.volume / 1000000).toFixed(1)}M
-                    </div>
+                  <div className="text-right text-sm text-gray-700 dark:text-gray-300">
+                    {selectedTimeframe === '30m' && c.choch_30m !== null && <span>CHOCH: ${c.choch_30m?.toString()}</span>}
+                    {selectedTimeframe === '15m' && c.choch_15m !== null && <span>CHOCH: ${c.choch_15m?.toString()}</span>}
+                    {(selectedTimeframe === '4h' || selectedTimeframe === '2h') && <span>Higher TF</span>}
                   </div>
                 </div>
               ))}
+              {!(processedData.shortSignalsByTf[selectedTimeframe]?.length) && (
+                <div className="text-sm text-gray-500">Seçilen zaman diliminde aday bulunamadı.</div>
+              )}
             </div>
           </div>
         </div>

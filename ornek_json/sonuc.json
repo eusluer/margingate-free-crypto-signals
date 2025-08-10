@@ -1,0 +1,383 @@
+{
+  "timestamp": "2025-08-10 09:51:42",
+  "total_coins_scanned": 50,
+  "short_signals": {
+    "count": 20,
+    "coins": [
+      {
+        "symbol": "ETHUSDT",
+        "timeframes": [
+          "4h",
+          "2h"
+        ],
+        "choch_30m": 4205.0,
+        "choch_15m": 4205.0
+      },
+      {
+        "symbol": "XRPUSDT",
+        "timeframes": [
+          "4h",
+          "2h"
+        ],
+        "choch_30m": 3.245,
+        "choch_15m": 3.2445
+      },
+      {
+        "symbol": "ENAUSDT",
+        "timeframes": [
+          "4h",
+          "2h"
+        ],
+        "choch_30m": null,
+        "choch_15m": 0.7349
+      },
+      {
+        "symbol": "MYXUSDT",
+        "timeframes": [
+          "4h",
+          "2h"
+        ],
+        "choch_30m": null,
+        "choch_15m": 1.73
+      },
+      {
+        "symbol": "BNBUSDT",
+        "timeframes": [
+          "4h",
+          "2h"
+        ],
+        "choch_30m": 803.19,
+        "choch_15m": 810.4
+      },
+      {
+        "symbol": "LTCUSDT",
+        "timeframes": [
+          "4h",
+          "2h"
+        ],
+        "choch_30m": 120.81,
+        "choch_15m": 120.44
+      },
+      {
+        "symbol": "GMXUSDT",
+        "timeframes": [
+          "4h",
+          "2h"
+        ],
+        "choch_30m": null,
+        "choch_15m": 18.914
+      },
+      {
+        "symbol": "1000BONKUSDT",
+        "timeframes": [
+          "4h"
+        ],
+        "choch_30m": 0.0268,
+        "choch_15m": 0.0271
+      },
+      {
+        "symbol": "BCHUSDT",
+        "timeframes": [
+          "4h",
+          "2h"
+        ],
+        "choch_30m": 576.67,
+        "choch_15m": 566.35
+      },
+      {
+        "symbol": "MAGICUSDT",
+        "timeframes": [
+          "4h",
+          "2h"
+        ],
+        "choch_30m": null,
+        "choch_15m": 0.2771
+      },
+      {
+        "symbol": "LDOUSDT",
+        "timeframes": [
+          "4h",
+          "2h"
+        ],
+        "choch_30m": 1.2925,
+        "choch_15m": 1.2939
+      },
+      {
+        "symbol": "HYPEUSDT",
+        "timeframes": [
+          "4h"
+        ],
+        "choch_30m": 43.622,
+        "choch_15m": 43.312
+      },
+      {
+        "symbol": "ETCUSDT",
+        "timeframes": [
+          "4h"
+        ],
+        "choch_30m": 23.291,
+        "choch_15m": 23.291
+      },
+      {
+        "symbol": "OPUSDT",
+        "timeframes": [
+          "4h",
+          "2h"
+        ],
+        "choch_30m": 0.7861,
+        "choch_15m": 0.7861
+      },
+      {
+        "symbol": "ENSUSDT",
+        "timeframes": [
+          "4h"
+        ],
+        "choch_30m": 29.572,
+        "choch_15m": 29.428
+      },
+      {
+        "symbol": "ALPINEUSDT",
+        "timeframes": [
+          "4h",
+          "2h"
+        ],
+        "choch_30m": null,
+        "choch_15m": 1.478
+      },
+      {
+        "symbol": "MEMEFIUSDT",
+        "timeframes": [
+          "4h",
+          "2h"
+        ],
+        "choch_30m": 0.0033,
+        "choch_15m": 0.0033
+      },
+      {
+        "symbol": "HEIUSDT",
+        "timeframes": [
+          "4h",
+          "2h"
+        ],
+        "choch_30m": null,
+        "choch_15m": 0.54
+      },
+      {
+        "symbol": "CFXUSDT",
+        "timeframes": [
+          "4h",
+          "2h"
+        ],
+        "choch_30m": 0.2111,
+        "choch_15m": 0.2075
+      },
+      {
+        "symbol": "SPKUSDT",
+        "timeframes": [
+          "4h",
+          "2h"
+        ],
+        "choch_30m": 0.1148,
+        "choch_15m": 0.1139
+      }
+    ]
+  },
+  "long_signals": {
+    "range_ici": {
+      "count": 1,
+      "coins": [
+        {
+          "symbol": "ENSUSDT",
+          "interval": "2h",
+          "current_price": 29.45,
+          "range_position_pct": 47.39
+        }
+      ]
+    },
+    "entry_sinyali": {
+      "count": 36,
+      "coins": [
+        {
+          "symbol": "ETHUSDT",
+          "current_price": 4224.77,
+          "choch_level": 4225.5
+        },
+        {
+          "symbol": "BTCUSDT",
+          "current_price": 118402.8,
+          "choch_level": 118371.0
+        },
+        {
+          "symbol": "SOLUSDT",
+          "current_price": 180.84,
+          "choch_level": 180.67
+        },
+        {
+          "symbol": "XRPUSDT",
+          "current_price": 3.2133,
+          "choch_level": 3.2434
+        },
+        {
+          "symbol": "DOGEUSDT",
+          "current_price": 0.234,
+          "choch_level": 0.2338
+        },
+        {
+          "symbol": "LINKUSDT",
+          "current_price": 22.197,
+          "choch_level": 22.493
+        },
+        {
+          "symbol": "SUIUSDT",
+          "current_price": 3.8435,
+          "choch_level": 3.87
+        },
+        {
+          "symbol": "ADAUSDT",
+          "current_price": 0.7999,
+          "choch_level": 0.8145
+        },
+        {
+          "symbol": "MYXUSDT",
+          "current_price": 1.7527,
+          "choch_level": 1.7444
+        },
+        {
+          "symbol": "PENGUUSDT",
+          "current_price": 0.0389,
+          "choch_level": 0.0395
+        },
+        {
+          "symbol": "BNBUSDT",
+          "current_price": 804.69,
+          "choch_level": 810.36
+        },
+        {
+          "symbol": "LTCUSDT",
+          "current_price": 120.82,
+          "choch_level": 121.49
+        },
+        {
+          "symbol": "FARTCOINUSDT",
+          "current_price": 1.0788,
+          "choch_level": 1.0979
+        },
+        {
+          "symbol": "UNIUSDT",
+          "current_price": 10.718,
+          "choch_level": 10.912
+        },
+        {
+          "symbol": "1000BONKUSDT",
+          "current_price": 0.0268,
+          "choch_level": 0.027
+        },
+        {
+          "symbol": "AVAXUSDT",
+          "current_price": 23.677,
+          "choch_level": 23.327
+        },
+        {
+          "symbol": "WIFUSDT",
+          "current_price": 0.9833,
+          "choch_level": 0.9789
+        },
+        {
+          "symbol": "BCHUSDT",
+          "current_price": 565.39,
+          "choch_level": 565.05
+        },
+        {
+          "symbol": "MAGICUSDT",
+          "current_price": 0.2764,
+          "choch_level": 0.2758
+        },
+        {
+          "symbol": "AAVEUSDT",
+          "current_price": 306.02,
+          "choch_level": 306.15
+        },
+        {
+          "symbol": "HYPEUSDT",
+          "current_price": 43.743,
+          "choch_level": 44.085
+        },
+        {
+          "symbol": "TRUMPUSDT",
+          "current_price": 9.392,
+          "choch_level": 9.237
+        },
+        {
+          "symbol": "XLMUSDT",
+          "current_price": 0.4422,
+          "choch_level": 0.4483
+        },
+        {
+          "symbol": "ETCUSDT",
+          "current_price": 23.13,
+          "choch_level": 23.281
+        },
+        {
+          "symbol": "CRVUSDT",
+          "current_price": 0.974,
+          "choch_level": 0.984
+        },
+        {
+          "symbol": "ENSUSDT",
+          "current_price": 29.45,
+          "choch_level": 29.714
+        },
+        {
+          "symbol": "ALPINEUSDT",
+          "current_price": 1.4621,
+          "choch_level": 1.4534
+        },
+        {
+          "symbol": "1000SHIBUSDT",
+          "current_price": 0.0135,
+          "choch_level": 0.0136
+        },
+        {
+          "symbol": "HBARUSDT",
+          "current_price": 0.2591,
+          "choch_level": 0.2642
+        },
+        {
+          "symbol": "DOTUSDT",
+          "current_price": 4.049,
+          "choch_level": 4.101
+        },
+        {
+          "symbol": "WLDUSDT",
+          "current_price": 1.0574,
+          "choch_level": 1.0429
+        },
+        {
+          "symbol": "HEIUSDT",
+          "current_price": 0.5308,
+          "choch_level": 0.533
+        },
+        {
+          "symbol": "CFXUSDT",
+          "current_price": 0.2104,
+          "choch_level": 0.2106
+        },
+        {
+          "symbol": "FILUSDT",
+          "current_price": 2.596,
+          "choch_level": 2.627
+        },
+        {
+          "symbol": "SPKUSDT",
+          "current_price": 0.1128,
+          "choch_level": 0.1144
+        },
+        {
+          "symbol": "ONDOUSDT",
+          "current_price": 1.0198,
+          "choch_level": 1.0248
+        }
+      ]
+    }
+  }
+}

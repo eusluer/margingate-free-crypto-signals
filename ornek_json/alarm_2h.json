@@ -1,0 +1,16 @@
+{
+  "scan_timestamp": "2025-08-10 09:57:55",
+  "interval": "2h",
+  "total_alarms": 1,
+  "alarms": [
+    {
+      "symbol": "ENSUSDT",
+      "current_price": 29.323,
+      "range_low": 28.914,
+      "range_high": 30.045,
+      "range_mid": 29.4795,
+      "range_position_pct": 36.16,
+      "timestamp": "2025-08-10 09:57:55"
+    }
+  ]
+}

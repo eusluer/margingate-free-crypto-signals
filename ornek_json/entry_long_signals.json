@@ -1,0 +1,53 @@
+{
+  "scan_timestamp": "2025-08-10 09:49:47",
+  "total_coins": 2,
+  "analyzed_coins": 2,
+  "active_signals": [
+    {
+      "symbol": "ENSUSDT",
+      "timestamp": "2025-08-10 09:49:47",
+      "signal_type": "BULLISH_CHOCH",
+      "choch_level": 30.059,
+      "current_price": 29.503,
+      "distance_pct": 1.85,
+      "max_distance_pct": 2.0,
+      "signal_active": true,
+      "break_timestamp": "2025-08-10 00:45:00"
+    },
+    {
+      "symbol": "VINEUSDT",
+      "timestamp": "2025-08-10 09:49:47",
+      "signal_type": "BULLISH_CHOCH",
+      "choch_level": 0.0671,
+      "current_price": 0.0682,
+      "distance_pct": 1.68,
+      "max_distance_pct": 2.0,
+      "signal_active": true,
+      "break_timestamp": "2025-08-08 19:45:00"
+    }
+  ],
+  "all_results": [
+    {
+      "symbol": "ENSUSDT",
+      "timestamp": "2025-08-10 09:49:47",
+      "signal_type": "BULLISH_CHOCH",
+      "choch_level": 30.059,
+      "current_price": 29.503,
+      "distance_pct": 1.85,
+      "max_distance_pct": 2.0,
+      "signal_active": true,
+      "break_timestamp": "2025-08-10 00:45:00"
+    },
+    {
+      "symbol": "VINEUSDT",
+      "timestamp": "2025-08-10 09:49:47",
+      "signal_type": "BULLISH_CHOCH",
+      "choch_level": 0.0671,
+      "current_price": 0.0682,
+      "distance_pct": 1.68,
+      "max_distance_pct": 2.0,
+      "signal_active": true,
+      "break_timestamp": "2025-08-08 19:45:00"
+    }
+  ]
+}

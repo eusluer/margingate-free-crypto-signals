@@ -1,0 +1,16 @@
+{
+  "scan_timestamp": "2025-08-09 20:54:44",
+  "interval": "4h",
+  "total_alarms": 1,
+  "alarms": [
+    {
+      "symbol": "VINEUSDT",
+      "current_price": 0.069,
+      "range_low": 0.0617,
+      "range_high": 0.08,
+      "range_mid": 0.0708,
+      "range_position_pct": 39.73,
+      "timestamp": "2025-08-09 20:54:44"
+    }
+  ]
+}

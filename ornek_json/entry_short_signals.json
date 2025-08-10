@@ -1,0 +1,1191 @@
+{
+  "scan_timestamp": "2025-08-09 21:28:58",
+  "total_coins": 50,
+  "analyzed_coins": 50,
+  "above_range_coins": 29,
+  "active_signals": [
+    {
+      "symbol": "ETHUSDT",
+      "timestamp": "2025-08-09 21:29:00",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": null,
+      "signal_15m": {
+        "symbol": "ETHUSDT",
+        "timestamp": "2025-08-09 21:29:00",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 4181.0,
+        "current_price": 4236.07,
+        "distance_pct": 1.32,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "XRPUSDT",
+      "timestamp": "2025-08-09 21:29:05",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": {
+        "symbol": "XRPUSDT",
+        "timestamp": "2025-08-09 21:29:04",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 3.3048,
+        "current_price": 3.2851,
+        "distance_pct": 0.6,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-08 14:30:00",
+        "interval": "30m"
+      },
+      "signal_15m": {
+        "symbol": "XRPUSDT",
+        "timestamp": "2025-08-09 21:29:05",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 3.3015,
+        "current_price": 3.2854,
+        "distance_pct": 0.49,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "MYXUSDT",
+      "timestamp": "2025-08-09 21:29:14",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": {
+        "symbol": "MYXUSDT",
+        "timestamp": "2025-08-09 21:29:14",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 1.621,
+        "current_price": 1.6505,
+        "distance_pct": 1.82,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:30:00",
+        "interval": "30m"
+      },
+      "signal_15m": {
+        "symbol": "MYXUSDT",
+        "timestamp": "2025-08-09 21:29:14",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 1.621,
+        "current_price": 1.6498,
+        "distance_pct": 1.77,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:45:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "BNBUSDT",
+      "timestamp": "2025-08-09 21:29:22",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": null,
+      "signal_15m": {
+        "symbol": "BNBUSDT",
+        "timestamp": "2025-08-09 21:29:22",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 811.58,
+        "current_price": 805.81,
+        "distance_pct": 0.71,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "LTCUSDT",
+      "timestamp": "2025-08-09 21:29:29",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": {
+        "symbol": "LTCUSDT",
+        "timestamp": "2025-08-09 21:29:28",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 122.75,
+        "current_price": 122.05,
+        "distance_pct": 0.57,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:30:00",
+        "interval": "30m"
+      },
+      "signal_15m": {
+        "symbol": "LTCUSDT",
+        "timestamp": "2025-08-09 21:29:29",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 124.41,
+        "current_price": 122.05,
+        "distance_pct": 1.9,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "UNIUSDT",
+      "timestamp": "2025-08-09 21:29:37",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": {
+        "symbol": "UNIUSDT",
+        "timestamp": "2025-08-09 21:29:36",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 10.858,
+        "current_price": 10.926,
+        "distance_pct": 0.63,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:30:00",
+        "interval": "30m"
+      },
+      "signal_15m": {
+        "symbol": "UNIUSDT",
+        "timestamp": "2025-08-09 21:29:37",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 11.147,
+        "current_price": 10.926,
+        "distance_pct": 1.98,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 11:30:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "2h"
+      ]
+    },
+    {
+      "symbol": "1000BONKUSDT",
+      "timestamp": "2025-08-09 21:29:39",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": null,
+      "signal_15m": {
+        "symbol": "1000BONKUSDT",
+        "timestamp": "2025-08-09 21:29:39",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 0.0269,
+        "current_price": 0.0273,
+        "distance_pct": 1.25,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 16:45:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h"
+      ]
+    },
+    {
+      "symbol": "BCHUSDT",
+      "timestamp": "2025-08-09 21:29:51",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": {
+        "symbol": "BCHUSDT",
+        "timestamp": "2025-08-09 21:29:50",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 576.67,
+        "current_price": 571.18,
+        "distance_pct": 0.95,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:00:00",
+        "interval": "30m"
+      },
+      "signal_15m": {
+        "symbol": "BCHUSDT",
+        "timestamp": "2025-08-09 21:29:51",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 576.67,
+        "current_price": 571.18,
+        "distance_pct": 0.95,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:15:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "OGUSDT",
+      "timestamp": "2025-08-09 21:29:53",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": null,
+      "signal_15m": {
+        "symbol": "OGUSDT",
+        "timestamp": "2025-08-09 21:29:53",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 11.227,
+        "current_price": 11.214,
+        "distance_pct": 0.12,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 18:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "ALPINEUSDT",
+      "timestamp": "2025-08-09 21:30:03",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": null,
+      "signal_15m": {
+        "symbol": "ALPINEUSDT",
+        "timestamp": "2025-08-09 21:30:03",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 1.478,
+        "current_price": 1.4552,
+        "distance_pct": 1.54,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 18:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "ETCUSDT",
+      "timestamp": "2025-08-09 21:30:06",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": null,
+      "signal_15m": {
+        "symbol": "ETCUSDT",
+        "timestamp": "2025-08-09 21:30:06",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 23.372,
+        "current_price": 23.313,
+        "distance_pct": 0.25,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h"
+      ]
+    },
+    {
+      "symbol": "OPUSDT",
+      "timestamp": "2025-08-09 21:30:08",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": null,
+      "signal_15m": {
+        "symbol": "OPUSDT",
+        "timestamp": "2025-08-09 21:30:08",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 0.7863,
+        "current_price": 0.7977,
+        "distance_pct": 1.45,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 14:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "SPKUSDT",
+      "timestamp": "2025-08-09 21:30:22",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": {
+        "symbol": "SPKUSDT",
+        "timestamp": "2025-08-09 21:30:22",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 0.1162,
+        "current_price": 0.1148,
+        "distance_pct": 1.26,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 14:00:00",
+        "interval": "30m"
+      },
+      "signal_15m": {
+        "symbol": "SPKUSDT",
+        "timestamp": "2025-08-09 21:30:22",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 0.1162,
+        "current_price": 0.1148,
+        "distance_pct": 1.26,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 14:15:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "HBARUSDT",
+      "timestamp": "2025-08-09 21:30:28",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": {
+        "symbol": "HBARUSDT",
+        "timestamp": "2025-08-09 21:30:28",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 0.2616,
+        "current_price": 0.2651,
+        "distance_pct": 1.33,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-08 12:00:00",
+        "interval": "30m"
+      },
+      "signal_15m": {
+        "symbol": "HBARUSDT",
+        "timestamp": "2025-08-09 21:30:28",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 0.2644,
+        "current_price": 0.2652,
+        "distance_pct": 0.29,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:45:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "2h"
+      ]
+    },
+    {
+      "symbol": "CFXUSDT",
+      "timestamp": "2025-08-09 21:30:33",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": {
+        "symbol": "CFXUSDT",
+        "timestamp": "2025-08-09 21:30:32",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 0.2146,
+        "current_price": 0.2132,
+        "distance_pct": 0.64,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 02:00:00",
+        "interval": "30m"
+      },
+      "signal_15m": {
+        "symbol": "CFXUSDT",
+        "timestamp": "2025-08-09 21:30:33",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 0.2146,
+        "current_price": 0.2132,
+        "distance_pct": 0.64,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 02:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    }
+  ],
+  "all_results": [
+    {
+      "symbol": "ETHUSDT",
+      "timestamp": "2025-08-09 21:29:00",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": null,
+      "signal_15m": {
+        "symbol": "ETHUSDT",
+        "timestamp": "2025-08-09 21:29:00",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 4181.0,
+        "current_price": 4236.07,
+        "distance_pct": 1.32,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timestamp": "2025-08-09 21:29:02",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "timestamp": "2025-08-09 21:29:03",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "timestamp": "2025-08-09 21:29:05",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": {
+        "symbol": "XRPUSDT",
+        "timestamp": "2025-08-09 21:29:04",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 3.3048,
+        "current_price": 3.2851,
+        "distance_pct": 0.6,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-08 14:30:00",
+        "interval": "30m"
+      },
+      "signal_15m": {
+        "symbol": "XRPUSDT",
+        "timestamp": "2025-08-09 21:29:05",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 3.3015,
+        "current_price": 3.2854,
+        "distance_pct": 0.49,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "timestamp": "2025-08-09 21:29:06",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "ENAUSDT",
+      "timestamp": "2025-08-09 21:29:08",
+      "signal_active": false,
+      "reason": "Above range but no Bearish CHOCH detected",
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "1000PEPEUSDT",
+      "timestamp": "2025-08-09 21:29:10",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "SOONUSDT",
+      "timestamp": "2025-08-09 21:29:12",
+      "signal_active": false,
+      "reason": "Above range but no Bearish CHOCH detected",
+      "above_range_timeframes": [
+        "2h"
+      ]
+    },
+    {
+      "symbol": "MYXUSDT",
+      "timestamp": "2025-08-09 21:29:14",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": {
+        "symbol": "MYXUSDT",
+        "timestamp": "2025-08-09 21:29:14",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 1.621,
+        "current_price": 1.6505,
+        "distance_pct": 1.82,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:30:00",
+        "interval": "30m"
+      },
+      "signal_15m": {
+        "symbol": "MYXUSDT",
+        "timestamp": "2025-08-09 21:29:14",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 1.621,
+        "current_price": 1.6498,
+        "distance_pct": 1.77,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:45:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "LINKUSDT",
+      "timestamp": "2025-08-09 21:29:17",
+      "signal_active": false,
+      "reason": "Above range but no Bearish CHOCH detected",
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "SUIUSDT",
+      "timestamp": "2025-08-09 21:29:19",
+      "signal_active": false,
+      "reason": "Above range but no Bearish CHOCH detected",
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "BNBUSDT",
+      "timestamp": "2025-08-09 21:29:22",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": null,
+      "signal_15m": {
+        "symbol": "BNBUSDT",
+        "timestamp": "2025-08-09 21:29:22",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 811.58,
+        "current_price": 805.81,
+        "distance_pct": 0.71,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "ADAUSDT",
+      "timestamp": "2025-08-09 21:29:23",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "MEMEFIUSDT",
+      "timestamp": "2025-08-09 21:29:26",
+      "signal_active": false,
+      "reason": "Above range but no Bearish CHOCH detected",
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "LTCUSDT",
+      "timestamp": "2025-08-09 21:29:29",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": {
+        "symbol": "LTCUSDT",
+        "timestamp": "2025-08-09 21:29:28",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 122.75,
+        "current_price": 122.05,
+        "distance_pct": 0.57,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:30:00",
+        "interval": "30m"
+      },
+      "signal_15m": {
+        "symbol": "LTCUSDT",
+        "timestamp": "2025-08-09 21:29:29",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 124.41,
+        "current_price": 122.05,
+        "distance_pct": 1.9,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "PENGUUSDT",
+      "timestamp": "2025-08-09 21:29:30",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "FARTCOINUSDT",
+      "timestamp": "2025-08-09 21:29:32",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "MAGICUSDT",
+      "timestamp": "2025-08-09 21:29:34",
+      "signal_active": false,
+      "reason": "Above range but no Bearish CHOCH detected",
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "UNIUSDT",
+      "timestamp": "2025-08-09 21:29:37",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": {
+        "symbol": "UNIUSDT",
+        "timestamp": "2025-08-09 21:29:36",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 10.858,
+        "current_price": 10.926,
+        "distance_pct": 0.63,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:30:00",
+        "interval": "30m"
+      },
+      "signal_15m": {
+        "symbol": "UNIUSDT",
+        "timestamp": "2025-08-09 21:29:37",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 11.147,
+        "current_price": 10.926,
+        "distance_pct": 1.98,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 11:30:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "2h"
+      ]
+    },
+    {
+      "symbol": "1000BONKUSDT",
+      "timestamp": "2025-08-09 21:29:39",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": null,
+      "signal_15m": {
+        "symbol": "1000BONKUSDT",
+        "timestamp": "2025-08-09 21:29:39",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 0.0269,
+        "current_price": 0.0273,
+        "distance_pct": 1.25,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 16:45:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h"
+      ]
+    },
+    {
+      "symbol": "WIFUSDT",
+      "timestamp": "2025-08-09 21:29:41",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "timestamp": "2025-08-09 21:29:42",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "HYPEUSDT",
+      "timestamp": "2025-08-09 21:29:44",
+      "signal_active": false,
+      "reason": "Above range but no Bearish CHOCH detected",
+      "above_range_timeframes": [
+        "4h"
+      ]
+    },
+    {
+      "symbol": "AAVEUSDT",
+      "timestamp": "2025-08-09 21:29:46",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "BIOUSDT",
+      "timestamp": "2025-08-09 21:29:48",
+      "signal_active": false,
+      "reason": "Above range but no Bearish CHOCH detected",
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "BCHUSDT",
+      "timestamp": "2025-08-09 21:29:51",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": {
+        "symbol": "BCHUSDT",
+        "timestamp": "2025-08-09 21:29:50",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 576.67,
+        "current_price": 571.18,
+        "distance_pct": 0.95,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:00:00",
+        "interval": "30m"
+      },
+      "signal_15m": {
+        "symbol": "BCHUSDT",
+        "timestamp": "2025-08-09 21:29:51",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 576.67,
+        "current_price": 571.18,
+        "distance_pct": 0.95,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:15:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "OGUSDT",
+      "timestamp": "2025-08-09 21:29:53",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": null,
+      "signal_15m": {
+        "symbol": "OGUSDT",
+        "timestamp": "2025-08-09 21:29:53",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 11.227,
+        "current_price": 11.214,
+        "distance_pct": 0.12,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 18:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "XLMUSDT",
+      "timestamp": "2025-08-09 21:29:55",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "HEIUSDT",
+      "timestamp": "2025-08-09 21:29:57",
+      "signal_active": false,
+      "reason": "Above range but no Bearish CHOCH detected",
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "CRVUSDT",
+      "timestamp": "2025-08-09 21:29:58",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "TRUMPUSDT",
+      "timestamp": "2025-08-09 21:29:59",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "ARBUSDT",
+      "timestamp": "2025-08-09 21:30:01",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "ALPINEUSDT",
+      "timestamp": "2025-08-09 21:30:03",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": null,
+      "signal_15m": {
+        "symbol": "ALPINEUSDT",
+        "timestamp": "2025-08-09 21:30:03",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 1.478,
+        "current_price": 1.4552,
+        "distance_pct": 1.54,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 18:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "ETCUSDT",
+      "timestamp": "2025-08-09 21:30:06",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": null,
+      "signal_15m": {
+        "symbol": "ETCUSDT",
+        "timestamp": "2025-08-09 21:30:06",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 23.372,
+        "current_price": 23.313,
+        "distance_pct": 0.25,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h"
+      ]
+    },
+    {
+      "symbol": "OPUSDT",
+      "timestamp": "2025-08-09 21:30:08",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": null,
+      "signal_15m": {
+        "symbol": "OPUSDT",
+        "timestamp": "2025-08-09 21:30:08",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 0.7863,
+        "current_price": 0.7977,
+        "distance_pct": 1.45,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 14:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "PENDLEUSDT",
+      "timestamp": "2025-08-09 21:30:11",
+      "signal_active": false,
+      "reason": "Above range but no Bearish CHOCH detected",
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "HFTUSDT",
+      "timestamp": "2025-08-09 21:30:13",
+      "signal_active": false,
+      "reason": "Above range but no Bearish CHOCH detected",
+      "above_range_timeframes": [
+        "4h"
+      ]
+    },
+    {
+      "symbol": "1000SHIBUSDT",
+      "timestamp": "2025-08-09 21:30:15",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "timestamp": "2025-08-09 21:30:16",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "COWUSDT",
+      "timestamp": "2025-08-09 21:30:19",
+      "signal_active": false,
+      "reason": "Above range but no Bearish CHOCH detected",
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "ETHFIUSDT",
+      "timestamp": "2025-08-09 21:30:20",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "SPKUSDT",
+      "timestamp": "2025-08-09 21:30:22",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": {
+        "symbol": "SPKUSDT",
+        "timestamp": "2025-08-09 21:30:22",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 0.1162,
+        "current_price": 0.1148,
+        "distance_pct": 1.26,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 14:00:00",
+        "interval": "30m"
+      },
+      "signal_15m": {
+        "symbol": "SPKUSDT",
+        "timestamp": "2025-08-09 21:30:22",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 0.1162,
+        "current_price": 0.1148,
+        "distance_pct": 1.26,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 14:15:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "AEROUSDT",
+      "timestamp": "2025-08-09 21:30:25",
+      "signal_active": false,
+      "reason": "Above range but no Bearish CHOCH detected",
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "WLDUSDT",
+      "timestamp": "2025-08-09 21:30:26",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "HBARUSDT",
+      "timestamp": "2025-08-09 21:30:28",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": {
+        "symbol": "HBARUSDT",
+        "timestamp": "2025-08-09 21:30:28",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 0.2616,
+        "current_price": 0.2651,
+        "distance_pct": 1.33,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-08 12:00:00",
+        "interval": "30m"
+      },
+      "signal_15m": {
+        "symbol": "HBARUSDT",
+        "timestamp": "2025-08-09 21:30:28",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 0.2644,
+        "current_price": 0.2652,
+        "distance_pct": 0.29,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 13:45:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "2h"
+      ]
+    },
+    {
+      "symbol": "ASRUSDT",
+      "timestamp": "2025-08-09 21:30:30",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "APTUSDT",
+      "timestamp": "2025-08-09 21:30:31",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    },
+    {
+      "symbol": "CFXUSDT",
+      "timestamp": "2025-08-09 21:30:33",
+      "signal_type": "BEARISH_CHOCH_COMBO",
+      "signal_30m": {
+        "symbol": "CFXUSDT",
+        "timestamp": "2025-08-09 21:30:32",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 0.2146,
+        "current_price": 0.2132,
+        "distance_pct": 0.64,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 02:00:00",
+        "interval": "30m"
+      },
+      "signal_15m": {
+        "symbol": "CFXUSDT",
+        "timestamp": "2025-08-09 21:30:33",
+        "signal_type": "BEARISH_CHOCH",
+        "choch_level": 0.2146,
+        "current_price": 0.2132,
+        "distance_pct": 0.64,
+        "max_distance_pct": 2.0,
+        "signal_active": true,
+        "break_timestamp": "2025-08-09 02:00:00",
+        "interval": "15m"
+      },
+      "signal_active": true,
+      "reason": "Price above range (4h, 2h) and bearish CHOCH detected",
+      "price_above_range": true,
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "LDOUSDT",
+      "timestamp": "2025-08-09 21:30:35",
+      "signal_active": false,
+      "reason": "Above range but no Bearish CHOCH detected",
+      "above_range_timeframes": [
+        "4h",
+        "2h"
+      ]
+    },
+    {
+      "symbol": "MOODENGUSDT",
+      "timestamp": "2025-08-09 21:30:37",
+      "signal_active": false,
+      "reason": "Price not above range on 2h or 4h"
+    }
+  ]
+}
