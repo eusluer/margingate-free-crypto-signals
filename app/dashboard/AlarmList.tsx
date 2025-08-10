@@ -7,8 +7,8 @@ import { AlarmsJson, OHLCVDataJson, Alarm } from "../../lib/types";
 import MiniChart from "../../components/MiniChart";
 
 export default function AlarmList() {
-  const { data, error, isLoading } = useSWR<AlarmsJson>(getAlarmsUrl('en'), fetchJson, { refreshInterval: 60_000 });
-  const { data: ohlcvData } = useSWR<OHLCVDataJson>(getOHLCVUrl('en'), fetchJson, { refreshInterval: 60_000 });
+  const { data, error, isLoading } = useSWR<AlarmsJson>(getAlarmsUrl('en'), fetchJson, { refreshInterval: 300_000 });
+  const { data: ohlcvData } = useSWR<OHLCVDataJson>(getOHLCVUrl('en'), fetchJson, { refreshInterval: 300_000 });
   const [typeFilter, setTypeFilter] = useState<string | null>(null);
   const [symbolFilter, setSymbolFilter] = useState("");
   const [expandedCard, setExpandedCard] = useState<number | null>(null);

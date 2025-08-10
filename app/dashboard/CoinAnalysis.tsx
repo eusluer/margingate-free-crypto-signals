@@ -14,10 +14,10 @@ interface CoinData {
 }
 
 export default function CoinAnalysis() {
-  const { data: signalsData } = useSWR<SignalsJson>(getSignalsUrl('en'), fetchJson, { refreshInterval: 60_000 });
-  const { data: coinsData } = useSWR<CoinsJson>(getCoinsUrl('en'), fetchJson, { refreshInterval: 60_000 });
-  const { data: alarmsData } = useSWR<AlarmsJson>(getAlarmsUrl('en'), fetchJson, { refreshInterval: 60_000 });
-  const { data: ohlcvData } = useSWR<OHLCVDataJson>(getOHLCVUrl('en'), fetchJson, { refreshInterval: 60_000 });
+  const { data: signalsData } = useSWR<SignalsJson>(getSignalsUrl('en'), fetchJson, { refreshInterval: 300_000 });
+  const { data: coinsData } = useSWR<CoinsJson>(getCoinsUrl('en'), fetchJson, { refreshInterval: 300_000 });
+  const { data: alarmsData } = useSWR<AlarmsJson>(getAlarmsUrl('en'), fetchJson, { refreshInterval: 300_000 });
+  const { data: ohlcvData } = useSWR<OHLCVDataJson>(getOHLCVUrl('en'), fetchJson, { refreshInterval: 300_000 });
   
   const [selectedCoin, setSelectedCoin] = useState<string>("");
   const [searchQuery, setSearchQuery] = useState<string>("");

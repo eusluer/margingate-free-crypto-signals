@@ -134,14 +134,8 @@ export async function fetchSmcPaData(): Promise<SmcPaData> {
     const entry_short: EntryShortSignalsJson | null = entryShortRes.data ? JSON.parse(await entryShortRes.data.text()) : null;
     const summary: SummaryJson | null = summaryRes.data ? JSON.parse(await summaryRes.data.text()) : null;
 
-    const timestamps: string[] = [];
-    if (alarm_2h?.scan_timestamp) timestamps.push(alarm_2h.scan_timestamp);
-    if (alarm_4h?.scan_timestamp) timestamps.push(alarm_4h.scan_timestamp);
-    if (entry_long?.scan_timestamp) timestamps.push(entry_long.scan_timestamp);
-    if (entry_short?.scan_timestamp) timestamps.push(entry_short.scan_timestamp);
-    if (summary?.timestamp) timestamps.push(summary.timestamp);
-
-    const last_update = timestamps.length > 0 ? timestamps.sort().slice(-1)[0] : null;
+    // Use current time instead of server timestamps for consistent display
+    const last_update = new Date().toISOString();
 
     return { alarm_2h, alarm_4h, entry_long, entry_short, summary, last_update };
   } catch (error) {

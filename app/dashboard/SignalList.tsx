@@ -14,8 +14,8 @@ interface SignalCardData {
 }
 
 export default function SignalList() {
-  const { data, error, isLoading } = useSWR<SignalsJson>(getSignalsUrl('en'), fetchJson, { refreshInterval: 60_000 });
-  const { data: ohlcvData } = useSWR<OHLCVDataJson>(getOHLCVUrl('en'), fetchJson, { refreshInterval: 60_000 });
+  const { data, error, isLoading } = useSWR<SignalsJson>(getSignalsUrl('en'), fetchJson, { refreshInterval: 300_000 });
+  const { data: ohlcvData } = useSWR<OHLCVDataJson>(getOHLCVUrl('en'), fetchJson, { refreshInterval: 300_000 });
   const [symbolFilter, setSymbolFilter] = useState("");
   const [expandedCard, setExpandedCard] = useState<string | null>(null);
 

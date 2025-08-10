@@ -15,8 +15,9 @@ type ProcessedData = {
 
 export default function SmcPaAnalysis() {
   const { data, error, isLoading } = useSWR("smc-pa-data", fetchSmcPaData, {
-    refreshInterval: 60_000,
+    refreshInterval: 300_000, // 5 minutes = 300,000 milliseconds
     revalidateOnFocus: true,
+    revalidateOnReconnect: true,
   });
 
   const [activeView, setActiveView] = useState<
