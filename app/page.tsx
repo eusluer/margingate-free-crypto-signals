@@ -7,7 +7,7 @@ const AnimatedBackground = () => {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
       {/* Floating geometric shapes */}
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 opacity-10">
+      <div className="absolute top-1/4 left-1/4 w-64 h-64 opacity-20">
         <svg viewBox="0 0 200 200" className="w-full h-full animate-spin" style={{ animationDuration: '20s' }}>
           <polygon points="100,10 190,50 190,150 100,190 10,150 10,50" 
                    fill="none" stroke="currentColor" strokeWidth="1" 
@@ -15,22 +15,98 @@ const AnimatedBackground = () => {
         </svg>
       </div>
       
-      {/* Animated chart lines */}
-      <div className="absolute top-1/3 right-1/4 w-48 h-32 opacity-20">
-        <svg viewBox="0 0 200 100" className="w-full h-full">
-          <path d="M10,80 Q50,30 100,50 T190,20" 
-                fill="none" stroke="currentColor" strokeWidth="2" 
-                className="text-purple-500 animate-pulse" />
-          <path d="M10,60 Q70,10 120,40 T190,30" 
-                fill="none" stroke="currentColor" strokeWidth="1" 
-                className="text-blue-400" style={{ animationDelay: '1s' }} />
+      {/* Candlestick Chart Animation */}
+      <div className="absolute top-20 right-20 w-64 h-40 opacity-40">
+        <svg viewBox="0 0 250 150" className="w-full h-full">
+          {/* Green candles */}
+          <g className="animate-pulse">
+            <rect x="20" y="60" width="8" height="30" fill="#22c55e" />
+            <line x1="24" y1="50" x2="24" y2="95" stroke="#22c55e" strokeWidth="1" />
+            <rect x="40" y="70" width="8" height="25" fill="#22c55e" />
+            <line x1="44" y1="60" x2="44" y2="100" stroke="#22c55e" strokeWidth="1" />
+            <rect x="80" y="55" width="8" height="35" fill="#22c55e" />
+            <line x1="84" y1="45" x2="84" y2="95" stroke="#22c55e" strokeWidth="1" />
+          </g>
+          {/* Red candles */}
+          <g className="animate-pulse" style={{ animationDelay: '0.5s' }}>
+            <rect x="60" y="75" width="8" height="20" fill="#ef4444" />
+            <line x1="64" y1="65" x2="64" y2="100" stroke="#ef4444" strokeWidth="1" />
+            <rect x="100" y="80" width="8" height="15" fill="#ef4444" />
+            <line x1="104" y1="70" x2="104" y2="100" stroke="#ef4444" strokeWidth="1" />
+            <rect x="120" y="85" width="8" height="10" fill="#ef4444" />
+            <line x1="124" y1="75" x2="124" y2="100" stroke="#ef4444" strokeWidth="1" />
+          </g>
+          {/* Price line */}
+          <path d="M15,80 Q50,60 90,70 Q130,85 180,75 Q200,70 230,65" 
+                fill="none" stroke="#3b82f6" strokeWidth="2" 
+                className="animate-pulse" style={{ animationDelay: '1s' }} strokeDasharray="3,3">
+            <animate attributeName="stroke-dashoffset" values="0;6" dur="2s" repeatCount="indefinite"/>
+          </path>
+        </svg>
+      </div>
+      
+      {/* Line Chart Animation */}
+      <div className="absolute bottom-32 left-20 w-72 h-32 opacity-35">
+        <svg viewBox="0 0 300 120" className="w-full h-full">
+          {/* Chart area */}
+          <defs>
+            <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.3"/>
+              <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.05"/>
+            </linearGradient>
+          </defs>
+          
+          {/* Animated line chart */}
+          <path d="M20,90 Q60,70 100,75 Q140,60 180,65 Q220,50 260,55" 
+                fill="none" stroke="#10b981" strokeWidth="3" 
+                className="animate-pulse">
+            <animate attributeName="d" 
+                     values="M20,90 Q60,70 100,75 Q140,60 180,65 Q220,50 260,55;
+                             M20,85 Q60,65 100,80 Q140,55 180,70 Q220,45 260,60;
+                             M20,90 Q60,70 100,75 Q140,60 180,65 Q220,50 260,55" 
+                     dur="4s" repeatCount="indefinite"/>
+          </path>
+          
+          {/* Area fill */}
+          <path d="M20,90 Q60,70 100,75 Q140,60 180,65 Q220,50 260,55 L260,110 L20,110 Z" 
+                fill="url(#chartGradient)">
+            <animate attributeName="d" 
+                     values="M20,90 Q60,70 100,75 Q140,60 180,65 Q220,50 260,55 L260,110 L20,110 Z;
+                             M20,85 Q60,65 100,80 Q140,55 180,70 Q220,45 260,60 L260,110 L20,110 Z;
+                             M20,90 Q60,70 100,75 Q140,60 180,65 Q220,50 260,55 L260,110 L20,110 Z" 
+                     dur="4s" repeatCount="indefinite"/>
+          </path>
+          
+          {/* Grid lines */}
+          <g stroke="#6b7280" strokeWidth="0.5" opacity="0.3">
+            <line x1="20" y1="30" x2="260" y2="30" />
+            <line x1="20" y1="50" x2="260" y2="50" />
+            <line x1="20" y1="70" x2="260" y2="70" />
+            <line x1="20" y1="90" x2="260" y2="90" />
+          </g>
+        </svg>
+      </div>
+      
+      {/* Additional smaller candlestick charts */}
+      <div className="absolute top-1/2 left-1/3 w-32 h-20 opacity-30">
+        <svg viewBox="0 0 120 80" className="w-full h-full">
+          <g className="animate-bounce" style={{ animationDuration: '3s' }}>
+            <rect x="10" y="35" width="6" height="15" fill="#22c55e" />
+            <line x1="13" y1="30" x2="13" y2="55" stroke="#22c55e" strokeWidth="1" />
+            <rect x="25" y="40" width="6" height="10" fill="#ef4444" />
+            <line x1="28" y1="35" x2="28" y2="55" stroke="#ef4444" strokeWidth="1" />
+            <rect x="40" y="32" width="6" height="18" fill="#22c55e" />
+            <line x1="43" y1="25" x2="43" y2="55" stroke="#22c55e" strokeWidth="1" />
+            <rect x="55" y="45" width="6" height="8" fill="#ef4444" />
+            <line x1="58" y1="40" x2="58" y2="58" stroke="#ef4444" strokeWidth="1" />
+          </g>
         </svg>
       </div>
       
       {/* Floating particles */}
       {[...Array(12)].map((_, i) => (
         <div key={i} 
-             className={`absolute w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full opacity-30 animate-ping`}
+             className={`absolute w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full opacity-50 animate-ping`}
              style={{
                left: `${Math.random() * 100}%`,
                top: `${Math.random() * 100}%`,
@@ -40,7 +116,7 @@ const AnimatedBackground = () => {
       ))}
       
       {/* Grid lines */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-10">
         <svg className="w-full h-full">
           <defs>
             <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
@@ -52,7 +128,7 @@ const AnimatedBackground = () => {
       </div>
       
       {/* Moving circuit lines */}
-      <div className="absolute top-10 left-10 w-96 h-96 opacity-10">
+      <div className="absolute top-10 left-10 w-96 h-96 opacity-20">
         <svg viewBox="0 0 300 300" className="w-full h-full">
           <path d="M50,50 L150,50 L150,100 L250,100 L250,150 L50,150 Z" 
                 fill="none" stroke="currentColor" strokeWidth="1" 
