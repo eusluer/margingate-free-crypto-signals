@@ -8,9 +8,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <Head>
-        <title>MarginGate - Free Crypto Trading Signals & Technical Analysis</title>
-        <meta name="description" content="Get professional crypto trading signals for free. Real-time FVG, BOS, CHoCH analysis, RSI tracking, and price action alerts. No cost, no limits - perfect for all traders." />
-        <meta name="keywords" content="crypto trading signals, free trading signals, FVG analysis, BOS analysis, CHoCH analysis, RSI tracking, price action, cryptocurrency analysis, trading alerts, technical analysis, crypto signals free, bitcoin signals, ethereum signals, trading indicators" />
+        <title>MarginGate - Smart Money Crypto Analysis Tool | Price Action Education</title>
+        <meta name="description" content="Educational crypto analysis tool using smart money concepts and price action. Learn FVG, BOS, CHoCH patterns in volatile cryptocurrencies. Free educational platform for leverage trading analysis - not financial advice." />
+        <meta name="keywords" content="smart money concepts, price action analysis, FVG analysis, BOS analysis, CHoCH analysis, leverage trading education, volatile crypto analysis, institutional trading patterns, crypto education tool, smart money trading, price action education, crypto volatility analysis" />
         <meta name="author" content="MarginGate" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
@@ -34,8 +34,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             "@context": "https://schema.org",
             "@type": "WebApplication",
             "name": "MarginGate",
-            "description": "Free crypto trading signals and technical analysis platform",
-            "applicationCategory": "FinanceApplication",
+            "description": "Educational cryptocurrency analysis tool using smart money concepts and price action for volatile crypto analysis",
+            "applicationCategory": "EducationalApplication",
             "operatingSystem": "Any",
             "offers": {
               "@type": "Offer",
@@ -43,11 +43,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "priceCurrency": "USD"
             },
             "featureList": [
-              "Free trading signals",
-              "Technical analysis",
-              "RSI tracking", 
-              "Price action alerts",
-              "Real-time data"
+              "Smart money analysis",
+              "Price action education",
+              "FVG, BOS, CHoCH patterns",
+              "Volatile crypto analysis", 
+              "Educational trading concepts",
+              "Risk management education"
             ]
           })
         }} />

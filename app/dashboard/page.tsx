@@ -34,30 +34,30 @@ export default function DashboardPage() {
   const tabs = [
     {
       id: "alarms" as TabType,
-      label: 'Trading Alerts',
+      label: 'Smart Money Alerts',
       icon: "🔔",
-      description: 'Price action-based entry opportunities',
+      description: 'Volatile crypto setups - Educational analysis only',
       component: <AlarmList />
     },
     {
       id: "signals" as TabType,
-      label: 'Technical Signals',
+      label: 'Price Action Signals',
       icon: "📊",
-      description: 'FVG, BOS and CHoCH analysis',
+      description: 'Smart money concepts for education',
       component: <SignalList />
     },
     {
       id: "coins" as TabType,
       label: 'Coin List',
       icon: "💰",
-      description: 'Real-time price and trend data',
+      description: 'High-volatility crypto analysis',
       component: <CoinList />
     },
     {
       id: "rsi" as TabType,
       label: 'RSI Map',
       icon: "🎯",
-      description: 'Visual RSI analysis and momentum tracking',
+      description: 'Momentum analysis for volatile pairs',
       component: <RSIMap />
     },
     {
@@ -93,6 +93,9 @@ export default function DashboardPage() {
               <p className="text-gray-600 dark:text-gray-400">
                 Welcome, <span className="font-semibold text-blue-600 dark:text-blue-400">{user.email}</span>
               </p>
+              <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                Smart Money Analysis Tool - Educational Purpose Only
+              </p>
             </div>
             <button 
               onClick={signOut} 
@@ -100,6 +103,20 @@ export default function DashboardPage() {
             >
               Logout
             </button>
+          </div>
+
+          {/* Risk Warning Banner */}
+          <div className="mb-6 bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 rounded-xl p-4 shadow-lg">
+            <div className="flex items-start gap-3">
+              <span className="text-amber-600 dark:text-amber-400 text-2xl">⚠️</span>
+              <div>
+                <h3 className="font-bold text-amber-800 dark:text-amber-200 mb-1">Educational Analysis Tool</h3>
+                <p className="text-sm text-amber-700 dark:text-amber-300">
+                  MarginGate analyzes volatile cryptocurrencies using price action and smart money concepts for educational purposes. 
+                  <strong> We do not provide trading advice.</strong> Always conduct your own analysis and implement proper risk management before making any trading decisions.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Tab Navigation */}
@@ -147,14 +164,14 @@ export default function DashboardPage() {
               
               <div className="text-center p-4 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-xl">
                 <div className="text-2xl mb-2">🎯</div>
-                <div className="text-lg font-bold text-green-700 dark:text-green-400">Active Alerts</div>
-                <div className="text-sm text-green-600 dark:text-green-500">Real-time opportunities tracked</div>
+                <div className="text-lg font-bold text-green-700 dark:text-green-400">Smart Money Setups</div>
+                <div className="text-sm text-green-600 dark:text-green-500">Volatile crypto analysis - Educational only</div>
               </div>
               
               <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-xl">
                 <div className="text-2xl mb-2">📈</div>
-                <div className="text-lg font-bold text-blue-700 dark:text-blue-400">Technical Analysis</div>
-                <div className="text-sm text-blue-600 dark:text-blue-500">Continuous signal scanning</div>
+                <div className="text-lg font-bold text-blue-700 dark:text-blue-400">Price Action Analysis</div>
+                <div className="text-sm text-blue-600 dark:text-blue-500">Smart money concept tracking</div>
               </div>
               
               <div className="text-center p-4 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-xl">
@@ -174,6 +191,56 @@ export default function DashboardPage() {
                 <div className="text-lg font-bold text-indigo-700 dark:text-indigo-400">Coin Analysis</div>
                 <div className="text-sm text-indigo-600 dark:text-indigo-500">Detailed examination</div>
               </div>
+            </div>
+          </div>
+
+          {/* Comprehensive Risk Disclaimer */}
+          <div className="mt-8 bg-red-50 dark:bg-red-900/10 border border-red-200 dark:border-red-700 rounded-2xl p-6 shadow-xl">
+            <div className="text-center mb-4">
+              <h3 className="text-xl font-bold text-red-800 dark:text-red-300 flex items-center justify-center gap-2">
+                <span className="text-2xl">⚠️</span>
+                Critical Risk Notice
+              </h3>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6 text-sm">
+              <div className="space-y-3">
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg">
+                  <h4 className="font-semibold text-red-700 dark:text-red-400 mb-2">Tool Purpose</h4>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    MarginGate analyzes volatile cryptocurrencies using price action and smart money concepts. This is an educational analysis tool that identifies potential setups based on institutional trading patterns.
+                  </p>
+                </div>
+                
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg">
+                  <h4 className="font-semibold text-red-700 dark:text-red-400 mb-2">No Trading Advice</h4>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    We do not provide buy/sell orders, investment recommendations, or financial advice. All signals are for educational analysis only.
+                  </p>
+                </div>
+              </div>
+              
+              <div className="space-y-3">
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg">
+                  <h4 className="font-semibold text-red-700 dark:text-red-400 mb-2">Leverage Trading Risks</h4>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Focus on volatile cryptocurrencies suitable for leverage trading carries extreme risk. Leverage can amplify losses and result in total capital loss.
+                  </p>
+                </div>
+                
+                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg">
+                  <h4 className="font-semibold text-red-700 dark:text-red-400 mb-2">Your Responsibility</h4>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Always conduct your own analysis, implement strict risk management, and never risk more than you can afford to lose.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-4 p-3 bg-amber-100 dark:bg-amber-900/20 rounded-lg text-center">
+              <p className="text-sm font-medium text-amber-800 dark:text-amber-200">
+                By using this platform, you acknowledge that cryptocurrency trading involves substantial risk and you are solely responsible for your trading decisions.
+              </p>
             </div>
           </div>
         </div>

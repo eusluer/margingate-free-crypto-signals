@@ -37,8 +37,17 @@ export default function Home() {
               </h2>
               
               <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto leading-relaxed mb-8">
-                Free algorithmic crypto trading signals for all traders
+                Advanced price action analysis tool for leverage traders using smart money concepts
               </p>
+              
+              <div className="bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-xl p-4 max-w-4xl mx-auto mb-8">
+                <div className="flex items-start gap-3">
+                  <span className="text-amber-600 dark:text-amber-400 text-xl">⚠️</span>
+                  <div className="text-sm text-amber-800 dark:text-amber-200">
+                    <strong>Important Notice:</strong> MarginGate is an analytical tool only. We do not provide buy/sell orders or financial advice. Always conduct your own analysis and implement proper risk management before making any trading decisions.
+                  </div>
+                </div>
+              </div>
               
               <div className="flex flex-wrap justify-center gap-4 mb-10">
                 <div className="flex items-center gap-2 px-4 py-2 bg-white/80 dark:bg-gray-800/80 rounded-full backdrop-blur-sm">
@@ -81,10 +90,10 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-900 dark:text-white">
-                Professional Crypto Analysis Tools - Completely Free
+                Smart Money Analysis Tools for Leverage Trading
               </h2>
               <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-Professional-grade analysis tools available to everyone for free
+Analyze the most volatile cryptocurrencies using advanced price action and smart money concepts. Our algorithms identify high-probability setups for leverage traders.
               </p>
             </div>
             
@@ -92,35 +101,35 @@ Professional-grade analysis tools available to everyone for free
               <div className="group p-8 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 <div className="text-4xl mb-4">🔔</div>
                 <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Free Crypto Trading Alerts & Price Action Signals</h3>
-                <p className="text-slate-600 dark:text-slate-300 mb-4">Get free crypto trading signals with LONG/SHORT entry points. Our advanced price action analysis identifies profitable trading opportunities in Bitcoin, Ethereum, and top altcoins automatically.</p>
+                <p className="text-slate-600 dark:text-slate-300 mb-4">Receive signals when smart money setups align in high-volatility cryptocurrencies. Our price action analysis identifies institutional patterns and optimal entry zones for leverage positions. Remember: These are analytical signals only - always conduct your own risk assessment.</p>
                 <div className="text-sm text-blue-600 dark:text-blue-400 font-medium">• BOS/CHoCH analysis • Trigger levels • Risk management</div>
               </div>
               
               <div className="group p-8 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 <div className="text-4xl mb-4">📊</div>
                 <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">FVG, BOS & CHoCH Technical Analysis</h3>
-                <p className="text-slate-600 dark:text-slate-300 mb-4">Access professional Fair Value Gap (FVG), Break of Structure (BOS), and Change of Character (CHoCH) analysis completely free. Get technical signals across 30m and 4h timeframes for better trading decisions.</p>
+                <p className="text-slate-600 dark:text-slate-300 mb-4">Advanced smart money concepts analysis including Fair Value Gaps where institutions fill orders, Break of Structure patterns showing trend continuation, and Change of Character signals indicating potential reversals. Perfect for volatile crypto pairs and leverage trading strategies.</p>
                 <div className="text-sm text-green-600 dark:text-green-400 font-medium">• Fair Value Gap • Structure breaks • Character changes</div>
               </div>
               
               <div className="group p-8 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 <div className="text-4xl mb-4">🎯</div>
                 <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Real-time RSI Momentum Tracking</h3>
-                <p className="text-slate-600 dark:text-slate-300 mb-4">Monitor cryptocurrency momentum with our free RSI indicator maps. Identify overbought and oversold conditions across multiple timeframes to time your crypto trades perfectly.</p>
+                <p className="text-slate-600 dark:text-slate-300 mb-4">Track momentum shifts in volatile crypto pairs using RSI heat maps. Identify extreme conditions where smart money typically enters or exits positions. Essential for timing leverage entries and managing high-risk positions.</p>
                 <div className="text-sm text-purple-600 dark:text-purple-400 font-medium">• Momentum tracking • Overbought/oversold • Multiple timeframes</div>
               </div>
               
               <div className="group p-8 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 <div className="text-4xl mb-4">💰</div>
                 <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Detailed Cryptocurrency Market Analysis</h3>
-                <p className="text-slate-600 dark:text-slate-300 mb-4">Get detailed cryptocurrency analysis for Bitcoin, Ethereum, and popular altcoins. Real-time price tracking, trend analysis, volume data, and interactive charts - all completely free.</p>
+                <p className="text-slate-600 dark:text-slate-300 mb-4">Deep analysis of the most volatile cryptocurrencies favored by leverage traders. Focus on pairs with highest institutional interest and price action clarity. All data is for educational analysis - make your own trading decisions.</p>
                 <div className="text-sm text-orange-600 dark:text-orange-400 font-medium">• Detailed coin analysis • Mini charts • Trend indicators</div>
               </div>
               
               <div className="group p-8 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                 <div className="text-4xl mb-4">⚡</div>
                 <h3 className="text-2xl font-bold mb-4 text-slate-900 dark:text-white">Live Market Data & Real-time Updates</h3>
-                <p className="text-slate-600 dark:text-slate-300 mb-4">Catch market changes instantly with millisecond-fast data transfer. 60-second automatic updates.</p>
+                <p className="text-slate-600 dark:text-slate-300 mb-4">Real-time price action monitoring for fast-moving crypto markets. Essential for leverage trading where timing is critical. Updates every 60 seconds to capture smart money movements and volatility spikes.</p>
                 <div className="text-sm text-red-600 dark:text-red-400 font-medium">• Real-time data • Auto updates • Low latency</div>
               </div>
               
@@ -230,10 +239,10 @@ Professional-grade analysis tools available to everyone for free
               
               <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
                 <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-white">
-                  What are FVG, BOS, and CHoCH in crypto trading?
+                  What are Smart Money Concepts and Price Action Analysis?
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  FVG (Fair Value Gap) identifies price gaps in charts that often get filled. BOS (Break of Structure) shows when important support/resistance levels are broken, indicating trend continuation. CHoCH (Change of Character) signals potential trend reversals. Our platform analyzes these automatically for Bitcoin, Ethereum, and major altcoins.
+                  Smart Money Concepts track institutional trading patterns. FVG (Fair Value Gap) shows where institutions fill large orders, BOS (Break of Structure) indicates trend continuation when key levels break, and CHoCH (Change of Character) signals potential reversals. Our tool identifies these patterns in volatile crypto pairs suitable for leverage trading. <strong>Important:</strong> These are educational signals only - not trading advice.
                 </p>
               </div>
               
@@ -271,6 +280,63 @@ Professional-grade analysis tools available to everyone for free
                 <p className="text-slate-600 dark:text-slate-300">
                   Our platform provides real-time analysis with signals updated every 60 seconds. Market conditions change rapidly in crypto, so we ensure you get the latest technical analysis, RSI levels, and price action alerts as soon as they develop.
                 </p>
+              </div>
+              
+              <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border-l-4 border-red-500">
+                <h3 className="text-xl font-bold mb-3 text-red-800 dark:text-red-300">
+                  What about risk management and leverage trading?
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300">
+                  <strong className="text-red-700 dark:text-red-400">Critical:</strong> MarginGate focuses on volatile cryptocurrencies suitable for leverage trading, which carries extreme risk. We provide analytical tools only - never trade signals or financial advice. You must: 1) Do your own analysis, 2) Implement strict risk management, 3) Never risk more than you can afford to lose, 4) Understand that leverage trading can result in total capital loss. <strong>Always trade responsibly.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Risk Disclaimer Section */}
+        <section className="relative py-16 px-4 bg-red-50 dark:bg-red-900/10 border-t border-red-200 dark:border-red-800">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold mb-4 text-red-800 dark:text-red-300 flex items-center justify-center gap-3">
+                <span className="text-4xl">⚠️</span>
+                Important Risk Disclaimer
+              </h2>
+            </div>
+            
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg border-l-4 border-red-500">
+              <div className="space-y-4 text-slate-700 dark:text-slate-300">
+                <p className="font-semibold text-lg text-red-800 dark:text-red-300">
+                  MarginGate is an Educational Analysis Tool Only
+                </p>
+                
+                <div className="space-y-3">
+                  <p>
+                    <strong>• No Financial Advice:</strong> We do not provide buy/sell orders, investment advice, or trading recommendations. All signals and analysis are for educational and informational purposes only.
+                  </p>
+                  
+                  <p>
+                    <strong>• Leverage Trading Risks:</strong> This tool focuses on volatile cryptocurrencies suitable for leverage trading. Leverage trading carries extremely high risk and can result in total loss of capital.
+                  </p>
+                  
+                  <p>
+                    <strong>• Your Responsibility:</strong> You must conduct your own analysis, implement proper risk management, and make independent trading decisions. Never risk more than you can afford to lose.
+                  </p>
+                  
+                  <p>
+                    <strong>• Smart Money Concepts:</strong> Our analysis identifies patterns based on price action and smart money concepts, but these do not guarantee profitable trades or predict future market movements.
+                  </p>
+                  
+                  <p>
+                    <strong>• Volatility Warning:</strong> Cryptocurrencies are highly volatile and unpredictable. Past performance does not indicate future results. Market conditions can change rapidly.
+                  </p>
+                </div>
+                
+                <div className="mt-6 p-4 bg-amber-50 dark:bg-amber-900/20 rounded-lg border border-amber-200 dark:border-amber-700">
+                  <p className="text-sm font-medium text-amber-800 dark:text-amber-200">
+                    By using MarginGate, you acknowledge that cryptocurrency trading involves substantial risk of loss and may not be suitable for all investors. You are solely responsible for your trading decisions and their consequences.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
