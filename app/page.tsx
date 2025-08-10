@@ -1,193 +1,242 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
+import React from "react";
 
-// Animated Background Component
+// Professional Trading Background Component
 const AnimatedBackground = () => {
+  const [currentTime, setCurrentTime] = React.useState(new Date());
+  
+  React.useEffect(() => {
+    const timer = setInterval(() => setCurrentTime(new Date()), 1000);
+    return () => clearInterval(timer);
+  }, []);
+  
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {/* Floating geometric shapes */}
-      <div className="absolute top-1/4 left-1/4 w-64 h-64 opacity-20">
-        <svg viewBox="0 0 200 200" className="w-full h-full animate-spin" style={{ animationDuration: '20s' }}>
-          <polygon points="100,10 190,50 190,150 100,190 10,150 10,50" 
-                   fill="none" stroke="currentColor" strokeWidth="1" 
-                   className="text-blue-500" />
-        </svg>
-      </div>
-      
-      {/* Large Candlestick Chart Animation - Top Right */}
-      <div className="absolute top-10 right-10 w-96 h-64 opacity-35">
-        <svg viewBox="0 0 400 250" className="w-full h-full">
-          {/* Background grid */}
+      {/* Professional Trading Dashboard Background */}
+      <div className="absolute inset-0 opacity-15">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/20 via-blue-900/10 to-slate-800/20"></div>
+        
+        {/* Trading Grid */}
+        <svg className="w-full h-full absolute inset-0" viewBox="0 0 1200 800">
           <defs>
-            <pattern id="tradingGrid" width="20" height="20" patternUnits="userSpaceOnUse">
-              <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#6b7280" strokeWidth="0.5" opacity="0.3"/>
+            <pattern id="trading-grid" width="40" height="30" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 30" fill="none" stroke="#334155" strokeWidth="0.5" opacity="0.3"/>
             </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#tradingGrid)" />
-          
-          {/* Green candles */}
-          <g className="animate-pulse">
-            <rect x="30" y="90" width="12" height="45" fill="#22c55e" />
-            <line x1="36" y1="75" x2="36" y2="145" stroke="#22c55e" strokeWidth="2" />
-            <rect x="60" y="105" width="12" height="35" fill="#22c55e" />
-            <line x1="66" y1="90" x2="66" y2="150" stroke="#22c55e" strokeWidth="2" />
-            <rect x="120" y="80" width="12" height="50" fill="#22c55e" />
-            <line x1="126" y1="65" x2="126" y2="140" stroke="#22c55e" strokeWidth="2" />
-            <rect x="180" y="95" width="12" height="40" fill="#22c55e" />
-            <line x1="186" y1="80" x2="186" y2="145" stroke="#22c55e" strokeWidth="2" />
-            <rect x="240" y="85" width="12" height="55" fill="#22c55e" />
-            <line x1="246" y1="70" x2="246" y2="150" stroke="#22c55e" strokeWidth="2" />
-            <rect x="300" y="100" width="12" height="35" fill="#22c55e" />
-            <line x1="306" y1="85" x2="306" y2="145" stroke="#22c55e" strokeWidth="2" />
-          </g>
-          {/* Red candles */}
-          <g className="animate-pulse" style={{ animationDelay: '0.5s' }}>
-            <rect x="90" y="115" width="12" height="25" fill="#ef4444" />
-            <line x1="96" y1="100" x2="96" y2="150" stroke="#ef4444" strokeWidth="2" />
-            <rect x="150" y="125" width="12" height="20" fill="#ef4444" />
-            <line x1="156" y1="110" x2="156" y2="155" stroke="#ef4444" strokeWidth="2" />
-            <rect x="210" y="130" width="12" height="15" fill="#ef4444" />
-            <line x1="216" y1="115" x2="216" y2="155" stroke="#ef4444" strokeWidth="2" />
-            <rect x="270" y="120" width="12" height="25" fill="#ef4444" />
-            <line x1="276" y1="105" x2="276" y2="155" stroke="#ef4444" strokeWidth="2" />
-            <rect x="330" y="135" width="12" height="15" fill="#ef4444" />
-            <line x1="336" y1="120" x2="336" y2="160" stroke="#ef4444" strokeWidth="2" />
-          </g>
-          {/* Moving average line */}
-          <path d="M25,120 Q80,110 150,115 Q220,125 290,120 Q340,115 370,110" 
-                fill="none" stroke="#3b82f6" strokeWidth="3" 
-                className="animate-pulse" style={{ animationDelay: '1s' }} strokeDasharray="5,5">
-            <animate attributeName="stroke-dashoffset" values="0;10" dur="3s" repeatCount="indefinite"/>
-          </path>
-          {/* Volume bars */}
-          <g opacity="0.6">
-            <rect x="30" y="180" width="12" height="30" fill="#8b5cf6" />
-            <rect x="60" y="185" width="12" height="25" fill="#8b5cf6" />
-            <rect x="90" y="175" width="12" height="35" fill="#8b5cf6" />
-            <rect x="120" y="170" width="12" height="40" fill="#8b5cf6" />
-            <rect x="150" y="190" width="12" height="20" fill="#8b5cf6" />
-          </g>
-        </svg>
-      </div>
-      
-      {/* Large Candlestick Chart Animation - Bottom Left */}
-      <div className="absolute bottom-20 left-10 w-80 h-48 opacity-30">
-        <svg viewBox="0 0 350 200" className="w-full h-full">
-          <rect width="100%" height="100%" fill="url(#tradingGrid)" />
-          
-          {/* Bearish trend candles */}
-          <g className="animate-pulse" style={{ animationDelay: '1.5s' }}>
-            <rect x="25" y="60" width="10" height="40" fill="#22c55e" />
-            <line x1="30" y1="50" x2="30" y2="110" stroke="#22c55e" strokeWidth="1.5" />
-            <rect x="50" y="80" width="10" height="30" fill="#ef4444" />
-            <line x1="55" y1="70" x2="55" y2="120" stroke="#ef4444" strokeWidth="1.5" />
-            <rect x="75" y="95" width="10" height="25" fill="#ef4444" />
-            <line x1="80" y1="85" x2="80" y2="130" stroke="#ef4444" strokeWidth="1.5" />
-            <rect x="100" y="110" width="10" height="20" fill="#ef4444" />
-            <line x1="105" y1="100" x2="105" y2="140" stroke="#ef4444" strokeWidth="1.5" />
-            <rect x="125" y="125" width="10" height="15" fill="#ef4444" />
-            <line x1="130" y1="115" x2="130" y2="150" stroke="#ef4444" strokeWidth="1.5" />
-            <rect x="150" y="140" width="10" height="10" fill="#ef4444" />
-            <line x1="155" y1="130" x2="155" y2="160" stroke="#ef4444" strokeWidth="1.5" />
-            <rect x="175" y="135" width="10" height="20" fill="#22c55e" />
-            <line x1="180" y1="125" x2="180" y2="165" stroke="#22c55e" strokeWidth="1.5" />
-            <rect x="200" y="120" width="10" height="30" fill="#22c55e" />
-            <line x1="205" y1="110" x2="205" y2="160" stroke="#22c55e" strokeWidth="1.5" />
-            <rect x="225" y="100" width="10" height="35" fill="#22c55e" />
-            <line x1="230" y1="90" x2="230" y2="145" stroke="#22c55e" strokeWidth="1.5" />
-            <rect x="250" y="85" width="10" height="40" fill="#22c55e" />
-            <line x1="255" y1="75" x2="255" y2="135" stroke="#22c55e" strokeWidth="1.5" />
-          </g>
-          {/* Trend line */}
-          <path d="M20,80 Q100,120 180,140 Q230,130 280,100" 
-                fill="none" stroke="#f59e0b" strokeWidth="2" 
-                className="animate-pulse" strokeDasharray="4,4">
-            <animate attributeName="stroke-dashoffset" values="0;8" dur="2.5s" repeatCount="indefinite"/>
-          </path>
-        </svg>
-      </div>
-      
-      {/* Medium Candlestick Chart - Top Center */}
-      <div className="absolute top-32 left-1/2 transform -translate-x-1/2 w-72 h-40 opacity-25">
-        <svg viewBox="0 0 300 150" className="w-full h-full">
-          <g className="animate-bounce" style={{ animationDuration: '4s' }}>
-            <rect x="20" y="60" width="8" height="25" fill="#22c55e" />
-            <line x1="24" y1="50" x2="24" y2="95" stroke="#22c55e" strokeWidth="1" />
-            <rect x="40" y="70" width="8" height="20" fill="#ef4444" />
-            <line x1="44" y1="60" x2="44" y2="100" stroke="#ef4444" strokeWidth="1" />
-            <rect x="60" y="55" width="8" height="30" fill="#22c55e" />
-            <line x1="64" y1="45" x2="64" y2="95" stroke="#22c55e" strokeWidth="1" />
-            <rect x="80" y="75" width="8" height="15" fill="#ef4444" />
-            <line x1="84" y1="65" x2="84" y2="100" stroke="#ef4444" strokeWidth="1" />
-            <rect x="100" y="50" width="8" height="35" fill="#22c55e" />
-            <line x1="104" y1="40" x2="104" y2="95" stroke="#22c55e" strokeWidth="1" />
-            <rect x="120" y="80" width="8" height="10" fill="#ef4444" />
-            <line x1="124" y1="70" x2="124" y2="100" stroke="#ef4444" strokeWidth="1" />
-          </g>
-        </svg>
-      </div>
-      
-      {/* Line Chart Animation */}
-      <div className="absolute bottom-32 left-20 w-72 h-32 opacity-35">
-        <svg viewBox="0 0 300 120" className="w-full h-full">
-          {/* Chart area */}
-          <defs>
-            <linearGradient id="chartGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.3"/>
-              <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.05"/>
+            <linearGradient id="priceGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#10b981" stopOpacity="0.2"/>
+              <stop offset="100%" stopColor="#10b981" stopOpacity="0.0"/>
+            </linearGradient>
+            <linearGradient id="volumeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.4"/>
+              <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.1"/>
             </linearGradient>
           </defs>
-          
-          {/* Animated line chart */}
-          <path d="M20,90 Q60,70 100,75 Q140,60 180,65 Q220,50 260,55" 
-                fill="none" stroke="#10b981" strokeWidth="3" 
-                className="animate-pulse">
-            <animate attributeName="d" 
-                     values="M20,90 Q60,70 100,75 Q140,60 180,65 Q220,50 260,55;
-                             M20,85 Q60,65 100,80 Q140,55 180,70 Q220,45 260,60;
-                             M20,90 Q60,70 100,75 Q140,60 180,65 Q220,50 260,55" 
-                     dur="4s" repeatCount="indefinite"/>
-          </path>
-          
-          {/* Area fill */}
-          <path d="M20,90 Q60,70 100,75 Q140,60 180,65 Q220,50 260,55 L260,110 L20,110 Z" 
-                fill="url(#chartGradient)">
-            <animate attributeName="d" 
-                     values="M20,90 Q60,70 100,75 Q140,60 180,65 Q220,50 260,55 L260,110 L20,110 Z;
-                             M20,85 Q60,65 100,80 Q140,55 180,70 Q220,45 260,60 L260,110 L20,110 Z;
-                             M20,90 Q60,70 100,75 Q140,60 180,65 Q220,50 260,55 L260,110 L20,110 Z" 
-                     dur="4s" repeatCount="indefinite"/>
-          </path>
-          
-          {/* Grid lines */}
-          <g stroke="#6b7280" strokeWidth="0.5" opacity="0.3">
-            <line x1="20" y1="30" x2="260" y2="30" />
-            <line x1="20" y1="50" x2="260" y2="50" />
-            <line x1="20" y1="70" x2="260" y2="70" />
-            <line x1="20" y1="90" x2="260" y2="90" />
+          <rect width="100%" height="100%" fill="url(#trading-grid)" />
+      
+          {/* Main Professional Chart - Top Right */}
+          <g transform="translate(700,50)">
+            {/* Chart Background */}
+            <rect x="0" y="0" width="450" height="280" fill="rgba(15, 23, 42, 0.6)" rx="8" />
+            
+            {/* Professional Price Chart */}
+            <g transform="translate(20,20)">
+              {/* Y-axis price labels */}
+              <g fill="#64748b" fontSize="10" fontFamily="monospace">
+                <text x="-5" y="30" textAnchor="end">45,250</text>
+                <text x="-5" y="70" textAnchor="end">44,800</text>
+                <text x="-5" y="110" textAnchor="end">44,350</text>
+                <text x="-5" y="150" textAnchor="end">43,900</text>
+                <text x="-5" y="190" textAnchor="end">43,450</text>
+                <text x="-5" y="230" textAnchor="end">43,000</text>
+              </g>
+              
+              {/* Price area chart with animation */}
+              <path d="M0,180 L30,165 L60,140 L90,155 L120,130 L150,145 L180,120 L210,135 L240,110 L270,125 L300,105 L330,120 L360,95 L390,110 L410,88" 
+                    fill="none" stroke="#10b981" strokeWidth="2" opacity="0.8">
+                <animate attributeName="d" 
+                         values="M0,180 L30,165 L60,140 L90,155 L120,130 L150,145 L180,120 L210,135 L240,110 L270,125 L300,105 L330,120 L360,95 L390,110 L410,88;
+                                 M0,185 L30,170 L60,145 L90,160 L120,135 L150,150 L180,125 L210,140 L240,115 L270,130 L300,110 L330,125 L360,100 L390,115 L410,93;
+                                 M0,180 L30,165 L60,140 L90,155 L120,130 L150,145 L180,120 L210,135 L240,110 L270,125 L300,105 L330,120 L360,95 L390,110 L410,88" 
+                         dur="8s" repeatCount="indefinite"/>
+              </path>
+              
+              {/* Area fill */}
+              <path d="M0,180 L30,165 L60,140 L90,155 L120,130 L150,145 L180,120 L210,135 L240,110 L270,125 L300,105 L330,120 L360,95 L390,110 L410,88 L410,240 L0,240 Z" 
+                    fill="url(#priceGradient)">
+                <animate attributeName="d" 
+                         values="M0,180 L30,165 L60,140 L90,155 L120,130 L150,145 L180,120 L210,135 L240,110 L270,125 L300,105 L330,120 L360,95 L390,110 L410,88 L410,240 L0,240 Z;
+                                 M0,185 L30,170 L60,145 L90,160 L120,135 L150,150 L180,125 L210,140 L240,115 L270,130 L300,110 L330,125 L360,100 L390,115 L410,93 L410,240 L0,240 Z;
+                                 M0,180 L30,165 L60,140 L90,155 L120,130 L150,145 L180,120 L210,135 L240,110 L270,125 L300,105 L330,120 L360,95 L390,110 L410,88 L410,240 L0,240 Z" 
+                         dur="8s" repeatCount="indefinite"/>
+              </path>
+              
+              {/* Professional candlesticks - simplified and elegant */}
+              <g opacity="0.9">
+                {[...Array(15)].map((_, i) => {
+                  const x = i * 28;
+                  const isGreen = Math.random() > 0.4;
+                  const height = 15 + Math.random() * 25;
+                  const y = 120 + (Math.random() - 0.5) * 60;
+                  return (
+                    <g key={i}>
+                      <line x1={x} y1={y - 10} x2={x} y2={y + height + 10} 
+                            stroke={isGreen ? '#10b981' : '#ef4444'} strokeWidth="1" opacity="0.6" />
+                      <rect x={x - 3} y={y} width="6" height={height} 
+                            fill={isGreen ? '#10b981' : '#ef4444'} opacity="0.8" />
+                    </g>
+                  );
+                })}
+              </g>
+              
+              {/* Moving averages */}
+              <path d="M0,160 Q100,150 200,155 Q300,160 410,158" 
+                    fill="none" stroke="#3b82f6" strokeWidth="1" opacity="0.6" strokeDasharray="2,2">
+                <animate attributeName="stroke-dashoffset" values="0;4" dur="4s" repeatCount="indefinite"/>
+              </path>
+              <path d="M0,170 Q100,165 200,168 Q300,172 410,170" 
+                    fill="none" stroke="#f59e0b" strokeWidth="1" opacity="0.5" strokeDasharray="3,3">
+                <animate attributeName="stroke-dashoffset" values="0;6" dur="6s" repeatCount="indefinite"/>
+              </path>
+            </g>
           </g>
-        </svg>
+      
+          {/* Professional Order Book - Bottom Left */}
+          <g transform="translate(50,500)">
+            <rect x="0" y="0" width="280" height="200" fill="rgba(15, 23, 42, 0.6)" rx="6" />
+            
+            {/* Order book header */}
+            <g transform="translate(10,15)">
+              <text x="0" y="0" fill="#64748b" fontSize="10" fontWeight="bold">Order Book</text>
+              <text x="0" y="20" fill="#64748b" fontSize="8">Price (USDT)</text>
+              <text x="120" y="20" fill="#64748b" fontSize="8">Amount (BTC)</text>
+              <text x="200" y="20" fill="#64748b" fontSize="8">Total</text>
+              
+              {/* Sell orders (red) */}
+              <g transform="translate(0,35)">
+                {[...Array(6)].map((_, i) => {
+                  const opacity = 0.3 + (i * 0.1);
+                  return (
+                    <g key={i} transform={`translate(0,${i * 12})`}>
+                      <rect x="0" y="0" width="260" height="10" fill="#ef4444" opacity={opacity * 0.1} />
+                      <text x="5" y="8" fill="#ef4444" fontSize="8" fontFamily="monospace">
+                        {(44000 + i * 50).toLocaleString()}
+                      </text>
+                      <text x="125" y="8" fill="#94a3b8" fontSize="8" fontFamily="monospace">
+                        {(Math.random() * 2).toFixed(4)}
+                      </text>
+                      <text x="205" y="8" fill="#94a3b8" fontSize="8" fontFamily="monospace">
+                        {(Math.random() * 10).toFixed(2)}
+                      </text>
+                    </g>
+                  );
+                })}
+              </g>
+              
+              {/* Current price */}
+              <g transform="translate(0,110)">
+                <rect x="0" y="0" width="260" height="12" fill="rgba(16, 185, 129, 0.1)" />
+                <text x="5" y="9" fill="#10b981" fontSize="10" fontWeight="bold" fontFamily="monospace">
+                  43,847.50 ↗ +1.24%
+                </text>
+              </g>
+              
+              {/* Buy orders (green) */}
+              <g transform="translate(0,130)">
+                {[...Array(5)].map((_, i) => {
+                  const opacity = 0.5 - (i * 0.08);
+                  return (
+                    <g key={i} transform={`translate(0,${i * 12})`}>
+                      <rect x="0" y="0" width="260" height="10" fill="#10b981" opacity={opacity * 0.1} />
+                      <text x="5" y="8" fill="#10b981" fontSize="8" fontFamily="monospace">
+                        {(43800 - i * 45).toLocaleString()}
+                      </text>
+                      <text x="125" y="8" fill="#94a3b8" fontSize="8" fontFamily="monospace">
+                        {(Math.random() * 3).toFixed(4)}
+                      </text>
+                      <text x="205" y="8" fill="#94a3b8" fontSize="8" fontFamily="monospace">
+                        {(Math.random() * 15).toFixed(2)}
+                      </text>
+                    </g>
+                  );
+                })}
+              </g>
+            </g>
+          </g>
+      
+          {/* Volume Chart - Top Center */}
+          <g transform="translate(400,50)">
+            <rect x="0" y="0" width="250" height="120" fill="rgba(15, 23, 42, 0.4)" rx="4" />
+            
+            <g transform="translate(10,10)">
+              <text x="0" y="0" fill="#64748b" fontSize="9" fontWeight="bold">Volume (24h)</text>
+              
+              {/* Volume bars with animation */}
+              <g transform="translate(0,15)">
+                {[...Array(20)].map((_, i) => {
+                  const height = 10 + Math.random() * 70;
+                  const x = i * 11;
+                  return (
+                    <rect key={i} x={x} y={85 - height} width="8" height={height} 
+                          fill="url(#volumeGradient)" opacity="0.7">
+                      <animate attributeName="height" 
+                               values={`${height};${height * 1.1};${height}`} 
+                               dur="3s" repeatCount="indefinite" 
+                               begin={`${i * 0.1}s`}/>
+                      <animate attributeName="y" 
+                               values={`${85 - height};${85 - height * 1.1};${85 - height}`} 
+                               dur="3s" repeatCount="indefinite" 
+                               begin={`${i * 0.1}s`}/>
+                    </rect>
+                  );
+                })}
+              </g>
+            </g>
+          </g>
+      
+      {/* Subtle background elements */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-1/4 left-1/3 w-96 h-2 bg-gradient-to-r from-transparent via-blue-500 to-transparent animate-pulse" style={{ animationDuration: '4s' }}></div>
+        <div className="absolute top-2/3 right-1/4 w-2 h-64 bg-gradient-to-b from-transparent via-green-500 to-transparent animate-pulse" style={{ animationDuration: '6s', animationDelay: '2s' }}></div>
       </div>
       
-      {/* Small Candlestick Chart - Right Center */}
-      <div className="absolute top-1/2 right-32 w-48 h-32 opacity-25">
-        <svg viewBox="0 0 180 120" className="w-full h-full">
-          <g className="animate-bounce" style={{ animationDuration: '3s' }}>
-            <rect x="15" y="50" width="8" height="20" fill="#22c55e" />
-            <line x1="19" y1="40" x2="19" y2="80" stroke="#22c55e" strokeWidth="1" />
-            <rect x="35" y="60" width="8" height="15" fill="#ef4444" />
-            <line x1="39" y1="50" x2="39" y2="85" stroke="#ef4444" strokeWidth="1" />
-            <rect x="55" y="45" width="8" height="25" fill="#22c55e" />
-            <line x1="59" y1="35" x2="59" y2="80" stroke="#22c55e" strokeWidth="1" />
-            <rect x="75" y="65" width="8" height="12" fill="#ef4444" />
-            <line x1="79" y1="55" x2="79" y2="85" stroke="#ef4444" strokeWidth="1" />
-            <rect x="95" y="40" width="8" height="30" fill="#22c55e" />
-            <line x1="99" y1="30" x2="99" y2="80" stroke="#22c55e" strokeWidth="1" />
-            <rect x="115" y="70" width="8" height="10" fill="#ef4444" />
-            <line x1="119" y1="60" x2="119" y2="90" stroke="#ef4444" strokeWidth="1" />
-            <rect x="135" y="55" width="8" height="18" fill="#22c55e" />
-            <line x1="139" y1="45" x2="139" y2="83" stroke="#22c55e" strokeWidth="1" />
+          {/* Market Statistics Panel - Right Side */}
+          <g transform="translate(900,200)">
+            <rect x="0" y="0" width="200" height="300" fill="rgba(15, 23, 42, 0.5)" rx="6" />
+            
+            <g transform="translate(15,20)">
+              <text x="0" y="0" fill="#64748b" fontSize="10" fontWeight="bold">Market Overview</text>
+              
+              {/* Market stats */}
+              <g transform="translate(0,25)">
+                <text x="0" y="0" fill="#94a3b8" fontSize="8">24h Change</text>
+                <text x="0" y="15" fill="#10b981" fontSize="12" fontWeight="bold">+2.47%</text>
+                
+                <text x="0" y="40" fill="#94a3b8" fontSize="8">24h High</text>
+                <text x="0" y="55" fill="#e2e8f0" fontSize="10" fontFamily="monospace">$44,127.50</text>
+                
+                <text x="0" y="75" fill="#94a3b8" fontSize="8">24h Low</text>
+                <text x="0" y="90" fill="#e2e8f0" fontSize="10" fontFamily="monospace">$42,863.21</text>
+                
+                <text x="0" y="110" fill="#94a3b8" fontSize="8">Volume</text>
+                <text x="0" y="125" fill="#e2e8f0" fontSize="10" fontFamily="monospace">$2.14B</text>
+                
+                <text x="0" y="145" fill="#94a3b8" fontSize="8">Market Cap</text>
+                <text x="0" y="160" fill="#e2e8f0" fontSize="10" fontFamily="monospace">$847.2B</text>
+              </g>
+              
+              {/* Mini trend indicator */}
+              <g transform="translate(0,190)">
+                <text x="0" y="0" fill="#94a3b8" fontSize="8">Trend</text>
+                <path d="M0,15 Q30,10 60,20 Q90,15 120,8 Q150,12 170,5" 
+                      fill="none" stroke="#10b981" strokeWidth="1.5">
+                  <animate attributeName="stroke-dasharray" 
+                           values="0,200;200,0;0,200" 
+                           dur="4s" repeatCount="indefinite"/>
+                </path>
+              </g>
+            </g>
           </g>
         </svg>
       </div>
