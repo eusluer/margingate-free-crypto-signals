@@ -15,33 +15,116 @@ const AnimatedBackground = () => {
         </svg>
       </div>
       
-      {/* Candlestick Chart Animation */}
-      <div className="absolute top-20 right-20 w-64 h-40 opacity-40">
-        <svg viewBox="0 0 250 150" className="w-full h-full">
+      {/* Large Candlestick Chart Animation - Top Right */}
+      <div className="absolute top-10 right-10 w-96 h-64 opacity-35">
+        <svg viewBox="0 0 400 250" className="w-full h-full">
+          {/* Background grid */}
+          <defs>
+            <pattern id="tradingGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+              <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#6b7280" strokeWidth="0.5" opacity="0.3"/>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#tradingGrid)" />
+          
           {/* Green candles */}
           <g className="animate-pulse">
-            <rect x="20" y="60" width="8" height="30" fill="#22c55e" />
-            <line x1="24" y1="50" x2="24" y2="95" stroke="#22c55e" strokeWidth="1" />
-            <rect x="40" y="70" width="8" height="25" fill="#22c55e" />
-            <line x1="44" y1="60" x2="44" y2="100" stroke="#22c55e" strokeWidth="1" />
-            <rect x="80" y="55" width="8" height="35" fill="#22c55e" />
-            <line x1="84" y1="45" x2="84" y2="95" stroke="#22c55e" strokeWidth="1" />
+            <rect x="30" y="90" width="12" height="45" fill="#22c55e" />
+            <line x1="36" y1="75" x2="36" y2="145" stroke="#22c55e" strokeWidth="2" />
+            <rect x="60" y="105" width="12" height="35" fill="#22c55e" />
+            <line x1="66" y1="90" x2="66" y2="150" stroke="#22c55e" strokeWidth="2" />
+            <rect x="120" y="80" width="12" height="50" fill="#22c55e" />
+            <line x1="126" y1="65" x2="126" y2="140" stroke="#22c55e" strokeWidth="2" />
+            <rect x="180" y="95" width="12" height="40" fill="#22c55e" />
+            <line x1="186" y1="80" x2="186" y2="145" stroke="#22c55e" strokeWidth="2" />
+            <rect x="240" y="85" width="12" height="55" fill="#22c55e" />
+            <line x1="246" y1="70" x2="246" y2="150" stroke="#22c55e" strokeWidth="2" />
+            <rect x="300" y="100" width="12" height="35" fill="#22c55e" />
+            <line x1="306" y1="85" x2="306" y2="145" stroke="#22c55e" strokeWidth="2" />
           </g>
           {/* Red candles */}
           <g className="animate-pulse" style={{ animationDelay: '0.5s' }}>
-            <rect x="60" y="75" width="8" height="20" fill="#ef4444" />
-            <line x1="64" y1="65" x2="64" y2="100" stroke="#ef4444" strokeWidth="1" />
-            <rect x="100" y="80" width="8" height="15" fill="#ef4444" />
-            <line x1="104" y1="70" x2="104" y2="100" stroke="#ef4444" strokeWidth="1" />
-            <rect x="120" y="85" width="8" height="10" fill="#ef4444" />
-            <line x1="124" y1="75" x2="124" y2="100" stroke="#ef4444" strokeWidth="1" />
+            <rect x="90" y="115" width="12" height="25" fill="#ef4444" />
+            <line x1="96" y1="100" x2="96" y2="150" stroke="#ef4444" strokeWidth="2" />
+            <rect x="150" y="125" width="12" height="20" fill="#ef4444" />
+            <line x1="156" y1="110" x2="156" y2="155" stroke="#ef4444" strokeWidth="2" />
+            <rect x="210" y="130" width="12" height="15" fill="#ef4444" />
+            <line x1="216" y1="115" x2="216" y2="155" stroke="#ef4444" strokeWidth="2" />
+            <rect x="270" y="120" width="12" height="25" fill="#ef4444" />
+            <line x1="276" y1="105" x2="276" y2="155" stroke="#ef4444" strokeWidth="2" />
+            <rect x="330" y="135" width="12" height="15" fill="#ef4444" />
+            <line x1="336" y1="120" x2="336" y2="160" stroke="#ef4444" strokeWidth="2" />
           </g>
-          {/* Price line */}
-          <path d="M15,80 Q50,60 90,70 Q130,85 180,75 Q200,70 230,65" 
-                fill="none" stroke="#3b82f6" strokeWidth="2" 
-                className="animate-pulse" style={{ animationDelay: '1s' }} strokeDasharray="3,3">
-            <animate attributeName="stroke-dashoffset" values="0;6" dur="2s" repeatCount="indefinite"/>
+          {/* Moving average line */}
+          <path d="M25,120 Q80,110 150,115 Q220,125 290,120 Q340,115 370,110" 
+                fill="none" stroke="#3b82f6" strokeWidth="3" 
+                className="animate-pulse" style={{ animationDelay: '1s' }} strokeDasharray="5,5">
+            <animate attributeName="stroke-dashoffset" values="0;10" dur="3s" repeatCount="indefinite"/>
           </path>
+          {/* Volume bars */}
+          <g opacity="0.6">
+            <rect x="30" y="180" width="12" height="30" fill="#8b5cf6" />
+            <rect x="60" y="185" width="12" height="25" fill="#8b5cf6" />
+            <rect x="90" y="175" width="12" height="35" fill="#8b5cf6" />
+            <rect x="120" y="170" width="12" height="40" fill="#8b5cf6" />
+            <rect x="150" y="190" width="12" height="20" fill="#8b5cf6" />
+          </g>
+        </svg>
+      </div>
+      
+      {/* Large Candlestick Chart Animation - Bottom Left */}
+      <div className="absolute bottom-20 left-10 w-80 h-48 opacity-30">
+        <svg viewBox="0 0 350 200" className="w-full h-full">
+          <rect width="100%" height="100%" fill="url(#tradingGrid)" />
+          
+          {/* Bearish trend candles */}
+          <g className="animate-pulse" style={{ animationDelay: '1.5s' }}>
+            <rect x="25" y="60" width="10" height="40" fill="#22c55e" />
+            <line x1="30" y1="50" x2="30" y2="110" stroke="#22c55e" strokeWidth="1.5" />
+            <rect x="50" y="80" width="10" height="30" fill="#ef4444" />
+            <line x1="55" y1="70" x2="55" y2="120" stroke="#ef4444" strokeWidth="1.5" />
+            <rect x="75" y="95" width="10" height="25" fill="#ef4444" />
+            <line x1="80" y1="85" x2="80" y2="130" stroke="#ef4444" strokeWidth="1.5" />
+            <rect x="100" y="110" width="10" height="20" fill="#ef4444" />
+            <line x1="105" y1="100" x2="105" y2="140" stroke="#ef4444" strokeWidth="1.5" />
+            <rect x="125" y="125" width="10" height="15" fill="#ef4444" />
+            <line x1="130" y1="115" x2="130" y2="150" stroke="#ef4444" strokeWidth="1.5" />
+            <rect x="150" y="140" width="10" height="10" fill="#ef4444" />
+            <line x1="155" y1="130" x2="155" y2="160" stroke="#ef4444" strokeWidth="1.5" />
+            <rect x="175" y="135" width="10" height="20" fill="#22c55e" />
+            <line x1="180" y1="125" x2="180" y2="165" stroke="#22c55e" strokeWidth="1.5" />
+            <rect x="200" y="120" width="10" height="30" fill="#22c55e" />
+            <line x1="205" y1="110" x2="205" y2="160" stroke="#22c55e" strokeWidth="1.5" />
+            <rect x="225" y="100" width="10" height="35" fill="#22c55e" />
+            <line x1="230" y1="90" x2="230" y2="145" stroke="#22c55e" strokeWidth="1.5" />
+            <rect x="250" y="85" width="10" height="40" fill="#22c55e" />
+            <line x1="255" y1="75" x2="255" y2="135" stroke="#22c55e" strokeWidth="1.5" />
+          </g>
+          {/* Trend line */}
+          <path d="M20,80 Q100,120 180,140 Q230,130 280,100" 
+                fill="none" stroke="#f59e0b" strokeWidth="2" 
+                className="animate-pulse" strokeDasharray="4,4">
+            <animate attributeName="stroke-dashoffset" values="0;8" dur="2.5s" repeatCount="indefinite"/>
+          </path>
+        </svg>
+      </div>
+      
+      {/* Medium Candlestick Chart - Top Center */}
+      <div className="absolute top-32 left-1/2 transform -translate-x-1/2 w-72 h-40 opacity-25">
+        <svg viewBox="0 0 300 150" className="w-full h-full">
+          <g className="animate-bounce" style={{ animationDuration: '4s' }}>
+            <rect x="20" y="60" width="8" height="25" fill="#22c55e" />
+            <line x1="24" y1="50" x2="24" y2="95" stroke="#22c55e" strokeWidth="1" />
+            <rect x="40" y="70" width="8" height="20" fill="#ef4444" />
+            <line x1="44" y1="60" x2="44" y2="100" stroke="#ef4444" strokeWidth="1" />
+            <rect x="60" y="55" width="8" height="30" fill="#22c55e" />
+            <line x1="64" y1="45" x2="64" y2="95" stroke="#22c55e" strokeWidth="1" />
+            <rect x="80" y="75" width="8" height="15" fill="#ef4444" />
+            <line x1="84" y1="65" x2="84" y2="100" stroke="#ef4444" strokeWidth="1" />
+            <rect x="100" y="50" width="8" height="35" fill="#22c55e" />
+            <line x1="104" y1="40" x2="104" y2="95" stroke="#22c55e" strokeWidth="1" />
+            <rect x="120" y="80" width="8" height="10" fill="#ef4444" />
+            <line x1="124" y1="70" x2="124" y2="100" stroke="#ef4444" strokeWidth="1" />
+          </g>
         </svg>
       </div>
       
@@ -87,18 +170,24 @@ const AnimatedBackground = () => {
         </svg>
       </div>
       
-      {/* Additional smaller candlestick charts */}
-      <div className="absolute top-1/2 left-1/3 w-32 h-20 opacity-30">
-        <svg viewBox="0 0 120 80" className="w-full h-full">
+      {/* Small Candlestick Chart - Right Center */}
+      <div className="absolute top-1/2 right-32 w-48 h-32 opacity-25">
+        <svg viewBox="0 0 180 120" className="w-full h-full">
           <g className="animate-bounce" style={{ animationDuration: '3s' }}>
-            <rect x="10" y="35" width="6" height="15" fill="#22c55e" />
-            <line x1="13" y1="30" x2="13" y2="55" stroke="#22c55e" strokeWidth="1" />
-            <rect x="25" y="40" width="6" height="10" fill="#ef4444" />
-            <line x1="28" y1="35" x2="28" y2="55" stroke="#ef4444" strokeWidth="1" />
-            <rect x="40" y="32" width="6" height="18" fill="#22c55e" />
-            <line x1="43" y1="25" x2="43" y2="55" stroke="#22c55e" strokeWidth="1" />
-            <rect x="55" y="45" width="6" height="8" fill="#ef4444" />
-            <line x1="58" y1="40" x2="58" y2="58" stroke="#ef4444" strokeWidth="1" />
+            <rect x="15" y="50" width="8" height="20" fill="#22c55e" />
+            <line x1="19" y1="40" x2="19" y2="80" stroke="#22c55e" strokeWidth="1" />
+            <rect x="35" y="60" width="8" height="15" fill="#ef4444" />
+            <line x1="39" y1="50" x2="39" y2="85" stroke="#ef4444" strokeWidth="1" />
+            <rect x="55" y="45" width="8" height="25" fill="#22c55e" />
+            <line x1="59" y1="35" x2="59" y2="80" stroke="#22c55e" strokeWidth="1" />
+            <rect x="75" y="65" width="8" height="12" fill="#ef4444" />
+            <line x1="79" y1="55" x2="79" y2="85" stroke="#ef4444" strokeWidth="1" />
+            <rect x="95" y="40" width="8" height="30" fill="#22c55e" />
+            <line x1="99" y1="30" x2="99" y2="80" stroke="#22c55e" strokeWidth="1" />
+            <rect x="115" y="70" width="8" height="10" fill="#ef4444" />
+            <line x1="119" y1="60" x2="119" y2="90" stroke="#ef4444" strokeWidth="1" />
+            <rect x="135" y="55" width="8" height="18" fill="#22c55e" />
+            <line x1="139" y1="45" x2="139" y2="83" stroke="#22c55e" strokeWidth="1" />
           </g>
         </svg>
       </div>
