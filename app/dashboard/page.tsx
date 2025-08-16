@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useAuth } from "../../components/AuthProvider";
 import { useRouter } from "next/navigation";
 import AlarmList from "./AlarmList";
@@ -9,6 +9,7 @@ import RSIMap from "./RSIMap";
 import CoinAnalysis from "./CoinAnalysis";
 import UserGuide from "./UserGuide";
 import SmcPaAnalysis from "./SmcPaAnalysis";
+import { dataManager } from "../../lib/dataManager";
 
 type TabType = "guide" | "alarms" | "signals" | "coins" | "rsi" | "analysis" | "smc-pa";
 
@@ -16,10 +17,43 @@ export default function DashboardPage() {
   const { user, loading, signOut } = useAuth();
   const router = useRouter();
   const [activeTab, setActiveTab] = useState<TabType>("alarms");
+  const [isRefreshing, setIsRefreshing] = useState(false);
+  const [lastRefresh, setLastRefresh] = useState<Date>(new Date());
 
   React.useEffect(() => {
     if (!loading && !user) router.replace("/login");
   }, [user, loading, router]);
+
+  // Otomatik yenileme sistemini başlat
+  useEffect(() => {
+    if (user) {
+      // Sayfa yüklendiğinde otomatik yenileme başlat
+      dataManager.startAutoRefresh(300_000); // 5 dakika
+      
+      // Focus ve online event listeners ekle
+      const cleanupFocus = dataManager.setupFocusRefresh();
+      const cleanupOnline = dataManager.setupOnlineRefresh();
+      
+      return () => {
+        dataManager.stopAutoRefresh();
+        if (typeof cleanupFocus === 'function') cleanupFocus();
+        if (typeof cleanupOnline === 'function') cleanupOnline();
+      };
+    }
+  }, [user]);
+
+  // Manuel yenileme fonksiyonu
+  const handleManualRefresh = async () => {
+    setIsRefreshing(true);
+    try {
+      await dataManager.refreshAllData();
+      setLastRefresh(new Date());
+    } catch (error) {
+      console.error('Refresh failed:', error);
+    } finally {
+      setIsRefreshing(false);
+    }
+  };
 
   if (loading || !user) {
     return (
@@ -104,13 +138,49 @@ export default function DashboardPage() {
               <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
                 Smart Money Analysis Tool - Educational Purpose Only
               </p>
+              <p className="text-xs text-gray-400 mt-1">
+                Last refresh: {lastRefresh.toLocaleTimeString()}
+              </p>
             </div>
-            <button 
-              onClick={signOut} 
-              className="mt-4 sm:mt-0 px-6 py-3 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-semibold rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105"
-            >
-              Logout
-            </button>
+            <div className="flex gap-3 mt-4 sm:mt-0">
+              <button 
+                onClick={handleManualRefresh}
+                disabled={isRefreshing}
+                className="px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 disabled:from-gray-400 disabled:to-gray-500 text-white font-medium rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105 disabled:scale-100 flex items-center gap-2"
+              >
+                {isRefreshing ? (
+                  <>
+                    <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
+                    Refreshing...
+                  </>
+                ) : (
+                  <>
+                    🔄 Refresh Data
+                  </>
+                )}
+              </button>
+              <button 
+                onClick={signOut} 
+                className="px-6 py-3 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-semibold rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105"
+              >
+                Logout
+              </button>
+            </div>
+          </div>
+
+          {/* Auto-refresh Status */}
+          <div className="mb-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded-xl p-3 shadow-sm">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <span className="text-sm font-medium text-blue-800 dark:text-blue-200">
+                  Auto-refresh active (every 5 minutes)
+                </span>
+              </div>
+              <div className="text-xs text-blue-600 dark:text-blue-400">
+                Next: {new Date(lastRefresh.getTime() + 300_000).toLocaleTimeString()}
+              </div>
+            </div>
           </div>
 
           {/* Risk Warning Banner */}

@@ -16,7 +16,12 @@ interface RSIData {
 }
 
 export default function RSIMap() {
-  const { data, error, isLoading } = useSWR<SignalsJson>(getSignalsUrl('en'), fetchJson, { refreshInterval: 300_000 });
+  const { data, error, isLoading } = useSWR<SignalsJson>(getSignalsUrl('en'), fetchJson, { 
+    refreshInterval: 300_000,
+    revalidateOnFocus: true,
+    revalidateOnReconnect: true,
+    dedupingInterval: 60_000
+  });
   const [selectedTimeframe, setSelectedTimeframe] = useState<string>("4h");
   const [symbolFilter, setSymbolFilter] = useState("");
   const [hoveredCoin, setHoveredCoin] = useState<{coin: RSIData, rsi: number, x: number, y: number} | null>(null);

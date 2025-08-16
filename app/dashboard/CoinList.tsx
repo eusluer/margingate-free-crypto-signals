@@ -7,8 +7,18 @@ import { CoinsJson, OHLCVDataJson } from "../../lib/types";
 import MiniChart from "../../components/MiniChart";
 
 export default function CoinList() {
-  const { data, error, isLoading } = useSWR<CoinsJson>(getCoinsUrl('en'), fetchJson, { refreshInterval: 300_000 });
-  const { data: ohlcvData } = useSWR<OHLCVDataJson>(getOHLCVUrl('en'), fetchJson, { refreshInterval: 300_000 });
+  const { data, error, isLoading } = useSWR<CoinsJson>(getCoinsUrl('en'), fetchJson, { 
+    refreshInterval: 300_000,
+    revalidateOnFocus: true,
+    revalidateOnReconnect: true,
+    dedupingInterval: 60_000
+  });
+  const { data: ohlcvData } = useSWR<OHLCVDataJson>(getOHLCVUrl('en'), fetchJson, { 
+    refreshInterval: 300_000,
+    revalidateOnFocus: true,
+    revalidateOnReconnect: true,
+    dedupingInterval: 60_000
+  });
   const [symbolFilter, setSymbolFilter] = useState("");
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 

@@ -18,6 +18,7 @@ export default function SmcPaAnalysis() {
     refreshInterval: 300_000, // 5 minutes = 300,000 milliseconds
     revalidateOnFocus: true,
     revalidateOnReconnect: true,
+    dedupingInterval: 60_000
   });
 
   const [activeView, setActiveView] = useState<
