@@ -4,6 +4,8 @@ export interface Coin {
   priceChangePercent: number;
   lastPrice: number;
   volume: number;
+  change_24h?: number;
+  rank?: number;
 }
 
 export interface CoinsJson {
